@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Metal Truss Sheet" />
+		<Description value="Adds Metal Truss Sheet back to game." />
+		<Author value="ShoudenKalferas and AeyviKalferas"/>
+		<Version value="A18.3_1.0" />
+		<Website value="https://github.com/XelaNull/7DTD-SalvagedElectronics.git" />
+	</ModInfo>
+</xml>
