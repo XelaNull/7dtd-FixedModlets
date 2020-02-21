@@ -3,7 +3,7 @@
 <property name="Texture" value="310"/>
 
 -->
-  <block name="Steel Truss Sheet">
+  <block name="Steel_Truss_Sheet">
   	<property name="Extends" value="scrapIronNoUpgradeMaster"/>
   	<property name="Shape" value="New"/>
   	<property name="LightOpacity" value="0"/>

@@ -11,7 +11,7 @@
       </effect_group>
     </recipe>
     
-    <recipe name="Steel Truss Sheet" count="1">
+    <recipe name="Steel_Truss_Sheet" count="1">
       <ingredient name="resourceForgedSteel" count="2"/>
       <effect_group>
         <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="resourceForgedSteel"/>
