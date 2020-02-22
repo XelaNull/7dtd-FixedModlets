@@ -293,9 +293,17 @@
 	?FIX Any other strange Requirements of Perks/Attributes
 	================================ -->
 	<!-- Existing recipes that should have required tablesaw -->
-	<setattribute xpath="/recipes/recipe[@name='cntCabinetBottom']" name="craft_area">tablesaw</setattribute>
-	<setattribute xpath="/recipes/recipe[@name='cntCupboardCabinetRedTopClosed']" name="craft_area">tablesaw</setattribute>
-
+	<append xpath="/recipes">
+		<recipe name="cntCabinetBottom" count="1" craft_time="4" tags="learnable" craft_area="tablesaw" tags="tableSawCrafting">
+			<ingredient name="resourceGlue" count="2" />
+			<ingredient name="resourceWood" count="10" />		
+		</recipe>
+		<recipe name="cntCupboardCabinetRedTopClosed" count="1" craft_time="4" tags="learnable" craft_area="tablesaw" tags="tableSawCrafting">
+			<ingredient name="resourceGlue" count="2" />
+			<ingredient name="resourceWood" count="10" />		
+		</recipe>
+	</append>
+	
 	<!-- Include Snowberry Recipe (Locked behind LivingOffTheLand 3) -->
 	<append xpath="/recipes">
 		<recipe name="plantedSnowberry1" count="1" craft_time="4" tags="learnable">
