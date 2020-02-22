@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<ModInfo>
-		<Name value="Metal Truss Sheet" />
-		<Description value="Adds Metal Truss Sheet back to game." />
+		<Name value="Meat Rendering" />
+		<Description value="Render animal fat from diseased meat." />
 		<Author value="ShoudenKalferas and AeyviKalferas"/>
 		<Version value="A18.3_1.0" />
 		<Website value="https://github.com/XelaNull/7DTD-SalvagedElectronics.git" />
