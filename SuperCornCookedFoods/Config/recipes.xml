@@ -1,0 +1,22 @@
+<configs>
+	<append xpath="/recipes">
+
+<recipe name="foodSuperCornBread" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+	<ingredient name="foodCornMeal" count="5"/>
+	<ingredient name="foodCropGraceCorn" count="5"/>
+	<ingredient name="drinkJarGrandpasAwesomeSauce" count="1"/>
+</recipe>
+
+
+<recipe name="foodSuperCornMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	<ingredient name="foodRawMeat" count="5"/>
+	<ingredient name="foodCropGraceCorn" count="5"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="2"/>
+	<ingredient name="drinkJarGrandpasAwesomeSauce" count="1"/>
+</recipe>
+
+
+
+	</append>
+</configs>

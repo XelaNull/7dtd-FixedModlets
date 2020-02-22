@@ -1,0 +1,18 @@
+<configs>
+	<append xpath="/lootcontainers">
+
+		<lootgroup name="coldfood">
+			<item name="foodEgg" count="1,2"/>
+			<item name="foodBlueberryPie"/>
+			<item name="foodMeatStew"/>
+			<item name="foodRawMeat" count="5,10"/>
+			<item name="foodRottingFlesh" count="1,2"/>
+			<item name="foodCropCorn"/>
+			<item name="foodCropPotato"/>
+			<item name="foodCropBlueberries"/>
+			<item name="foodSuperCornBread" count="1,4"/>
+			<item name="foodSuperCornMeatStew" count="1,2"/>
+		</lootgroup>
+
+	</append>
+</configs>

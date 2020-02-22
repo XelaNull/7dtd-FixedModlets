@@ -1,0 +1,8 @@
+Key,UsedInMainMenu,Source,Context,Changes,English, French,German,Klingon,Spanish,Polish
+foodSuperCornBread,,item,Food,newKey,Super Cornbread [ff0000](MOD)[-],,,,,
+foodSuperCornBreadDesc,,item,Food,newKey,This stuff makes you feel good inside... It also seems to give you a small Stamina boost. Tasty!  [ff0000](Mod created by Gopher Mods)[-],,,,,
+foodSuperCornMeatStew,,item,Food,newKey,Supercorn Meat Stew [ff0000](MOD)[-],,,,,
+foodSuperCornMeatStewDesc,,item,Food,newKey,Fills you up and makes you feel good inside...  [ff0000](Mod created by Gopher Mods)[-],,,,,
+buffCookedSuperCornItemDesc,buffs,Buff,,,You are feeling good inside...,,,,,
+buffCookedSuperCornItemName,buffs,Buff,,,Ate a Cooked Super Corn food,,,,,
+buffCookedSuperCornItemTooltip,buffs,Buff,,,You ate a cooked Super Corn food. You feel good inside.,,,,,
