@@ -13,7 +13,7 @@
     -->
     </recipe>
     
-    <recipe name="Steel_Truss_Sheet" count="1">
+    <recipe name="Steel Truss Sheet" count="1">
       <ingredient name="resourceForgedSteel" count="2"/>
     </recipe>
   </append>
