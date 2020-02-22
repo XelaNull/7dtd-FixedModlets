@@ -379,7 +379,7 @@
 			<property name="Extends" value="Home Watersource Helper"/>
 			<property name="CustomIcon" value="wallHungSink"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Plumbing/wall_hung_sinkPrefab"/>
+			<property name="Model" value="#Entities/LootContainers?wallHungSinkPrefab.prefab"/>
 			<property name="ImposterExclude" value="true"/>
 			<property name="EconomicValue" value="144"/>
 			<drop event="Destroy" name="Home Wall Sink" count="1" prob="1"/>
