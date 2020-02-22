@@ -25,7 +25,7 @@
     
     <block name="Steel Truss Sheet">
       <property name="Extends" value="SteelNoUpgradeMaster"/>
-      <property name="CustomIcon" value="pouredConcreteBlock"/>
+      <property name="CustomIcon" value="metalTrussingSheet"/>
       <property name="CustomIconTint" value="dadada"/>
     	<property name="Shape" value="New"/>
     	<property name="LightOpacity" value="0"/>
@@ -34,7 +34,7 @@
     	<property name="SortOrder2" value="0703"/> <!-- SortShape -->
     	<property name="Place" value="TowardsPlacerInverted"/>
     	<property name="Mesh" value="cutout"/>
-      <property name="Texture" value="355,355,356,356,356,356"/>
+      <property name="Texture" value="310"/>
 
 <!--    	<property name="Texture" value="310"/>-->
     	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
