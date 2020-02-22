@@ -1,19 +1,25 @@
 <configs>
 <!-- Change damage, degredation use, and attacksperminute based on quality -->
-	<remove xpath="/items/item/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage'][@operation='perc_add']"/>
-	<remove xpath="/items/item/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage'][@operation='perc_add']"/>
-	
-	<append xpath="/items/item/effect_group[@name='Base Effects']">
+	<remove xpath="/items/item/effect_group[starts-with (@name,'gun')]/passive_effect[@name='EntityDamage'][@operation='perc_add']"/>
+	<remove xpath="/items/item/effect_group[starts-with (@name,'gun')]/passive_effect[@name='BlockDamage'][@operation='perc_add']"/>
+	<append xpath="/items/item/effect_group[starts-with (@name,'gun')]">
 		<passive_effect name="EntityDamage" operation="perc_add" value="0,.5" tier="1,9"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="0,2" tier="1,9"/>
-		<!--<passive_effect name="DegradationPerUse" operation="perc_add" value="0,-.1" tier="1,6"/>-->
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="0,.20" tier="1,6"/>
 		<passive_effect name="HarvestCount" operation="perc_add" value="0,.125"  tier="1,6"/>
-<!--		<passive_effect name="PhysicalDamageResist" operation="perc_add" value="0,.2"  tier="1,6"/>
--->	</append>
+	</append>
+
+	<remove xpath="/items/item/effect_group[starts-with (@name,'meleeTool')]/passive_effect[@name='EntityDamage'][@operation='perc_add']"/>
+	<remove xpath="/items/item/effect_group[starts-with (@name,'meleeTool')]/passive_effect[@name='BlockDamage'][@operation='perc_add']"/>
+	<append xpath="/items/item/effect_group[starts-with (@name,'meleeTool')]">
+		<passive_effect name="EntityDamage" operation="perc_add" value="0,.5" tier="1,9"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="0,2" tier="1,9"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="0,.20" tier="1,6"/>
+		<passive_effect name="HarvestCount" operation="perc_add" value="0,.125"  tier="1,6"/>
+	</append>
 
 	<!-- +5% per quality level to max range, effective range, damage falloff, RPM, Reloading, spread, and handling -->
-	<append xpath="/items/item[starts-with (@name,'gun')]/effect_group[@name='Base Effects']">
+	<append xpath="/items/item[starts-with (@name,'gun')]/effect_group[starts-with (@name,'gun')]">
 		<passive_effect name="MaxRange" operation="perc_add" value="0,.25" tier="1,6"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="0,.25" tier="1,6"/>
 		<passive_effect name="RoundsPerMinute" operation="perc_add" value="0,.25" tier="1,6"/>
@@ -28,257 +34,55 @@
 		<passive_effect name="WeaponHandling" operation="perc_add" value="0,.25" tier="1,6"/>
 	</append>
 
-<!--
-<item name="gunAK47"> 
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,selfLoading,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,perkAutoWeaponsDrumMag,canHaveCosmetic"/>
-	<property name="DisplayType" value="rangedGun"/>
-	<property name="HoldType" value="48"/>
-	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/ak47/ak47Prefab.prefab"/>
-	<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="4"/>
-
-	<property name="CrosshairOnAim" value="true"/> 
-	<property name="CrosshairUpAfterShot" value="true"/> 
-
-	<property name="RepairTools" value="resourceRepairKit"/>
-	<property name="DegradationBreaksAfter" value="false"/>
-
-	<property name="SoundJammed" value="weapon_jam"/>
-	<property name="Sound_Sight_In" value="rifle_sight_in"/>
-	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
-
-	<property name="RepairExpMultiplier" value="10.8"/>
-	<property name="EconomicValue" value="500"/>
-	<property name="UnlockedBy" value="perkMachineGunner,gunAK47Schematic"/>
-	<property name="ShowQuality" value="true"/>
-	<property name="Group" value="Ammo/Weapons"/>
-
-	<property class="Action0">
-		<property name="Class" value="Ranged"/>
-		<property name="Delay" value=".150"/> 
-		<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP"/>
-		<property name="Sound_start" value="ak47_fire"/>
-		<property name="Sound_loop" value="ak47_fire"/>
-		<property name="Sound_empty" value="dryfire"/>
-		<property name="Sound_reload" value="ak47_reload"/>
-		<property name="Sound_end" value="ak47_fire_end"/>
-		<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
-		<property name="Particles_muzzle_fire_fpv" value="gunfire_AK47_fpv"/>
-		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-	</property>
-	<property class="Action1">
-		<property name="Class" value="Zoom"/>
-		<property name="Zoom_max_out" value="55"/>
-		<property name="Zoom_max_in" value="55"/>
-		<property name="ScopeCameraOffset" value="-.00062,0,.055"/>
-	</property>
-
-	<effect_group name="gunAK47">
-		<passive_effect name="MaxRange" operation="base_set" value="90"/>
-		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
-		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/> 
-		<passive_effect name="EntityDamage" operation="base_add" value="-8"/>
-
-		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> 
-		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> 
-		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> 
-		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> 
-
-		<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkMachineGunner"/> 
-		<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05"/> 
-		<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/> 
-		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> 
-
-		<passive_effect name="RoundsPerMinute" operation="base_set" value="400"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="30"/>
-		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".5"/>
-
-		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.8"/>
-		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.8"/>
-		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".15"/>
-		<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
-		<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
-		<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
-
-		<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-.5"/>
-		<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="1"/>
-
-		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-1"/>
-		<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="1"/>
-
-		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.9"/>
-		<passive_effect name="WeaponHandling" operation="base_set" value=".7"/> 
-
-		<passive_effect name="DegradationMax" operation="base_set" value="250,550" tier="1,6" tags="perkMachineGunner,perkBookAutoWeapons"/>
-		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMachineGunner,perkBookAutoWeapons"/>
-
-		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
-		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-	</effect_group>
-</item>
-
--->
-
-
-
 <!-- Alter the Entity Damage in line with the original files-->
-	<set xpath="/items/item[@name='gunAK47']/effect_group[@name='gunAK47']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">-.2,.8</set>
+	<set xpath="/items/item[@name='gunPistol']/effect_group[@name='gunPistol']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">.25,1.25</set>
+	<set xpath="/items/item[@name='gun44Magnum']/effect_group[@name='gun44Magnum']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">.25,1.25</set>
 	<set xpath="/items/item[@name='gunSMG5']/effect_group[@name='gunSMG5']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">-.2,.8</set>
-	<set xpath="/items/item[@name='gunHuntingRifle']/effect_group[@name='gunHuntingRifle']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">.35,1.35</set>
-	<set xpath="/items/item[@name='gunMR10']/effect_group[@name='gunMR10']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">.25,1.25</set>
-	<set xpath="/items/item[@name='gunCrossbowIron']/effect_group[@name='gunCrossbowIron']/passive_effect[@name='EntityDamage'][@operation='perc_add']/@value">.3,1.3</set>
-	<set xpath="/items/item[@name='gunCrossbow']/effect_group[@name='gunCrossbow']/passive_effect[@name='EntityDamage'][@operation='perc_add']/@value">.45,1.45</set>
-<!-- Alter the Block Damage in line with the original files-->
+	<set xpath="/items/item[@name='gunBlunderbuss']/effect_group[@name='gunBlunderbuss']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">-.2,.8</set>
+	<set xpath="/items/item[@name='gunDoubleBarrelShotgun']/effect_group[@name='gunDoubleBarrelShotgun']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">-.2,.8</set>
+	<set xpath="/items/item[@name='gunPumpShotgun']/effect_group[@name='gunPumpShotgun']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">-.2,.8</set>
 	<set xpath="/items/item[@name='gunHuntingRifle']/effect_group[@name='gunHuntingRifle']/passive_effect[@name='EntityDamage'][@operation='perc_add']/@value">.35,2.35</set>
+	<set xpath="/items/item[@name='gunMR10']/effect_group[@name='gunMR10']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">.25,1.25</set>
+	<set xpath="/items/item[@name='gunAK47']/effect_group[@name='gunAK47']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">-.2,.8</set>
+	<set xpath="/items/item[@name='gunTacticalAR']/effect_group[@name='gunTacticalAR']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">-.2,.8</set>
+	<set xpath="/items/item[@name='gunM60']/effect_group[@name='gunM60']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">.25,1.25</set>
+	<set xpath="/items/item[@name='gunRocketLauncher']/effect_group[@name='gunRocketLauncher']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">.25,1.25</set>
+	<set xpath="/items/item[@name='gunBowPrimitive']/effect_group[@name='gunBowPrimitive']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">.25,1.25</set>
+	<set xpath="/items/item[@name='gunBowWooden']/effect_group[@name='gunBowWooden']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">.25,1.25</set>
+	<set xpath="/items/item[@name='gunBowCompound']/effect_group[@name='gunBowCompound']/passive_effect[@name='EntityDamage' and not(contains(@tier, '2,6'))][@operation='perc_add']/@value">.25,1.25</set>
+	<set xpath="/items/item[@name='gunCrossbowIron']/effect_group[@name='gunCrossbowIron']/passive_effect[@name='EntityDamage'][@operation='perc_add']/@value">.3,1.3</set>
+	<set xpath="/items/item[@name='gunCrossbowCompound']/effect_group[@name='gunCrossbowCompound']/passive_effect[@name='EntityDamage'][@operation='perc_add']/@value">.45,1.45</set>
 
+<!-- Alter the Block Damage in line with the original files-->
 <!-- Alter the Harvest amount based on type of item, i.e. Iron gets more than stone, Steel gets more than iron -->
-	<append xpath="/items/item[@name='meleeToolKnifeIron']/effect_group[@name='meleeToolKnifeIron']">
+	<append xpath="/items/item[starts-with (@name,'meleeToolStone')]/effect_group[starts-with (@name,'meleeToolStone')]">
 		<passive_effect name="HarvestCount" operation="perc_add" value=".15,.275" tags="butcherHarvest"/>
 	</append>
 	<append xpath="/items/item[@name='meleeToolClawHammer']/effect_group[@name='meleeToolClawHammer']">
 		<passive_effect name="HarvestCount" operation="perc_add" value=".15,.275" tags="butcherHarvest"/>
 	</append>
-	<append xpath="/items/item[@name='meleeToolPickaxeIron']/effect_group[@name='meleeToolPickaxeIron']">
+	<append xpath="/items/item[starts-with (@name,'meleeToolFireaxe')]/effect_group[starts-with (@name,'meleeToolFireaxe')]">
 		<passive_effect name="HarvestCount" operation="perc_add" value=".15,.275" tags="butcherHarvest"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolShovelIron']/effect_group[@name='meleeToolShovelIron']">
+	</append>	
+	<append xpath="/items/item[starts-with (@name,'meleeToolPickaxe')]/effect_group[starts-with (@name,'meleeToolPickaxe')]">
 		<passive_effect name="HarvestCount" operation="perc_add" value=".15,.275" tags="butcherHarvest"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolFireaxeIron']/effect_group[@name='meleeToolFireaxeIron']">
+	</append>	
+	<append xpath="/items/item[starts-with (@name,'meleeToolShovel')]/effect_group[starts-with (@name,'meleeToolShovel')]">
 		<passive_effect name="HarvestCount" operation="perc_add" value=".15,.275" tags="butcherHarvest"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolMachete']/effect_group[@name='meleeToolMachete']">
-		<passive_effect name="HarvestCount" operation="perc_add" value=".3,.5" tags="butcherHarvest"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolWrench']/effect_group[@name='meleeToolWrench']">
-		<passive_effect name="HarvestCount" operation="perc_add" value=".3,.5" tags="butcherHarvest"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolPickaxeSteel']/effect_group[@name='meleeToolPickaxeSteel']">
-		<passive_effect name="HarvestCount" operation="perc_add" value=".3,.5" tags="butcherHarvest"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolShovelSteel']/effect_group[@name='meleeToolShovelSteel']">
-		<passive_effect name="HarvestCount" operation="perc_add" value=".3,.5" tags="butcherHarvest"/>
-	</append>
-	<append xpath="/items/item[@name='meleeToolFireaxeSteel']/effect_group[@name='meleeToolFireaxeSteel']">
-		<passive_effect name="HarvestCount" operation="perc_add" value=".3,.5" tags="butcherHarvest"/>
 	</append>
 	<append xpath="/items/item[@name='meleeToolChainsaw']/effect_group[@name='meleeToolChainsaw']">
 		<passive_effect name="HarvestCount" operation="perc_add" value=".5,1" tags="butcherHarvest"/>
-	</append>
+	</append>		
 	<append xpath="/items/item[@name='meleeToolAuger']/effect_group[@name='meleeToolAuger']">
 		<passive_effect name="HarvestCount" operation="perc_add" value=".5,1" tags="butcherHarvest"/>
+	</append>		
+	<append xpath="/items/item[@name='meleeToolWrench']/effect_group[@name='meleeToolWrench']">
+		<passive_effect name="HarvestCount" operation="perc_add" value=".3,.5" tags="butcherHarvest"/>
+	</append>		
+	<append xpath="/items/item[starts-with (@name,'meleeToolKnife')]/effect_group[starts-with (@name,'meleeToolKnife')]">
+		<passive_effect name="HarvestCount" operation="perc_add" value=".15,.275" tags="butcherHarvest"/>
 	</append>
-
-
-	<insertAfter xpath="/items/item[@name='meleeToolStoneAxe']">
-		<item name="godPumpShotgun">
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,bottomAttachments,perkShotgunMessiah"/>
-				<property name="DisplayType" value="adminRanged"/>
-				<property name="HoldType" value="5"/>
-				<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/PumpShotgunPrefab"/>
-				<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="27"/>
-				<property name="RepairTools" value="resourceRepairKit"/>
-				<property name="DegradationBreaksAfter" value="false"/>
-				<property name="SoundJammed" value="weapon_jam"/>
-				<property name="Attachments" value="meleeToolFlashlight02"/>
-				<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
-				<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
-				<property name="Sound_Sight_In" value="rifle_sight_in"/>
-				<property name="Sound_Sight_Out" value="rifle_sight_out"/>
-				<property name="LightSource" value="lightSource"/> <!-- Start: Needed for the attachment flashlight -->
-				<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
-				<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/> <!-- End: Needed for the attachment flashlight -->
-				<property name="Group" value="Ammo/Weapons"/>
-				<property name="ActionSkillGroup" value="Shotguns"/>
-				<property name="CraftingSkillGroup" value="craftSkillGuns"/>
-				<property name="RepairExpMultiplier" value="10.8"/>
-				<property name="PickupJournalEntry" value="alternateAmmoTip"/>
-				<property name="LightValue" value="0.45"/>
-				<property name="EconomicValue" value="2700"/>
-
-			<property class="Action0">
-				<property name="Class" value="Ranged"/>
-				<property name="Delay" value="0.8"/> <!-- obsolete if rounds per minute exists -->
-				<property name="Magazine_items" value="godShells"/>
-				<property name="Single_magazine_usage" value="true"/>
-				<property name="Infinite_ammo" value="true"/>
-				<property name="Reload_time" value="2.6"/>
-				<property name="Sound_start" value="pump_shotgun_fire"/>
-				<property name="Sound_repeat" value=""/>
-				<property name="Sound_end" value=""/>
-				<property name="Sound_empty" value="weapon_empty"/>
-				<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
-				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-				<property name="ScopeOffset" value="-0.00062,0.088,0.065"/>
-				<property name="SideOffset" value="0,0,0"/>
-				<property name="BarrelOffset" value="0,0,0"/>
-			</property>
-			<property class="Action1">
-				<property name="Class" value="Zoom"/>
-				<property name="Zoom_max_out" value="55"/>
-				<property name="Zoom_max_in" value="55"/>
-				<property name="ScopeCameraOffset" value="0,-.005,0"/>
-			</property>
-
-			<effect_group name="Base Effects"> <!-- Shotgun Long -->
-				<passive_effect name="EntityDamage" operation="perc_add" value="0"/>
-				<passive_effect name="BlockDamage" operation="perc_add" value="30000"/>
-				<!--<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>-->
-				<!--passive_effect name="DamageModifier" operation="perc_add" value="4" tags="wood"/-->
-
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="600"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
-
-				<passive_effect name="MagazineSize" operation="base_set" value="30000"/>
-				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 2.3s -->
-				<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15" tags="EntityDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-
-				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0"/>
-				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="15"/>
-				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="1"/>
-				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="1"/>
-				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1"/>
-				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="1"/>
-
-				<passive_effect name="KickDegreesVertical" operation="base_set" value="0"/>
-				<passive_effect name="KickDegreesHorizontal" operation="base_set" value="0"/>
-				<display_value name="dRecoil" value="0" />
-				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="22"/>
-				<passive_effect name="WeaponHandling" operation="base_set" value="1.7"/>
-
-				<passive_effect name="DegradationMax" operation="base_set" value="0" tier="6"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
-			</effect_group>
-		</item>
-
-		<item name="godShells">
-			<property name="Tags" value="ammo,shotgun"/>
-			<property name="DisplayType" value="ammoShotgun"/>
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-			<property name="Material" value="Mlead_scrap"/>
-			<property name="Stacknumber" value="250"/> <!-- STK ammo -->
-			<property name="EconomicValue" value="17"/>
-			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
-			<property name="Group" value="Ammo/Weapons"/>
-			<effect_group name="Base Effects" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="0"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="30000"/>
-				<passive_effect name="RoundRayCount" operation="base_set" value="99"/>
-				<passive_effect name="MaxRange" operation="base_set" value="35"/>
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="7"/>
-				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0"/>
-				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="55"/>
-				<passive_effect name="DismemberChance" operation="perc_subtract" value="0.875" tags="head"/>
-				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="1"/>
-				<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="1"/>
-				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="1"/>
-				<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value="1"/>
-			</effect_group>
-		</item>
-	</insertAfter>
+	<append xpath="/items/item[starts-with (@name,'meleeToolSledgehammer')]/effect_group[starts-with (@name,'meleeToolSledgehammer')]">
+		<passive_effect name="HarvestCount" operation="perc_add" value=".15,.275" tags="butcherHarvest"/>
+	</append>
 </configs>
