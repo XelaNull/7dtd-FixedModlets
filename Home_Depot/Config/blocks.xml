@@ -326,7 +326,7 @@
 			<property name="Extends" value="Home Campfire Helper"/>
 			<property name="CustomIcon" value="cntCharcoalGrillOpen"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/LootContainers/Grill_Simple_EmptyPrefab"/>
+			<property name="Model" value="#Entities/LootContainers?Grill_Simple_EmptyPrefab.prefab"/>
 			<property name="Path" value="solid"/>
 			<property name="Place" value="TowardsPlacer90"/>
 			<property name="EconomicValue" value="244"/>

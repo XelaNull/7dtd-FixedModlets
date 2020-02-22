@@ -294,11 +294,11 @@
 	================================ -->
 	<!-- Existing recipes that should have required tablesaw -->
 	<append xpath="/recipes">
-		<recipe name="cntCabinetBottom" count="1" craft_time="4" tags="learnable" craft_area="tablesaw" tags="tableSawCrafting">
+		<recipe name="cntCabinetBottom" count="1" craft_time="4" craft_area="tablesaw" tags="learnable,tableSawCrafting">
 			<ingredient name="resourceGlue" count="2" />
 			<ingredient name="resourceWood" count="10" />		
 		</recipe>
-		<recipe name="cntCupboardCabinetRedTopClosed" count="1" craft_time="4" tags="learnable" craft_area="tablesaw" tags="tableSawCrafting">
+		<recipe name="cntCupboardCabinetRedTopClosed" count="1" craft_time="4" craft_area="tablesaw" tags="learnable,tableSawCrafting">
 			<ingredient name="resourceGlue" count="2" />
 			<ingredient name="resourceWood" count="10" />		
 		</recipe>
