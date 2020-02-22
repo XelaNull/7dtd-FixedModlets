@@ -20,14 +20,13 @@
     	<property name="FilterTags" value="fbuilding,firon"/>
     	<property name="SortOrder1" value="40e0"/>
     	<property name="SortOrder2" value="0002"/>
-      <property name="Map.Color" value="100,100,100"/>
+      <property name="Map.Color" value="255,255,255"/>
     </block>
     
     <block name="Steel Truss Sheet">
       <property name="Extends" value="SteelNoUpgradeMaster"/>
       <property name="CustomIcon" value="metalTrussingSheet"/>
-<!--      <property name="CustomIconTint" value="dadada"/>-->
-      <property name="CustomIconTint" value="ff8080"/>
+      <property name="CustomIconTint" value="ffffff"/>
     	<property name="Shape" value="New"/>
     	<property name="LightOpacity" value="0"/>
     	<property name="Model" value="billboard"/>
