@@ -185,9 +185,9 @@
 	TWEAK TRADER RESTOCK VARIABLES
 	================================ -->
 
-	<!-- boost the number of items circulating to accommodate extra decorative items 
+	<!-- boost the number of items circulating to accommodate extra decorative items -->
 	<set xpath="/traders/trader_info[@id='1']/@min_inventory">45</set>
-	<set xpath="/traders/trader_info[@id='1']/@max_inventory">85</set>-->
+	<set xpath="/traders/trader_info[@id='1']/@max_inventory">85</set>
 	<set xpath="/traders/trader_info[@id='1']/@min_items_swapped">25</set>
 	<set xpath="/traders/trader_info[@id='1']/@max_items_swapped">25</set>
 	
