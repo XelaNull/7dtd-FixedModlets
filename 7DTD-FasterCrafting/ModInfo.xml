@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Faster Crafting" />
+		<Description value="Decreases craft time of all recipes by 50 percent." />
+		<Author value="ShoudenKalferas with originating idea from lurch840"/>
+		<Version value="A18.3_1.0" />
+		<Website value="https://github.com/XelaNull/7DTD-FixedModlets.git" />
+	</ModInfo>
+</xml>

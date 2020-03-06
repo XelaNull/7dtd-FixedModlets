@@ -1,0 +1,62 @@
+<configs>
+  <!-- No point in bothering to adjust the recipes that have a craft_time of 1 thru 3, as its already so short -->
+  <set xpath="/recipes/recipe[starts-with(@name, 'vehicle4x4')]/@craft_time">105</set>
+  <set xpath="/recipes/recipe[starts-with(@name, 'vehicleBicycle')]/@craft_time">15</set>
+  <set xpath="/recipes/recipe[starts-with(@name, 'vehicleMotorcycle')]/@craft_time">75</set>
+  <set xpath="/recipes/recipe[starts-with(@name, 'vehicleMinibike')]/@craft_time">45</set>
+  <set xpath="/recipes/recipe[starts-with(@name, 'vehicleGyrocopter')]/@craft_time">135</set>
+
+  <set xpath="/recipes/recipe[@name='toolForgeCrucible']/@craft_time">150</set>
+  <set xpath="/recipes/recipe[@name='thrownDynamite']/@craft_time">7</set>
+  <set xpath="/recipes/recipe[@name='thrownTimedCharge']/@craft_time">15</set>
+  <set xpath="/recipes/recipe[@name='thrownGrenadeContact']/@craft_time">10</set>
+  <set xpath="/recipes/recipe[@name='thrownGrenade']/@craft_time">8</set>
+  <set xpath="/recipes/recipe[@name='thrownAmmoPipeBomb']/@craft_time">6</set>
+  <set xpath="/recipes/recipe[@name='thrownAmmoMolotovCocktail']/@craft_time">6</set>
+  <set xpath="/recipes/recipe[@name='resourceGunPowderBundle']/@craft_time">900</set>
+  <set xpath="/recipes/recipe[@name='meleeToolKnifeMachete']/@craft_time">30</set>
+  <set xpath="/recipes/recipe[@name='resourceLockPickBundle']/@craft_time">150</set>
+  <set xpath="/recipes/recipe[@name='keystoneBlock']/@craft_time">15</set>
+  <set xpath="/recipes/recipe[@name='foodHoboStew']/@craft_time">32</set>
+  <set xpath="/recipes/recipe[@name='farmPlotBlockPlayer']/@craft_time">10</set>
+  <set xpath="/recipes/recipe[@name='drinkJarBoiledWater']/@craft_time">20</set>
+  <set xpath="/recipes/recipe[@name='ammoRocketHE']/@craft_time">15</set>
+  <set xpath="/recipes/recipe[@name='ammoRocketFrag']/@craft_time">20</set>
+  <set xpath="/recipes/recipe[@name='oilBarrel']/@craft_time">2</set>
+  <set xpath="/recipes/recipe[@name='ammoGasCan']/@craft_time">2</set>
+  <set xpath="/recipes/recipe[@name='ammoGasCanBundle']/@craft_time">300</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltStone']/@craft_time">120</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltSteelAP']/@craft_time">120</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltIron']/@craft_time">120</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltExploding']/@craft_time">180</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']/@craft_time">180</set>
+  <set xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']/@craft_time">7</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleArrowStone']/@craft_time">120</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleArrowSteelAP']/@craft_time">120</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleArrowIron']/@craft_time">120</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleArrowExploding']/@craft_time">180</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']/@craft_time">180</set>
+  <set xpath="/recipes/recipe[@name='ammoArrowFlaming']/@craft_time">6</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleShotgunBreachingSlug']/@craft_time">180</set>
+  <set xpath="/recipes/recipe[@name='ammoShotgunBreachingSlug']/@craft_time">4</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleShotgunSlug']/@craft_time">180</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleShotgunShell']/@craft_time">120</set>
+  <set xpath="/recipes/recipe[@name='ammoBundleBlunderbuss']/@craft_time">120</set>
+  <set xpath="/recipes/recipe[@name='ammoBundle762mmBulletAP']/@craft_time">180</set>
+  <set xpath="/recipes/recipe[@name='ammoBundle762mmBulletHP']/@craft_time">180</set>
+  <set xpath="/recipes/recipe[@name='ammoBundle762mmBulletBall']/@craft_time">120</set>
+  <set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletAP']/@craft_time">180</set>
+  <set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletHP']/@craft_time">180</set>
+  <set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletBall']/@craft_time">120</set>
+  <set xpath="/recipes/recipe[@name='ammoBundle9mmBulletAP']/@craft_time">180</set>
+  <set xpath="/recipes/recipe[@name='ammoBundle9mmBulletHP']/@craft_time">180</set>
+  <set xpath="/recipes/recipe[@name='ammoBundle9mmBulletBall']/@craft_time">120</set>
+  <set xpath="/recipes/recipe[@name='resourceCoalBundle']/@craft_time">5</set>
+  <set xpath="/recipes/recipe[@name='resourceLeadBundle']/@craft_time">5</set>
+  <set xpath="/recipes/recipe[@name='resourcePotassiumNitratePowderBundle']/@craft_time">5</set>
+  <set xpath="/recipes/recipe[@name='resourceOilShaleBundle']/@craft_time">5</set>
+  <set xpath="/recipes/recipe[@name='resourceScrapIronBundle']/@craft_time">5</set>
+  <set xpath="/recipes/recipe[@name='resourceWoodBundle']/@craft_time">5</set>
+  <set xpath="/recipes/recipe[@name='resourceRockSmallBundle']/@craft_time">5</set>
+	
+</configs>
