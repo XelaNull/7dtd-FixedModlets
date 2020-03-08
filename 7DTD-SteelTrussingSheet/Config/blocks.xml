@@ -12,7 +12,7 @@
     	<property name="DescriptionKey" value="scrapIronGroupDesc"/>
     	<!-- <property name="ImposterExchange" value="imposterBlock" param1="87"/> -->
     	<property name="CreativeMode" value="None"/>
-    	<property class="RepairItems"> <property name="resourceScrapIron" value="300"/> </property>
+    	<property class="RepairItems"> <property name="resourceForgedSteel" value="1"/> </property>
     	<drop event="Harvest" name="resourceScrapIron" count="17" tag="allHarvest"/>
     	<drop event="Destroy" count="0"/>
     	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
