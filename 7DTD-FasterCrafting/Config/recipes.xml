@@ -5,7 +5,6 @@
   <set xpath="/recipes/recipe[starts-with(@name, 'vehicleMotorcycle')]/@craft_time">75</set>
   <set xpath="/recipes/recipe[starts-with(@name, 'vehicleMinibike')]/@craft_time">45</set>
   <set xpath="/recipes/recipe[starts-with(@name, 'vehicleGyrocopter')]/@craft_time">135</set>
-
   <set xpath="/recipes/recipe[@name='toolForgeCrucible']/@craft_time">150</set>
   <set xpath="/recipes/recipe[@name='thrownDynamite']/@craft_time">7</set>
   <set xpath="/recipes/recipe[@name='thrownTimedCharge']/@craft_time">15</set>
