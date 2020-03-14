@@ -57,5 +57,9 @@
   <set xpath="/recipes/recipe[@name='resourceScrapIronBundle']/@craft_time">5</set>
   <set xpath="/recipes/recipe[@name='resourceWoodBundle']/@craft_time">5</set>
   <set xpath="/recipes/recipe[@name='resourceRockSmallBundle']/@craft_time">5</set>
+  
+  <set xpath="/recipes/recipe[@name='trapSpikesIronDmg0']/@craft_time">20</set>
+  <set xpath="/recipes/recipe[@name='trapSpikesIronDmg0']/@craft_area">workbench</set>
+  <set xpath="/recipes/recipe[@name='trapSpikesIronDmg0']/@tags">workbenchCrafting</set>
 	
 </configs>
