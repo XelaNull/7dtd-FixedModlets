@@ -4,7 +4,7 @@
 		<Name value="Xal_SetZombiesAttackAnimals" />
 		<Description value="Allow zombies and zombie dogs to attack passive animals." />
 		<Author value="Xaliber, Fixed By ShoudenKalferas" />
-		<Version value="18.0.2" compat="A18.3"/>
+		<Version value="A19_1.0"/>
 		<Website value="https://7daystodie.com/forums/showthread.php?136821-Zombies-Hunt-Too-Allow-Zombies-to-Attack-Animals"/>
 	</ModInfo>
 </xml>
