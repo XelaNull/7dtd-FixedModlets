@@ -9,7 +9,7 @@
 		</recipe>
 		<recipe name="HellBeast" count="1" craft_time="300" craft_area="workbench" tags="workbenchCrafting">
 			<ingredient name="vehicleMotorcyclePlaceable" count="1"/>
-			<ingredient name="meleeThrownSpearSteelParts" count="10"/>
+			<ingredient name="meleeWpnSpearT3SteelSpearParts" count="10"/>
 			<ingredient name="resourceBone" count="100"/>
 			<ingredient name="smallEngine" count="2"/>
 			<ingredient name="resourceMechanicalParts" count="50"/>
