@@ -37,7 +37,7 @@
 			<ingredient name="resourceForgedSteel" count="100"/>
 			<ingredient name="vehicleGyroCopterAccessories" count="2"/>
 			<ingredient name="meleeToolSalvageT1Wrench" count="2"/>
-			<ingredient name="gunJunkTurretParts" count="40"/>
+			<ingredient name="gunBotRoboticsParts" count="40"/>
 			<ingredient name="resourceElectricParts" count="40"/>
 		</recipe>
 		<recipe name="Armored Car" count="1" craft_area="workbench" craft_time="600">
