@@ -1,6 +1,6 @@
 <configs>
   <append xpath="/recipes">  
-    <recipe name="resourceAcid" count="2" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+    <recipe name="resourceAcid" count="2" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
     	<ingredient name="foodRottingFlesh" count="2"/>
       <ingredient name="foodMoldyBread" count="1"/>
       <ingredient name="resourceAcid" count="1"/>
