@@ -5,5 +5,10 @@
       <ingredient name="foodMoldyBread" count="1"/>
       <ingredient name="resourceAcid" count="1"/>
     </recipe>
+    <recipe name="foodShamSandwich" count="2" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+      <ingredient name="foodCanSham" count="1"/>
+      <ingredient name="foodCornBread" count="1"/>
+      <ingredient name="foodCropMushrooms" count="1"/>      
+    </recipe>
   </append>  
 </configs>
