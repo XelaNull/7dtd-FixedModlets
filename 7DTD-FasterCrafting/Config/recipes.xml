@@ -1,5 +1,7 @@
 <configs>
   <!-- No point in bothering to adjust the recipes that have a craft_time of 1 thru 3, as its already so short -->
+  <!-- The purpose of this modlet is to reduce the craft time on a handful of items only -->
+  <!-- Add more entries if you want to include those recipes too. This is a very simple modlet to modify -->
   <set xpath="/recipes/recipe[starts-with(@name, 'vehicle4x4')]/@craft_time">105</set>
   <set xpath="/recipes/recipe[starts-with(@name, 'vehicleBicycle')]/@craft_time">15</set>
   <set xpath="/recipes/recipe[starts-with(@name, 'vehicleMotorcycle')]/@craft_time">75</set>
@@ -13,7 +15,7 @@
   <set xpath="/recipes/recipe[@name='thrownAmmoPipeBomb']/@craft_time">6</set>
   <set xpath="/recipes/recipe[@name='thrownAmmoMolotovCocktail']/@craft_time">6</set>
   <set xpath="/recipes/recipe[@name='resourceGunPowderBundle']/@craft_time">900</set>
-  <set xpath="/recipes/recipe[@name='meleeToolKnifeMachete']/@craft_time">30</set>
+  <set xpath="/recipes/recipe[@name='meleeWpnBladeT3Machete']/@craft_time">30</set>
   <set xpath="/recipes/recipe[@name='resourceLockPickBundle']/@craft_time">150</set>
   <set xpath="/recipes/recipe[@name='keystoneBlock']/@craft_time">15</set>
   <set xpath="/recipes/recipe[@name='foodHoboStew']/@craft_time">32</set>
@@ -21,8 +23,7 @@
   <set xpath="/recipes/recipe[@name='drinkJarBoiledWater']/@craft_time">20</set>
   <set xpath="/recipes/recipe[@name='ammoRocketHE']/@craft_time">15</set>
   <set xpath="/recipes/recipe[@name='ammoRocketFrag']/@craft_time">20</set>
-  <set xpath="/recipes/recipe[@name='oilBarrel']/@craft_time">2</set>
-  <set xpath="/recipes/recipe[@name='ammoGasCan']/@craft_time">2</set>
+  <!--<set xpath="/recipes/recipe[@name='oilBarrel']/@craft_time">2</set>-->
   <set xpath="/recipes/recipe[@name='ammoGasCanBundle']/@craft_time">300</set>
   <set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltStone']/@craft_time">120</set>
   <set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltSteelAP']/@craft_time">120</set>
@@ -58,8 +59,10 @@
   <set xpath="/recipes/recipe[@name='resourceWoodBundle']/@craft_time">5</set>
   <set xpath="/recipes/recipe[@name='resourceRockSmallBundle']/@craft_time">5</set>
   
-  <set xpath="/recipes/recipe[@name='trapSpikesIronDmg0']/@craft_time">20</set>
-  <set xpath="/recipes/recipe[@name='trapSpikesIronDmg0']/@craft_area">workbench</set>
-  <set xpath="/recipes/recipe[@name='trapSpikesIronDmg0']/@tags">workbenchCrafting</set>
+  <!-- The recipes below didn't include craft_time, craft_area, or tags, so we have to use the setattribute instead -->
+  <setattribute xpath="/recipes/recipe[@name='ammoGasCan']/@craft_time">2</setattribute>
+  <setattribute xpath="/recipes/recipe[@name='trapSpikesIronDmg0']/@craft_time">20</setattribute>
+  <setattribute xpath="/recipes/recipe[@name='trapSpikesIronDmg0']/@craft_area">workbench</setattribute>
+  <setattribute xpath="/recipes/recipe[@name='trapSpikesIronDmg0']/@tags">workbenchCrafting</setattribute>
 	
 </configs>
