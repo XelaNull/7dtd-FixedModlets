@@ -58,11 +58,15 @@
   <set xpath="/recipes/recipe[@name='resourceScrapIronBundle']/@craft_time">5</set>
   <set xpath="/recipes/recipe[@name='resourceWoodBundle']/@craft_time">5</set>
   <set xpath="/recipes/recipe[@name='resourceRockSmallBundle']/@craft_time">5</set>
+
+  <setattribute xpath="/recipes/recipe[@name='resourceForgedIron']" name="craft_time">1</setattribute>
+  <setattribute xpath="/recipes/recipe[@name='resourceForgedSteel']" name="craft_time">1</setattribute>
+
   
   <!-- The recipes below didn't include craft_time, craft_area, or tags, so we have to use the setattribute instead -->
-  <setattribute xpath="/recipes/recipe[@name='ammoGasCan']/@craft_time">2</setattribute>
-  <setattribute xpath="/recipes/recipe[@name='trapSpikesIronDmg0']/@craft_time">20</setattribute>
-  <setattribute xpath="/recipes/recipe[@name='trapSpikesIronDmg0']/@craft_area">workbench</setattribute>
-  <setattribute xpath="/recipes/recipe[@name='trapSpikesIronDmg0']/@tags">workbenchCrafting</setattribute>
+  <setattribute xpath="/recipes/recipe[@name='ammoGasCan']" name="craft_time">2</setattribute>
+  <setattribute xpath="/recipes/recipe[@name='trapSpikesIronDmg0']" name="craft_time">20</setattribute>
+  <setattribute xpath="/recipes/recipe[@name='trapSpikesIronDmg0']" name="craft_area">workbench</setattribute>
+  <setattribute xpath="/recipes/recipe[@name='trapSpikesIronDmg0']" name="tags">workbenchCrafting</setattribute>
 	
 </configs>
