@@ -1,0 +1,306 @@
+<riles_fixes>
+
+
+
+<!--steel polish-->
+<append xpath="/recipes">
+	<recipe name="resourceSteelPolishR" count="10" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+		<ingredient name="drinkJarGrandpasAwesomeSauce" count="2"/>
+		<ingredient name="drugRecog" count="5"/>
+		<ingredient name="resourceGunPowder" count="10"/>
+		<ingredient name="resourceOil" count="10"/>
+		<ingredient name="resourceAnimalFat" count="10"/>
+	</recipe>
+</append>
+
+
+
+
+
+<append xpath="/recipes">
+	<recipe name="woodLadderBarsCatwalksRailingsBeamsBlockVariantHelper" count="1">
+		<ingredient name="resourceWood" count="6"/>
+	</recipe>
+<recipe name="ironLadderBarsCatwalksRailingsBeamsBlockVariantHelper" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+	<ingredient name="unit_iron" count="100"/>
+	<ingredient name="unit_clay" count="20"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_iron"/>
+	</effect_group>
+</recipe>
+<recipe name="steelLadderBarsCatwalksRailingsBeamsBlockVariantHelper" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering" craft_tool="toolForgeCrucible">
+	<ingredient name="unit_iron" count="200"/>
+	<ingredient name="unit_clay" count="40"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_iron"/>
+	</effect_group>
+</recipe>
+
+</append>
+
+
+<remove xpath="/recipes/recipe[@name='ladderMetal']"/>
+<remove xpath="/recipes/recipe[@name='ladderSteel']"/>
+<remove xpath="/recipes/recipe[@name='woodCatwalkBlockVariantHelper']"/>
+<remove xpath="/recipes/recipe[@name='ladderWood']"/>
+<set xpath="/recipes/recipe[@name='woodBarsCentered']/@name">woodBarsStandaloneVariantHelper</set>
+<remove xpath="/recipes/recipe[@name='woodBars']"/>
+<remove xpath="/recipes/recipe[@name='ironBars']"/>
+<remove xpath="/recipes/recipe[@name='ironBarsCentered']"/>
+
+<!--
+<append xpath="/recipes">
+	<recipe name="steelBarsStandaloneVariantHelper" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+		<ingredient name="unit_iron" count="240"/>
+		<ingredient name="unit_clay" count="50"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_iron"/>
+		</effect_group>
+	</recipe>	
+</append>
+<set xpath="/recipes/recipe[@name='ironBarsCentered']/@name">ironBarsStandaloneVariantHelper</set>
+-->
+<!--...........................Version 1.04 fixes...........................-->
+
+
+
+<!--vehicle wheel update-->
+<remove xpath="/recipes/recipe[@name='vehicleWheels']"/>
+
+<append xpath="/recipes">
+	<recipe name="vehicleWheels" count="1" tags="perkGreaseMonkey,learnable" craft_area="workbench">
+		<ingredient name="resourceForgedIron" count="2"/>
+		<ingredient name="resourceOil" count="1"/>
+		<ingredient name="resourceTire" count="1"/>
+		<ingredient name="resourceMechanicalParts" count="10"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0" value=".5" tags="resourceForgedIron"/>
+		</effect_group>
+	</recipe>
+	<recipe name="resourceTire" count="1" tags="perkGreaseMonkey,learnable" craft_area="chemistryStation">
+		<ingredient name="resourceScrapPolymers" count="16"/>
+		<ingredient name="resourceOil" count="1"/>
+		<ingredient name="resourceCoal" count="10"/>
+		<ingredient name="resourceAcid" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0" value=".5" tags="resourceScrapPolymers,resourceCoal"/>
+		</effect_group>
+	</recipe>
+</append>
+<!--...........................Version 1.03 fixes...........................-->
+<!--...........................Version 1.02 fixes...........................-->
+
+
+	<!--Remove scrap polymers as arrow/bolt ingredient and return to feathers.-->
+	<remove xpath="/recipes/recipe[contains(@name,'Arrow')]/ingredient[@name='resourceScrapPolymers']"/>
+	<remove xpath="/recipes/recipe[contains(@name,'Bolt')]/ingredient[@name='resourceScrapPolymers']"/>
+	<append xpath="/recipes/recipe[@name='ammoArrowFlaming']"><ingredient name="resourceFeather" count="1"/></append>
+	<append xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']"><ingredient name="resourceFeather" count="80"/></append>
+	<append xpath="/recipes/recipe[@name='ammoArrowExploding']"><ingredient name="resourceFeather" count="1"/></append>
+	<append xpath="/recipes/recipe[@name='ammoBundleArrowExploding']"><ingredient name="resourceFeather" count="60"/></append>
+	<append xpath="/recipes/recipe[@name='ammoArrowSteelAP']"><ingredient name="resourceFeather" count="1"/></append>
+	<append xpath="/recipes/recipe[@name='ammoBundleArrowSteelAP']"><ingredient name="resourceFeather" count="80"/></append>
+	<append xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']"><ingredient name="resourceFeather" count="1"/></append>
+	<append xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']"><ingredient name="resourceFeather" count="80"/></append>
+	<append xpath="/recipes/recipe[@name='ammoCrossbowBoltExploding']"><ingredient name="resourceFeather" count="1"/></append>
+	<append xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltExploding']"><ingredient name="resourceFeather" count="60"/></append>
+	<append xpath="/recipes/recipe[@name='ammoCrossbowBoltSteelAP']"><ingredient name="resourceFeather" count="1"/></append>
+	<append xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltSteelAP']"><ingredient name="resourceFeather" count="80"/></append>
+	<append xpath="/recipes">
+		<!--Plastics to Feathers-->
+		<recipe name="resourceFeather" count="1" craft_time="1" craft_area="workbench">
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>	
+		<!--Stone arrow/bolt-->
+		<recipe name="ammoArrowStone" count="1" craft_time="1">
+			<ingredient name="ammoCrossbowBoltStone" count="1"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltStone" count="1" craft_time="1">
+			<ingredient name="ammoArrowStone" count="1"/>
+		</recipe>	
+		<!--Iron arrow/bolt-->
+		<recipe name="ammoArrowIron" count="1" craft_time="7" >
+			<ingredient name="ammoCrossbowBoltIron" count="1"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltIron" count="1" craft_time="7">
+			<ingredient name="ammoArrowIron" count="1"/>
+		</recipe>		
+		<!--Steel arrow/bolt--> 
+		<recipe name="ammoArrowSteelAP" count="1" craft_time="8" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltSteelAP" count="1"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltSteelAP" count="1" craft_time="8" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammoArrowSteelAP" count="1"/>
+		</recipe>		
+		<!--Flaming arrow/bolt--> 
+		<recipe name="ammoArrowFlaming" count="1" craft_time="10" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltFlaming" count="1"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltFlaming" count="1" craft_time="10" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammoArrowFlaming" count="1"/>
+		</recipe>	
+		<!--Exploding arrow/bolt--> 
+		<recipe name="ammoArrowExploding" count="1" craft_time="12" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltExploding" count="1"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltExploding" count="1" craft_time="14" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammoArrowExploding" count="1"/>
+			<ingredient name="resourceGunPowder" count="2"/>		
+		</recipe>		
+	</append>
+	
+	
+	<!--Commercial / House doors. Requires Brass -->	
+	<append xpath="/recipes">	
+		<recipe name="DecoDoorsVariantHelper" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="4"/>
+			<ingredient name="resourceScrapBrass" count="50"/>		
+		</recipe>
+	</append>	
+	
+
+
+
+
+<!--...........................Version 1.01 fixes...........................-->
+<append xpath="/recipes">
+	<recipe name="medicalFirstAidBandage" count="1" tags="learnable">
+		<ingredient name="medicalAloeCream" count="1"/>
+		<ingredient name="medicalBandage" count="1"/>
+	</recipe>
+</append>
+
+
+
+
+<!--...........................Version 1.00 fixes...........................-->
+
+
+<append xpath="/recipes">
+<recipe name="resourceClayLumpBundle" count="1" craft_time="10" tags="learnable">
+	<ingredient name="resourceClayLump" count="6000"/>
+</recipe>
+<recipe name="resourceCrushedSandBundle" count="1" craft_time="10" tags="learnable">
+	<ingredient name="resourceCrushedSand" count="6000"/>
+</recipe>
+
+
+<!--
+<recipe name="ammoBundle9mmBulletBall" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammo9mmBulletBall" count="100"/>
+</recipe>
+<recipe name="ammoBundle9mmBulletHP" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammo9mmBulletHP" count="100"/>
+</recipe>
+<recipe name="ammoBundle9mmBulletAP" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammo9mmBulletAP" count="100"/>
+</recipe>
+<recipe name="ammoBundle44MagnumBulletBall" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammo44MagnumBulletBall" count="100"/>
+</recipe>
+<recipe name="ammoBundle44MagnumBulletHP" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammo44MagnumBulletHP" count="100"/>
+</recipe>	
+<recipe name="ammoBundle44MagnumBulletAP" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammo44MagnumBulletAP" count="100"/>
+</recipe>	
+<recipe name="ammoBundle762mmBulletBall" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammo762mmBulletBall" count="100"/>
+</recipe>	
+<recipe name="ammoBundle762mmBulletHP" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammo762mmBulletHP" count="100"/>
+</recipe>	
+<recipe name="ammoBundle762mmBulletAP" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammo762mmBulletAP" count="100"/>
+</recipe>	
+<recipe name="ammoBundleBlunderbuss" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoBlunderbuss" count="100"/>
+</recipe>
+<recipe name="ammoBundleShotgunShell" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoShotgunShell" count="100"/>
+</recipe>
+<recipe name="ammoBundleShotgunSlug" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoShotgunSlug" count="100"/>
+</recipe>
+<recipe name="ammoBundleShotgunBreachingSlug" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoShotgunBreachingSlug" count="100"/>
+</recipe>
+<recipe name="ammoBundleJunkTurretRegular" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoJunkTurretRegular" count="1000"/>
+</recipe>	
+<recipe name="ammoBundleJunkTurretShell" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoJunkTurretShell" count="1000"/>
+</recipe>
+<recipe name="ammoBundleJunkTurretAP" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoJunkTurretAP" count="1000"/>
+</recipe>	
+<recipe name="ammoBundleArrowFlaming" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoArrowFlaming" count="100"/>
+</recipe>	
+<recipe name="ammoBundleArrowExploding" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoArrowExploding" count="75"/>
+</recipe>
+<recipe name="ammoBundleArrowIron" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoArrowIron" count="100"/>
+</recipe>
+<recipe name="ammoBundleArrowSteelAP" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoArrowSteelAP" count="100"/>
+</recipe>	
+<recipe name="ammoBundleArrowStone" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoArrowStone" count="100"/>
+</recipe>	
+<recipe name="ammoBundleCrossbowBoltFlaming" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoCrossbowBoltFlaming" count="100"/>
+</recipe>	
+<recipe name="ammoBundleCrossbowBoltExploding" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoCrossbowBoltExploding" count="75"/>
+</recipe>	
+<recipe name="ammoBundleCrossbowBoltIron" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoCrossbowBoltIron" count="100"/>
+</recipe>	
+<recipe name="ammoBundleCrossbowBoltSteelAP" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoCrossbowBoltSteelAP" count="100"/>
+</recipe>
+<recipe name="ammoBundleCrossbowBoltStone" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoCrossbowBoltStone" count="100"/>
+</recipe>
+<recipe name="ammoGasCanBundle" count="1" craft_time="10" tags="learnable">
+	<ingredient name="ammoGasCan" count="10000"/>
+</recipe>
+<recipe name="resourceLockPickBundle" count="1" craft_time="10" tags="learnable">
+	<ingredient name="resourceLockPick" count="50"/>
+</recipe>
+<recipe name="resourceGunPowderBundle" count="1" craft_time="10" tags="learnable">
+	<ingredient name="resourceGunPowder" count="1000"/>
+</recipe>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</append>
+
+
+</riles_fixes>
+
+

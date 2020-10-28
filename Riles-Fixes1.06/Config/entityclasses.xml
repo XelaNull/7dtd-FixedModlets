@@ -1,0 +1,21 @@
+<riles_fixes>
+
+
+
+<!--...........................Version 1.04 fixes...........................-->
+
+	<!--Dead Animals stick around longer. BIG animals leave gore blocks if left alone-->	
+		<set xpath="/entity_classes/entity_class[starts-with(@name,'animal')]/property[@name='TimeStayAfterDeath']/@value">1200</set> <!--20 minutes instead of 5-->
+			
+	<!--Zombie Loot drops last WAY longer before disappearing-->
+		<set xpath="/entity_classes/entity_class[starts-with(@name,'EntityLootContainer')]/property[@name='TimeStayAfterDeath']/@value">36000</set>
+
+
+<!--...........................Version 1.03 fixes...........................-->
+<!--...........................Version 1.02 fixes...........................-->
+<!--...........................Version 1.01 fixes...........................-->
+<!--...........................Version 1.00 fixes...........................-->
+
+</riles_fixes>
+
+
