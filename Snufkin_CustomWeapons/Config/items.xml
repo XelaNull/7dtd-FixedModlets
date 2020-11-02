@@ -1526,7 +1526,7 @@
 			<property name="Group" value="Ammo/Weapons"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Melee/Spear/spear_steel_Prefab.prefab"/>
 			<property name="HoldType" value="65"/>
-			<property name="Material" value="MmeleeThrownSpearSteel"/>
+			<property name="Material" value="MmeleeWpnSpearParts"/>
 			<property name="Weight" value="6"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
 			<property name="SoundDestroy" value="wooddestroy1"/>
@@ -1905,7 +1905,7 @@
 			<property name="DisplayType" value="melee"/>
 			<property name="HoldType" value="33"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Melee/SledgeHammer/steelSledgeHammerPrefab.prefab"/>
-			<property name="Material" value="MmeleeToolSledgehammerSteel"/>
+			<property name="Material" value="MmeleeWpnSledgeParts"/>
 			<property name="Weight" value="6"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
 			<property name="DegradationBreaksAfter" value="false"/>

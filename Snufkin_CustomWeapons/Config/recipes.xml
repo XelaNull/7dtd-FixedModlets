@@ -1,7 +1,7 @@
 <configs>
 	<append xpath="/recipes">
 		<recipe name="Polearm" count="1" craft_area="workbench" tags="learnable">
-			<ingredient name="meleeThrownSpearSteelParts" count="15"/>
+			<ingredient name="meleeWpnSpearT3SteelSpearParts" count="15"/>
 			<ingredient name="resourceForgedSteel" count="20"/>
 			<ingredient name="resourceWood" count="30"/>
 			<ingredient name="resourceLeather" count="10"/>
@@ -34,22 +34,22 @@
 			<ingredient name="resourceScrapPolymers" count="20"/>
 		</recipe>
 		<recipe name="Railgun" count="1" craft_area="workbench" craft_time="240" tags="learnable,railgun">
-			<ingredient name="gunHuntingRifleParts" count="40"/>
-			<ingredient name="meleeStunBatonParts" count="25"/>
+			<ingredient name="gunRifleT1HuntingRifleParts" count="40"/>
+			<ingredient name="meleeWpnBatonT2StunBatonParts" count="25"/>
 			<ingredient name="resourceForgedSteel" count="300"/>
 			<ingredient name="resourceMechanicalParts" count="75"/>
 			<ingredient name="resourceElectricParts" count="120"/>
 		</recipe>
 		<recipe name="CrossbowMag" count="1" craft_area="workbench" craft_time="240" tags="learnable,crossbowmag">
-			<ingredient name="gunCrossbowCompound" count="1"/>
-			<ingredient name="gunBowWoodenParts" count="25"/>
+			<ingredient name="gunBowT3CompoundCrossbow" count="1"/>
+			<ingredient name="gunBowT1WoodenBowParts" count="25"/>
 			<ingredient name="resourceForgedSteel" count="50"/>
 			<ingredient name="resourceDuctTape" count="20"/>
 			<ingredient name="resourceMechanicalParts" count="40"/>
 		</recipe>
 		<recipe name="Thor Hammer" count="1" craft_area="workbench" craft_time="240" tags="learnable,thorhammer">
-			<ingredient name="meleeToolSledgehammerSteelParts" count="20"/>
-			<ingredient name="meleeStunBatonParts" count="20"/>
+			<ingredient name="meleeWpnSledgeT3SteelSledgehammerParts" count="20"/>
+			<ingredient name="meleeWpnBatonT2StunBatonParts" count="20"/>
 			<ingredient name="resourceForgedSteel" count="50"/>
 			<ingredient name="resourceDuctTape" count="20"/>
 			<ingredient name="resourceElectricParts" count="40"/>
