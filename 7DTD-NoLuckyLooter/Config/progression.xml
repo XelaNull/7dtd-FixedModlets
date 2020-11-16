@@ -1,0 +1,4 @@
+<configs>
+  <remove xpath="/progression/skills/skill[@name='skillLuckyLooter']" />
+  <remove xpath="/progression/perks/perk[@parent='skillLuckyLooter']" />
+</configs>
