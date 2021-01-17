@@ -900,7 +900,7 @@
 			<property name="SortOrder2" value="0490"/> <!-- SortShape -->
 			<property name="ImposterExchange" value="imposterBlock" param1="67"/>
 			<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronCNRRoundTop"/> </property>
-			<property name="DowngradeBlock" value="rWoodCNRRoundTop"/>
+			<!--<property name="DowngradeBlock" value="rWoodCNRRoundTop"/>-->
 		</block>
 	</append>
 
