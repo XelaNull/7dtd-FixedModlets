@@ -1,0 +1,68 @@
+Key,Source,Context,UsedInMainMenu,NoTranslate,english
+cntStorageGenericHalf,blocks,Container,,,Small Storage Box
+cntStorageGenericHalfInsecure,blocks,Container,,,Small Storage Box
+cntPlayerFireWoodStack,blocks,Container,,,Stack of Wood
+cntPlayerCementBagStack,blocks,Container,,,Cement Pallet
+cntPlayerBrownBoxes,blocks,Container,,,Pallet of Boxes
+cntPlayerBlueTarp,blocks,Container,,,Covered Pallet
+cntPlayerBrickPile,blocks,Container,,,Pallet of Bricks
+cntPlayerMedicLootPileSmall,blocks,Container,,,Medical Supplies
+cntPlayerMedicLootPileMedium,blocks,Container,,,Medical Supplies
+cntPlayerMedicineCabinetClosed,blocks,Container,,,Medicine Cabinet
+cntPlayerPillCaseClosed,blocks,Container,,,Medical Storage
+cntPlayerWaterCoolerFull,blocks,Container,,,Water Cooler
+cntPlayerVendingMachine,blocks,Container,,,Vending Machine
+cntPlayerFoodPileSmall,blocks,Container,,,Canned Goods
+cntPlayerFoodPileMedium,blocks,Container,,,Canned Goods
+cntPlayerFoodPileLarge,blocks,Container,,,Canned Goods
+cntPlayerAmmoPileSmall,blocks,Container,,,Ammunition Pile
+cntPlayerAmmoPileMedium,blocks,Container,,,Ammunition Pile
+cntPlayerAmmoPileLarge,blocks,Container,,,Ammunition Pile
+cntPlayerMunitionsBox,blocks,Container,,,Munitions Storage Box
+cntPlayerScrapMetalPile,blocks,Container,,,Pile of Scrap Metal
+cntPlayerBarrelPlasticSingle00,blocks,Container,,,Plastic Barrel
+cntPlayerBarrelPlasticQuadA,blocks,Container,,,Plastic Barrels
+cntPlayerBarrelGenericQuadA,blocks,Container,,,Rusty Barrels
+cntPlayerBarrelGasQuadA,blocks,Container,,,Gas Barrels
+cntPlayerBarrelGasSingle00,blocks,Container,,,Gas Barrel
+cntPlayerBarrelOilQuadA,blocks,Container,,,Oil Barrels
+cntPlayerBarrelOilSingle00,blocks,Container,,,Oil Barrel
+cntPlayerBarrelAcidQuadA,blocks,Container,,,Green Barrels
+cntPlayerBarrelAcidSingle00,blocks,Container,,,Green Barrel
+cntPlayerBarrelRadiatedQuadA,blocks,Container,,,Yellow Barrels
+cntPlayerBarrelRadiatedSingle00,blocks,Container,,,Yellow Barrel
+cntPlayerGunRackSmallMagazines,blocks,Container,,,Ammo Rack
+cntPlayerGunRackSmallArmor,blocks,Container,,,Armor Rack
+cntPlayerGunRackLargeGuns01,blocks,Container,,,Gun Rack
+cntPlayerGunRackLargeGuns02,blocks,Container,,,Gun Rack
+cntPlayerWeaponsBagSmall,blocks,Container,,,Small Weapons Bag
+cntPlayerWeaponsBagLarge,blocks,Container,,,Large Weapons Bag
+cntPlayerHardenedChestSecure,blocks,Container,,,Hardened Chest
+cntPlayerClothesRackRoundPants,blocks,Container,,,Clothing Rack
+cntPlayerClothesRackRectanglePants,blocks,Container,,,Clothing Rack
+cntPlayerClothesShelfStackShirts02,blocks,Container,,,Clothing Shelf
+cntPlayerLuggageMediumClosed,blocks,Container,,,Luggage
+cntPlayerLuggagePileBClosed,blocks,Container,,,Luggage Pile
+cntPlayerClothesShelfStackShirts02,blocks,Container,,,Clothing Shelf
+cntPlayerLaundryBasketVer2Full,blocks,Container,,,Laundry Basket
+cntPlayerFileCabinetShortClosed,blocks,Container,,,File Cabinet
+cntPlayerFileCabinetTallClosed,blocks,Container,,,File Cabinet
+cntPlayerBookPile01,blocks,Container,,,Stack of Books
+cntPlayerBookPile04,blocks,Container,,,Pile of Books
+cntPlayerCardboardBox,blocks,Container,,,Cardboard Box
+cntPlayerBackpack03,blocks,Container,,,Backpack
+cntPlayerDuffle01,blocks,Container,,,Duffle Bag
+cntPlayerTrashPile09,blocks,Container,,,Small Cardboard Box
+cntPlayerBarrelWoodVert,blocks,Container,,,Upright Wooden Barrel
+cntPlayerBarrelWoodHor,blocks,Container,,,Wooden Barrel
+cntPlayerBarrelWoodSet,blocks,Container,,,Wooden Barrels
+cntPlayerCooler,blocks,Container,,,Chest Cooler
+cntPlayerBookcaseFull,blocks,Container,,,Bookcase
+cntPlayerGarmentBag,blocks,Container,,,Garment Bag
+cntPlayerClosetRod,blocks,Container,,,Closet Rod
+cntPlayerToolBoxClosed,blocks,Container,,,Tool Box
+cntPlayerRollingToolBoxClosed,blocks,Container,,,Tool Chest
+
+
+
+

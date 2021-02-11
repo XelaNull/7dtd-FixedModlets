@@ -1,0 +1,556 @@
+<configs>
+
+	<append xpath="/blocks">
+		<!-- *** HALF SIZED STORAGE BOX *** -->
+		<block name="cntStorageGenericHalf">
+			<property name="Extends" value="cntStorageGeneric"/>
+			<property name="CustomIcon" value="cntStorageGenericHalf"/>
+			<property name="Shape" value="New"/>
+			<property name="Model" value="cube_half"/>
+			<property name="FuelValue" value="150"/>
+			<property name="LootList" value="150"/>
+			<property name="CanPickup" value="true"/>
+			<property name="DowngradeBlock" value="cntStorageGenericHalfInsecure"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntStorageGenericHalfInsecure">
+			<property name="Extends" value="cntStorageGenericInsecure"/>
+			<property name="CustomIcon" value="cntStorageGenericHalf"/>
+			<property name="Shape" value="New"/>
+			<property name="Model" value="cube_half"/>
+			<property name="FuelValue" value="150"/>
+			<property name="LootList" value="150"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<!-- *** PALLETS *** -->
+		<block name="cntPlayerFireWoodStack">
+			<property name="Extends" value="modularFireWoodStackA"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="CustomIcon" value="modularFireWoodStackA"/>
+			<property name="LootList" value="151"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+
+		<block name="cntPlayerCementBagStack">
+			<property name="Extends" value="palletWhiteBagsBase" />
+			<property name="CustomIcon" value="palletWhiteBagsBase"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="CustomIcon" value="palletWhiteBagsBase"/>
+			<property name="LootList" value="152"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+			<drop event="Harvest" name="resourceCement" count="0" prob="1" />
+		</block>
+		<block name="cntPlayerBrownBoxes">
+			<property name="Extends" value="palletBrownBoxesBase"/>
+			<property name="CustomIcon" value="palletBrownBoxesBase"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="153"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+			<drop event="Harvest" name="resourcePaper" count="0" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceScrapPolymers" count="0" tag="allHarvest"/>
+		</block>
+		<block name="cntPlayerBlueTarp">
+			<property name="Extends" value="palletBlueTarpBase"/>
+			<property name="CustomIcon" value="palletBlueTarpBase"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="DescriptionKey" value="cntPlayerBlueTarpDesc"/>
+			<property name="LootList" value="154"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+			<drop event="Harvest" name="resourceCobblestones" count="0" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="0" tag="allHarvest"/>
+		</block>
+		<block name="cntPlayerBrickPile">
+			<property name="Extends" value="palletBricksBase"/>
+			<property name="CustomIcon" value="palletBricksBase"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="154"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+			<drop event="Harvest" name="resourceRockSmall" count="0" tag="oreWoodHarvest"/>
+		</block>
+		<!-- *** BARRELS *** -->
+		<block name="cntPlayerBarrelPlasticSingle00">
+			<property name="Extends" value="cntBarrelPlasticSingle00" param1="Explosion,DescriptionKey"/> 
+			<property name="CustomIcon" value="cntBarrelPlasticSingle00"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="160"/>
+		</block>
+
+		<block name="cntPlayerBarrelPlasticQuadA">
+			<property name="Extends" value="cntBarrelPlasticQuadA" param1="Explosion,DescriptionKey"/> 
+			<property name="CustomIcon" value="cntBarrelPlasticQuadA"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="160"/>
+		</block>
+		<block name="cntPlayerBarrelGenericQuadA">
+			<property name="Extends" value="cntBarrelGenericQuadA" param1="Explosion,DescriptionKey"/> 
+			<property name="CustomIcon" value="cntBarrelGenericQuadA"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="155"/>
+		</block>
+		<block name="cntPlayerBarrelGasQuadA">
+			<property name="Extends" value="cntBarrelGasQuadA" param1="Explosion"/> 
+			<property name="CustomIcon" value="cntBarrelGasQuadA"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="155"/>
+		</block>
+		<block name="cntPlayerBarrelGasSingle00">
+			<property name="Extends" value="cntBarrelGasSingle00" param1="Explosion"/> 
+			<property name="CustomIcon" value="cntBarrelGasSingle00"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="155"/>
+		</block>
+		<block name="cntPlayerBarrelOilQuadA">
+			<property name="Extends" value="cntBarrelOilQuadA" param1="Explosion"/> 
+			<property name="CustomIcon" value="cntBarrelOilQuadA"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="155"/>
+		</block>
+		<block name="cntPlayerBarrelOilSingle00">
+			<property name="Extends" value="cntBarrelOilSingle00" param1="Explosion"/> 
+			<property name="CustomIcon" value="cntBarrelOilSingle00"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="155"/>
+		</block>
+		<block name="cntPlayerBarrelAcidQuadA">
+			<property name="Extends" value="cntBarrelAcidQuadA" param1="Explosion"/> 
+			<property name="CustomIcon" value="cntBarrelAcidQuadA"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="155"/>
+		</block>
+		<block name="cntPlayerBarrelAcidSingle00">
+			<property name="Extends" value="cntBarrelAcidSingle00" param1="Explosion"/> 
+			<property name="CustomIcon" value="cntBarrelAcidSingle00"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="155"/>
+		</block>
+		<block name="cntPlayerBarrelRadiatedQuadA">
+			<property name="Extends" value="cntBarrelRadiatedQuadA" param1="Explosion"/> 
+			<property name="CustomIcon" value="cntBarrelRadiatedQuadA"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="155"/>
+		</block>
+		<block name="cntPlayerBarrelRadiatedSingle00">
+			<property name="Extends" value="cntBarrelRadiatedSingle00" param1="Explosion"/> 
+			<property name="CustomIcon" value="cntBarrelRadiatedSingle00"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="155"/>
+		</block>
+		<block name="cntPlayerBarrelWoodVert">
+			<property name="Extends" value="wineBarrel" /> 
+			<property name="CustomIcon" value="wineBarrel"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="163"/>
+		</block>
+		<block name="cntPlayerBarrelWoodHor">
+			<property name="Extends" value="wineBarrel" /> 
+			<property name="CustomIcon" value="wineBarrel"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="163"/>
+		</block>
+		<block name="cntPlayerBarrelWoodSet">
+			<property name="Extends" value="wineBarrelSet" param1="IsTerrainDecoration" /> 
+			<property name="CustomIcon" value="wineBarrelSet"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="163"/>
+		</block>
+
+
+		<!--***  MEDICINE STORAGE *** -->
+		<block name="cntPlayerMedicLootPileSmall">
+			<property name="Extends" value="cntMedicLootPileA" /> 
+			<property name="CustomIcon" value="cntMedicLootPileA"/>
+			<property name="FilterTags" value="floot"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerMedicLootPileMedium">
+			<property name="Extends" value="cntMedicLootPileB" /> 
+			<property name="CustomIcon" value="cntMedicLootPileB"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+		</block>
+		<block name="cntPlayerMedicineCabinetClosed">
+			<property name="Extends" value="cntMedicineCabinetClosed" /> 
+			<property name="CustomIcon" value="cntMedicineCabinetClosed"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="158"/>
+		</block>
+		<block name="cntPlayerPillCaseClosed">
+			<property name="Extends" value="cntPillCaseClosed" /> 
+			<property name="CustomIcon" value="cntPillCaseClosed"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="158"/>
+		</block>
+
+		<!-- *** FOOD/DRINK STORAGE *** -->
+		<block name="cntPlayerWaterCoolerFull">
+			<property name="Extends" value="cntWaterCoolerFull" /> 
+			<property name="CustomIcon" value="cntWaterCoolerFull"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="160"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerCooler">
+			<property name="Extends" value="cntCoolerClosed" /> 
+			<property name="CustomIcon" value="cntCoolerClosed"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="160"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerVendingMachine">
+			<property name="Extends" value="cntVendingMachine2Broken" /> 
+			<property name="CustomIcon" value="cntVendingMachine2Broken"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="157"/>
+			<drop event="Harvest" name="resourceForgedIron" prob=".75" count="3" tag="allHarvest" />
+
+		</block>
+
+		<block name="cntPlayerFoodPileSmall">
+			<property name="Extends" value="cntFoodPileSmall" /> 
+			<property name="CustomIcon" value="cntFoodPileSmall"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+
+		<block name="cntPlayerFoodPileMedium">
+			<property name="Extends" value="cntFoodPileMedium" /> 
+			<property name="CustomIcon" value="cntFoodPileMedium"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+
+		<block name="cntPlayerFoodPileLarge">
+			<property name="Extends" value="cntFoodPileLarge" /> 
+			<property name="CustomIcon" value="cntFoodPileLarge"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+
+		<!-- *** AMMO STORAGE *** -->
+		<block name="cntPlayerAmmoPileSmall">
+			<property name="Extends" value="cntAmmoPileSmall" /> 
+			<property name="CustomIcon" value="cntAmmoPileSmall"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerAmmoPileMedium">
+			<property name="Extends" value="cntAmmoPileMedium" /> 
+			<property name="CustomIcon" value="cntAmmoPileMedium"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerAmmoPileLarge">
+			<property name="Extends" value="cntAmmoPileLarge" /> 
+			<property name="CustomIcon" value="cntAmmoPileLarge"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+<block name="cntPlayerMunitionsBox">
+			<property name="Extends" value="cntMunitionsBox" /> 
+			<property name="CustomIcon" value="cntMunitionsBox"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="158"/>
+			<drop event="Harvest" name="resourceForgedIron" prob=".75" count="3" tag="allHarvest" />
+		</block>
+
+		<!-- *** SCRAP METAL PILE *** -->
+		<block name="cntPlayerScrapMetalPile">
+			<property name="Extends" value="scrapMetalPile" /> 
+			<property name="CustomIcon" value="scrapMetalPile"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="162"/>
+			<drop event="Harvest" name="resourceForgedIron" prob=".75" count="3" tag="allHarvest" />
+		</block>
+		<!-- *** PAPER/BOOK STORAGE *** -->
+		<block name="cntPlayerFileCabinetShortClosed">
+			<property name="Extends" value="cntFileCabinetShortClosed" /> 
+			<property name="CustomIcon" value="cntFileCabinetShortClosed"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="161"/>
+			<drop event="Harvest" name="resourceForgedIron" prob=".75" count="3" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerFileCabinetTallClosed">
+			<property name="Extends" value="cntFileCabinetTallClosed" /> 
+			<property name="CustomIcon" value="cntFileCabinetTallClosed"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="161"/>
+			<drop event="Harvest" name="resourceForgedIron" prob=".75" count="3" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerBookPile01">
+			<property name="Extends" value="cntBookPile01" /> 
+			<property name="CustomIcon" value="cntBookPile01"/>
+			<property name="Material" value="MclothStable"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerBookPile04">
+			<property name="Extends" value="cntBookPile04" /> 
+			<property name="CustomIcon" value="cntBookPile04"/>
+			<property name="Material" value="MclothStable"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerBookcaseFull">
+			<property name="Extends" value="cntBookcaseFull" /> 
+			<property name="CustomIcon" value="cntBookcaseFull"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<!-- *** GUN/ARMOR STORAGE *** -->
+<block name="cntPlayerGunRackSmallMagazines">
+			<property name="Extends" value="cntGunRackSmallMagazines" /> 
+			<property name="CustomIcon" value="cntGunRackSmallMagazines"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceForgedIron" prob=".75" count="3" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerGunRackSmallArmor">
+			<property name="Extends" value="cntGunRackSmallArmor" /> 
+			<property name="CustomIcon" value="cntGunRackSmallArmor"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceForgedIron" prob=".75" count="3" tag="allHarvest" />
+		</block>	
+		<block name="cntPlayerGunRackLargeGuns01">
+			<property name="Extends" value="cntGunRackLargeGuns01" /> 
+			<property name="CustomIcon" value="cntGunRackLargeGuns01"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceForgedIron" prob=".75" count="3" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerGunRackLargeGuns02">
+			<property name="Extends" value="cntGunRackLargeGuns02" /> 
+			<property name="CustomIcon" value="cntGunRackLargeGuns02"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceForgedIron" prob=".75" count="3" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerWeaponsBagSmall">
+			<property name="Extends" value="cntWeaponsBagSmall" /> 
+			<property name="CustomIcon" value="cntWeaponsBagSmall"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="152"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerWeaponsBagLarge">
+			<property name="Extends" value="cntWeaponsBagLarge" /> 
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="152"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerHardenedChestSecure">
+			<property name="Extends" value="cntHardenedChestSecure" /> 
+			<property name="CustomIcon" value="cntHardenedChestSecure"/>
+			<property name="Class" value="SecureLoot"/>
+			<property name="MaxDamage" value="2500"/>
+			<property name="LootList" value="158"/>
+			<drop event="Harvest" name="resourceForgedIron" prob=".75" count="3" tag="allHarvest" />
+
+		</block>
+
+		<!-- *** CLOTHING STORAGE ***-->
+		<block name="cntPlayerClothesRackRoundPants">
+			<property name="Extends" value="cntClothesRackRoundPants" /> 
+			<property name="CustomIcon" value="cntClothesRackRoundPants"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceForgedIron" prob=".75" count="3" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerLuggageMediumClosed">
+			<property name="Extends" value="cntLuggageMediumClosed" /> 
+			<property name="CustomIcon" value="cntLuggageMediumClosed"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerLuggagePileBClosed">
+			<property name="Extends" value="cntLuggagePileBClosed" /> 
+			<property name="CustomIcon" value="cntLuggagePileBClosed"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerClothesRackRectanglePants">
+			<property name="Extends" value="cntClothesRackRectanglePants" /> 
+			<property name="CustomIcon" value="cntClothesRackRectanglePants"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceForgedIron" prob=".75" count="3" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerClothesShelfStackShirts02">
+			<property name="Extends" value="cntClothesShelfStackShirts02" /> 
+			<property name="CustomIcon" value="cntClothesShelfStackShirts02"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerLaundryBasketVer2Full">
+			<property name="Extends" value="cntLaundryBasketVer2Full" /> 
+			<property name="CustomIcon" value="cntLaundryBasketVer2Full"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="156"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerGarmentBag">
+			<property name="Extends" value="cntModularClosetClosed" /> 
+			<property name="CustomIcon" value="cntModularClosetClosed"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="152"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerClosetRod">
+			<property name="Extends" value="cntModularClosetEnd" /> 
+			<property name="CustomIcon" value="cntModularClosetEnd"/>
+
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		
+		<!-- *** MISC. STORAGE *** -->
+			<block name="cntPlayerCardboardBox">
+			<property name="Extends" value="cntCardboardBox" /> 
+			<property name="CustomIcon" value="cntGarageStorage"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="153"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerBackpack03">
+			<property name="Extends" value="cntBackpack03" /> 
+			<property name="CustomIcon" value="cntBackpack03"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="152"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerDuffle01">
+			<property name="Extends" value="cntDuffle01" /> 
+			<property name="CustomIcon" value="cntDuffle01"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="152"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerTrashPile09">
+			<property name="Extends" value="cntTrashPile09" /> 
+			<property name="CustomIcon" value="cntTrashPile09"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="153"/>
+			<drop event="Harvest" name="resourceNail" prob=".75" count="10" tag="allHarvest" />
+			<drop event="Harvest" name="resourceWood" prob=".75" count="12" tag="allHarvest" />
+		</block>
+				<block name="cntPlayerToolBoxClosed">
+			<property name="Extends" value="cntToolBoxClosed" /> 
+			<property name="CustomIcon" value="cntToolBoxClosed"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="164"/>
+		<drop event="Harvest" name="resourceForgedIron" prob=".75" count="3" tag="allHarvest" />
+		</block>
+		<block name="cntPlayerRollingToolBoxClosed">
+			<property name="Extends" value="cntRollingToolBoxClosed" /> 
+			<property name="CustomIcon" value="cntRollingToolBoxClosed"/>
+			<property name="Class" value="Loot"/>
+			<property name="MaxDamage" value="400"/>
+			<property name="LootList" value="164"/>
+		<drop event="Harvest" name="resourceForgedIron" prob=".75" count="3" tag="allHarvest" />
+		</block>
+	</append>
+
+	<append xpath="/blocks/block[@name='cntWoodFurnitureBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">	,cntStorageGenericHalf,cntPlayerFireWoodStack,cntPlayerCementBagStack,cntPlayerBlueTarp,cntPlayerBrownBoxes,cntPlayerBrickPile,cntPlayerMedicLootPileSmall,cntPlayerBarrelPlasticSingle00,cntPlayerBarrelPlasticQuadA,cntPlayerMedicLootPileMedium,cntPlayerWaterCoolerFull,cntPlayerFoodPileSmall,cntPlayerFoodPileMedium,cntPlayerFoodPileLarge,cntPlayerAmmoPileSmall,cntPlayerAmmoPileMedium,cntPlayerAmmoPileLarge,cntPlayerWeaponsBagSmall,cntPlayerWeaponsBagLarge,cntPlayerClothesShelfStackShirts02,cntPlayerLaundryBasketVer2Full,cntLuggageMediumClosed,cntLuggagePileBClosed,cntPlayerBookPile01,cntPlayerBookPile04,cntPlayerDuffle01,cntPlayerBackpack03,cntPlayerTrashPile09,cntPlayerCardboardBox,cntPlayerBarrelWoodVert,cntPlayerBarrelWoodHor,cntPlayerBarrelWoodSet,cntPlayerCooler,cntPlayerBookcaseFull,cntPlayerGarmentBag,cntPlayerClosetRod</append>
+	<append xpath="/blocks/block[@name='metalFurnitureBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,cntPlayerBarrelRadiatedQuadA,cntPlayerBarrelRadiatedSingle00,cntPlayerBarrelOilQuadA,cntPlayerBarrelOilSingle00,cntPlayerBarrelGenericQuadA,cntPlayerBarrelGasQuadA,cntPlayerBarrelGasSingle00,cntPlayerBarrelAcidQuadA,cntPlayerBarrelAcidSingle00,cntPlayerScrapMetalPile,cntPlayerHardenedChestSecure,cntPlayerClothesRackRoundPants,cntPlayerClothesRackRectanglePants,cntPlayerGunRackSmallMagazines,cntPlayerGunRackSmallArmor,cntPlayerGunRackLargeGuns01,cntPlayerGunRackLargeGuns02,cntPlayerMedicineCabinetClosed,cntPlayerPillCaseClosed,cntPlayerMunitionsBox,cntPlayerVendingMachine,cntPlayerFileCabinetShortClosed,cntPlayerFileCabinetTallClosed,cntPlayerToolBoxClosed,cntPlayerRollingToolBoxClosed</append>
+</configs>
