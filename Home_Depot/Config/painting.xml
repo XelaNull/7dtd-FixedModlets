@@ -3,7 +3,7 @@
 	UN-HIDE HIDDEN TEXTURES (the ones that aren't bugged)
 	================================ -->
 	<remove xpath="/paints/paint[@id='138']/property[@name='Hidden']"/>
-	<remove xpath="/paints/paint[@id='148']/property[@name='Hidden']"/>
+	<!--<remove xpath="/paints/paint[@id='148']/property[@name='Hidden']"/>-->
 
 
 <!--================================
