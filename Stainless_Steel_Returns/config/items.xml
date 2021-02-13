@@ -1,6 +1,6 @@
 <Claymore>
-<append xpath="/items/item[@name='gunToolNailgun']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,resourceSteelPolish</append>
-<append xpath="/items/item[@name='meleeToolClawHammer']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,resourceSteelPolish</append>
+<append xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,resourceSteelPolish</append>
+<append xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,resourceSteelPolish</append>
 
 <append xpath="/items/item[@name='resourceSteelPolish']">
 <property name="UnlockedBy" value="perkYeahScience,resourceSteelPolishSchematic"/>
