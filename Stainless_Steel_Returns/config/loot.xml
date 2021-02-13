@@ -1,14 +1,14 @@
 <Claymore>
-<append xpath="/lootcontainers/lootgroup[@name='schematicsModsRare']">
+<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralRare']">
 <item name="resourceSteelPolishSchematic"/>
 </append>
-<append xpath="/lootcontainers/lootgroup[@name='workingStiffs']">
+<append xpath="/lootcontainers/lootgroup[@name='workingStiffsBox']">
 <item name="resourceSteelPolish" count="3,25" prob="0.1"/>
 </append>
 <append xpath="/lootcontainers/lootgroup[@name='forgeLoot']">
 <item name="resourceSteelPolish" count="3,25" prob="0.1"/>
 </append>
-<append xpath="/lootcontainers/lootgroup[@name='rareTools']">
+<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsRare']">
 <item name="resourceSteelPolishSchematic" prob="0.2"/>
 <item name="resourceSteelPolish" count="3,25" prob="0.3"/>
 </append>
