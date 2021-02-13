@@ -3,8 +3,8 @@
 	<ModInfo>
 		<Name value="Meat Rendering" />
 		<Description value="Render animal fat from diseased meat." />
-		<Author value="ShoudenKalferas and AeyviKalferas"/>
-		<Version value="A19_1.0" />
-		<Website value="https://github.com/XelaNull/7DTD-SalvagedElectronics.git" />
+		<Author value="Shouden Kalferas, originating idea from Aeyvi Kalferas"/>
+		<Version value="A19.3_1.0" />
+		<Website value="https://github.com/XelaNull/7dtd-FixedModlets.git" />
 	</ModInfo>
 </xml>

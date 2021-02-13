@@ -1,6 +1,6 @@
 <configs>
-  <!-- No point in bothering to adjust the recipes that have a craft_time of 1 thru 3, as its already so short -->
   <!-- The purpose of this modlet is to reduce the craft time on a handful of items only -->
+  <!-- No point in bothering to adjust the recipes that have a craft_time of 1 thru 3, as its already so short -->
   <!-- Add more entries if you want to include those recipes too. This is a very simple modlet to modify -->
   <set xpath="/recipes/recipe[starts-with(@name, 'vehicle4x4')]/@craft_time">105</set>
   <set xpath="/recipes/recipe[starts-with(@name, 'vehicleBicycle')]/@craft_time">15</set>
@@ -23,7 +23,6 @@
   <set xpath="/recipes/recipe[@name='drinkJarBoiledWater']/@craft_time">20</set>
   <set xpath="/recipes/recipe[@name='ammoRocketHE']/@craft_time">15</set>
   <set xpath="/recipes/recipe[@name='ammoRocketFrag']/@craft_time">20</set>
-  <!--<set xpath="/recipes/recipe[@name='oilBarrel']/@craft_time">2</set>-->
   <set xpath="/recipes/recipe[@name='ammoGasCanBundle']/@craft_time">300</set>
   <set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltStone']/@craft_time">120</set>
   <set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltSteelAP']/@craft_time">120</set>
@@ -62,7 +61,6 @@
   <setattribute xpath="/recipes/recipe[@name='resourceForgedIron']" name="craft_time">1</setattribute>
   <setattribute xpath="/recipes/recipe[@name='resourceForgedSteel']" name="craft_time">1</setattribute>
 
-  
   <!-- The recipes below didn't include craft_time, craft_area, or tags, so we have to use the setattribute instead -->
   <setattribute xpath="/recipes/recipe[@name='ammoGasCan']" name="craft_time">2</setattribute>
   <setattribute xpath="/recipes/recipe[@name='trapSpikesIronDmg0']" name="craft_time">20</setattribute>

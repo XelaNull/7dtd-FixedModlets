@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="IceBurg_Craft_Windows" />
+		<Description value="Adds recipes to be able to craft all the different Vanilla windows" />
+		<Author value="IceBurg" />
+		<Version value="1.0.0" />
+		<Website value="https://7daystodiemods.com/craft-door-trim-window-trim-shutters-mini-blinds-curtains-crown-moulding/" />
+	</ModInfo>
+</xml>
