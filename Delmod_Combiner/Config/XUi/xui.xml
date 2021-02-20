@@ -1,0 +1,10 @@
+<delmod>
+	<!-- Add the combiner window to the Workbench and the Vehicle Storage windows. -->
+	<append xpath="/xui/ruleset/window_group[@name='workstation_workbench']" >
+		<window name="windowCombine" />
+	</append>
+	<append xpath="/xui/ruleset/window_group[@name='vehicleStorage']" >
+		<window name="windowCombine" />
+	</append>
+
+</delmod>
