@@ -1,13 +1,17 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
-h7sb_chefsessel,items,vehicle,,,"Office Chair",,"Chefsessel",,,,,,,,,,,,
-h7sb_klappstuhl,items,vehicle,,,"Folding Chair",,"Klappstuhl",,,,,,,,,,,,
-h7sb_holzhocker,items,vehicle,,,"Wooden Stool",,"Holzhocker",,,,,,,,,,,,
-h7sb_sessel,items,vehicle,,,"Armchair",,"Stoffsessel",,,,,,,,,,,,
-h7sb_sessel1,items,vehicle,,,"Leather Armchair",,"Ledersessel",,,,,,,,,,,,
-h7sb_sessel2,items,vehicle,,,"Armchair",,"Stoffsessel",,,,,,,,,,,,
-h7sb_sessel3,items,vehicle,,,"Leather Armchair",,"Ledersessel",,,,,,,,,,,,
-h7sb_bank,items,vehicle,,,"Park Bench",,"Parkbank",,,,,,,,,,,,
-h7sb_bank1,items,vehicle,,,"Park Bench",,"Parkbank",,,,,,,,,,,,
-h7sb_sofa,items,vehicle,,,"Sofa",,"Sofa",,,,,,,,,,,,
-h7sb_sofa1,items,vehicle,,,"Leather Sofa",,"Ledersofa",,,,,,,,,,,,
-h7sb_ssItems,item,desc,,,"This item can be placed to sit on (E). The middle of the bike is usually the later middle of the block. \n\nBy long press (E) the block can be pick up again.",,"Dieser Gegenstand kann platziert werden um sich darauf zu setzen (E). Die Mitte des Fahrrads ist idR die spätere Mitte des Blocks. \n\nDurch langes drücken (E) kann der Block wieder aufgehoben werden.",,,,,,,,,,,,
+Key,Source,Context,English,German
+h7sb_ssTip_title,desc,main,H7SB [FFB6C1]Seats[-] Mod,H7SB [FFB6C1]Seats[-] Mod
+h7sb_ssTip,desc,main,"[FFB6C1]╔[-] Seating \n[FFB6C1]╠[-] Single Seater: Stool / Folding Chair / Office Chair / 4x Armchair \n[FFB6C1]╠ [-]Two-Seater: 2x Park Bench \n[FFB6C1]╠[-] Three-Seater: 2x sofas \n[FFB6C1]╚[-] Seating can be placed (RMB) to sit on by pressing the E button. The center of the 'bicycle' is usually also the middle of the seat the E button and selection of the hand symbol you can pickup the item again. \n\n[FFB6C1]www.eihwaz.de[-] // [ff0000]I need help with localization![-]","[FFB6C1]╔[-] Sitzgelegenheiten \n[FFB6C1]╠[-] Einsitzer: Hocker / Klappstuhl / Chefsessel / 4x Sessel \n[FFB6C1]╠[-] Zweisitzer: 2x Parkbank \n[FFB6C1]╠[-] Dreisitzer: 2x Sofas \n[FFB6C1]╚[-] Sitzgelegenheiten können platziert (RMB) werden, um sich durch drücken der E-Taste darauf zu setzten. Der Mittelpunkt des `Fahrrads´ ist idR ebenfalls die Mitte des Sitzes. Durch langes drücken der E-Taste und Auswahl des Hand-Symbols kann man den Gegenstand wieder aufheben. \n\n[FFB6C1]www.eihwaz.de[-]"
+
+h7sb_ssItems,item,desc,This item can be placed to sit on (E). The middle of the bike is usually the later middle of the block. \n\nBy long press (E) the block can be pick up again.,Dieser Gegenstand kann platziert werden um sich darauf zu setzen (E). Die Mitte des Fahrrads ist idR die spätere Mitte des Blocks. \n\nDurch langes drücken (E) kann der Block wieder aufgehoben werden.
+
+h7sb_chefsessel,items,vehicle,Office Chair,Chefsessel
+h7sb_klappstuhl,items,vehicle,Folding Chair,Klappstuhl
+h7sb_holzhocker,items,vehicle,Wooden Stool,Holzhocker
+h7sb_sessel,items,vehicle,Armchair,Stoffsessel
+h7sb_sessel1,items,vehicle,Leather Armchair,Ledersessel
+h7sb_sessel2,items,vehicle,Armchair,Stoffsessel
+h7sb_sessel3,items,vehicle,Leather Armchair,Ledersessel
+h7sb_bank,items,vehicle,Park Bench,Parkbank
+h7sb_bank1,items,vehicle,Park Bench,Parkbank
+h7sb_sofa,items,vehicle,Sofa,Sofa
+h7sb_sofa1,items,vehicle,Leather Sofa,Ledersofa
