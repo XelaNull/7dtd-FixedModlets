@@ -13,13 +13,13 @@
 <block name="h7sb_metallMöbel">
 	<property name="Extends" value="metalFurnitureBlockVariantHelper"/>
 	<property name="CustomIcon" value="cntWallOven"/>
-	<property name="PickupJournalEntry" value="h7sb_stTip"/>
+	<!--<property name="PickupJournalEntry" value="h7sb_stTip"/>-->
 	<property name="PlaceAltBlockValue" value="h7sb_ofen,h7sb_ofen1,h7sb_waschmaschine,h7sb_abfallpresse,h7sb_kühlschrank,h7sb_kühlschrank1,h7sb_kühlfach,h7sb_kühlbox,showerHead,faucet04,faucet02,h7sb_badewanne,radiatorHouse01Player,h7sb_mülleimer,h7sb_mülleimer1,h7sb_mülleimer2,rustyIronTable,rScrapIronTable,h7sb_eisentischRund,h7sb_eisentischRund1,cntStoreShelfSingleBottomEmpty,cntStoreShelfSingleTopEmpty,cntStoreShelfDoubleBottomEmpty,cntStoreShelfDoubleTopEmpty,,,,,,,,,h7sb_kleiderhaken,h7sb_kleiderhaken1,h7sb_kleiderständer,h7sb_kleiderständer1,h7sb_kleiderständer2,,,,h7sb_spind,h7sb_spind1,h7sb_spind2,h7sb_spind3,h7sb_spind4,,,,h7sb_eisenfassOben,h7sb_eisenfassOben1,h7sb_eisenfassOben2,h7sb_eisenfassOben4,h7sb_eisenfassOben3,,,,h7sb_eisenfassUnten,h7sb_eisenfassUnten1,h7sb_eisenfassUnten2,h7sb_eisenfassUnten4,h7sb_eisenfassUnten3,h7sb_wasserspender"/>
 </block>
 <block name="h7sb_holzMöbel">
 	<property name="Extends" value="cntWoodFurnitureBlockVariantHelper"/>
 	<property name="CustomIcon" value="cntCupboardCabinetRedTopOpen"/>
-	<property name="PickupJournalEntry" value="h7sb_stTip"/>
+	<!--<property name="PickupJournalEntry" value="h7sb_stTip"/>-->
 	<property name="PlaceAltBlockValue" value="h7sb_schrankRot,h7sb_schrankRot1,h7sb_schrankRot2,h7sb_schrankRot3,h7sb_spüleRot,h7sb_thekeRot,h7sb_holztisch,h7sb_holztisch1,h7sb_schrankSchwarz,h7sb_schrankSchwarz1,h7sb_schrankSchwarz2,h7sb_schrankSchwarz3,h7sb_spüleSchwarz,h7sb_schrankSchwarz4,h7sb_holztisch2,h7sb_holztisch3,h7sb_schrankBraun,h7sb_schrankBraun1,h7sb_schrankBraun2,h7sb_schrankBraun3,h7sb_spüleBraun,h7sb_thekeBraun,h7sb_kommode,h7sb_holztisch4,h7sb_holzstuhl,h7sb_alterstuhl,h7sb_pbank,h7sb_pbank1,h7sb_holztisch5,h7sb_ventilatorklein,h7sb_hundehütte,h7sb_holzrad,h7sb_fenterläden,h7sb_fenterrahmenSchmal,h7sb_fenterrahmenSchmal1,h7sb_fenterrahmenSchmal2,h7sb_bücherregal1,h7sb_bücherregal2,h7sb_bücherregal3,h7sb_bücherregal4,h7sb_lagerkiste,h7sb_weinfass,h7sb_weinfass1,h7sb_weinfass2,h7sb_medizinschrank,h7sb_medizinschrank1,h7sb_pillenschrank,h7sb_bücherregal,h7sb_holzstapel1,h7sb_kistenstapel1,h7sb_steinstapel1,h7sb_abgedecktstapel1,h7sb_lagerkiste1,h7sb_lagerkiste2,h7sb_lagerkiste3,h7sb_lagerkiste4,h7sb_holzstapel,h7sb_kistenstapel,h7sb_steinstapel,h7sb_abgedecktstapel,h7sb_lagerkiste5,h7sb_lagerkiste6,h7sb_lagerkiste7,h7sb_lagerkiste8"/>
 </block>
 
@@ -28,7 +28,7 @@
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="FilterTags" value="ffurniture"/>
 	<property name="Group" value="Basics,Decor/Miscellaneous"/>
-	<property name="PickupJournalEntry" value="h7sb_stTip"/>
+	<!--<property name="PickupJournalEntry" value="h7sb_stTip"/>-->
 	
 	<property name="Mesh" value="models"/>
 	<property name="Shape" value="Ext3dModel"/>
