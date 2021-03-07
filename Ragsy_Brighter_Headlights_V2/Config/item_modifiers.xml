@@ -1,3 +1,0 @@
-<configs>
-  <set xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']/property[@name='LightValue']/@value">2.5</set>
-</configs>
