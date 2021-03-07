@@ -1,5 +1,0 @@
-<configs>
-  <append xpath="/items/item[@name='resourceAcid']">
-    <property name="UnlockedBy" value="perkMasterChef"/>
-  </append>
-</configs>
