@@ -1,0 +1,13 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+h7sb_chefsessel,items,vehicle,,,"Office Chair",,"Chefsessel",,,,,,,,,,,,
+h7sb_klappstuhl,items,vehicle,,,"Folding Chair",,"Klappstuhl",,,,,,,,,,,,
+h7sb_holzhocker,items,vehicle,,,"Wooden Stool",,"Holzhocker",,,,,,,,,,,,
+h7sb_sessel,items,vehicle,,,"Armchair",,"Stoffsessel",,,,,,,,,,,,
+h7sb_sessel1,items,vehicle,,,"Leather Armchair",,"Ledersessel",,,,,,,,,,,,
+h7sb_sessel2,items,vehicle,,,"Armchair",,"Stoffsessel",,,,,,,,,,,,
+h7sb_sessel3,items,vehicle,,,"Leather Armchair",,"Ledersessel",,,,,,,,,,,,
+h7sb_bank,items,vehicle,,,"Park Bench",,"Parkbank",,,,,,,,,,,,
+h7sb_bank1,items,vehicle,,,"Park Bench",,"Parkbank",,,,,,,,,,,,
+h7sb_sofa,items,vehicle,,,"Sofa",,"Sofa",,,,,,,,,,,,
+h7sb_sofa1,items,vehicle,,,"Leather Sofa",,"Ledersofa",,,,,,,,,,,,
+h7sb_ssItems,item,desc,,,"This item can be placed to sit on (E). The middle of the bike is usually the later middle of the block. \n\nBy long press (E) the block can be pick up again.",,"Dieser Gegenstand kann platziert werden um sich darauf zu setzen (E). Die Mitte des Fahrrads ist idR die spätere Mitte des Blocks. \n\nDurch langes drücken (E) kann der Block wieder aufgehoben werden.",,,,,,,,,,,,
