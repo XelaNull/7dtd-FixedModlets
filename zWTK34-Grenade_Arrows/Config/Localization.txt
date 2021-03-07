@@ -1,7 +1,3 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english
-{my_key},{xml_file},{type_of_object},{true/false/null},{true/false/null},"{Localized_Name_Eng}"
-
-ammoArrowGrenade,items,item,,," Grenade Tipped Arrow"
-ammoArrowGrenadeDesc,items,item,,,"A arrow with a explosive tip"
-medicalFirstAidKitLarge,items,item,,,"large firstaid kit"
-medicalFirstAidKitLargeDesc,items,item,,,"a larger vertion of the firstaid kit"
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+ammoArrowGrenade,items,item,,,"Grenade Tipped Arrow",,,,,,,,,,,,,,
+ammoArrowGrenadeDesc,items,item,,,"A arrow with a explosive tip",,,,,,,,,,,,,,
