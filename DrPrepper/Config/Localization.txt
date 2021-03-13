@@ -1,6 +1,6 @@
-Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
-buffDrPrepperDesc,buffs,Buff,New,You get there faster while carrying more.\n\nIt's the sugar-buzz that gets you done sooner!,,,,,
-buffDrPrepperName,buffs,Buff,New,Dr. Prepper,,,,,
-buffDrPrepperTooltip,buffs,Buff,New,You feel ready to get busy!,,,,,
-drPrepper,items,Food,New,Dr. Prepper,,,,,
-drPrepperDesc,items,Food,EnChanged,Get there first and bring a bigger load with Dr. Prepper!,,,,,
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+buffDrPrepperDesc,buffs,Buff,,,"You get there faster while carrying more.\n\nIt's the sugar-buzz that gets you done sooner!",,"Du gibts schneller, während du mehr bekommst. \n \nIt's the sugar-buzz, das bekommt man früher fertig!",,"Vous vous y rendre plus vite tout en transportant plus. \n \nIt's the sucre-buzz that gets you done tôt !",,,,"Idziesz tam szybciej, podczas noszenia więcej. \n \nIt's the sugar-buzz that gets you done szybciej!",,,,,,"Se llega más rápido mientras se lleva más. \n \nEs el zumbido de azúcar que se hace antes!"
+buffDrPrepperName,buffs,Buff,,,"Dr. Prepper",,"Dr. Prepper",,"Dr. Prepper",,,,"Dr. Prepper",,,,,,"Dr. Prepper"
+buffDrPrepperTooltip,buffs,Buff,,,"You feel ready to get busy!",,"Sie fühlen sich bereit, sich zu beschäftigen!",,"Vous vous sentez prêt à vous occuper !",,,,"Czujesz się gotowy, aby się zająć!",,,,,,"¡Te sientes listo para estar ocupado!"
+drPrepper,items,Food,,,"Dr. Prepper",,"Dr. Prepper",,"Dr. Prepper",,,,"Dr. Prepper",,,,,,"Dr. Prepper"
+drPrepperDesc,items,Food,,,"Get there first and bring a bigger load with Dr. Prepper!",,"Holen Sie sich zuerst und bringen Sie eine größere Last mit Dr. Prepper!",,"Va-y d'abord et amère une plus grosse charge avec le Dr Prepper !",,,,"Najpierw zabierz i przynieś większy ładunek z dr. Prepperem!",,,,,,"¡Llegar allí primero y traer una mayor carga con el Dr. Prepper!"
