@@ -1,68 +1,64 @@
-Key,Source,Context,UsedInMainMenu,NoTranslate,english
-cntStorageGenericHalf,blocks,Container,,,Small Storage Box
-cntStorageGenericHalfInsecure,blocks,Container,,,Small Storage Box
-cntPlayerFireWoodStack,blocks,Container,,,Stack of Wood
-cntPlayerCementBagStack,blocks,Container,,,Cement Pallet
-cntPlayerBrownBoxes,blocks,Container,,,Pallet of Boxes
-cntPlayerBlueTarp,blocks,Container,,,Covered Pallet
-cntPlayerBrickPile,blocks,Container,,,Pallet of Bricks
-cntPlayerMedicLootPileSmall,blocks,Container,,,Medical Supplies
-cntPlayerMedicLootPileMedium,blocks,Container,,,Medical Supplies
-cntPlayerMedicineCabinetClosed,blocks,Container,,,Medicine Cabinet
-cntPlayerPillCaseClosed,blocks,Container,,,Medical Storage
-cntPlayerWaterCoolerFull,blocks,Container,,,Water Cooler
-cntPlayerVendingMachine,blocks,Container,,,Vending Machine
-cntPlayerFoodPileSmall,blocks,Container,,,Canned Goods
-cntPlayerFoodPileMedium,blocks,Container,,,Canned Goods
-cntPlayerFoodPileLarge,blocks,Container,,,Canned Goods
-cntPlayerAmmoPileSmall,blocks,Container,,,Ammunition Pile
-cntPlayerAmmoPileMedium,blocks,Container,,,Ammunition Pile
-cntPlayerAmmoPileLarge,blocks,Container,,,Ammunition Pile
-cntPlayerMunitionsBox,blocks,Container,,,Munitions Storage Box
-cntPlayerScrapMetalPile,blocks,Container,,,Pile of Scrap Metal
-cntPlayerBarrelPlasticSingle00,blocks,Container,,,Plastic Barrel
-cntPlayerBarrelPlasticQuadA,blocks,Container,,,Plastic Barrels
-cntPlayerBarrelGenericQuadA,blocks,Container,,,Rusty Barrels
-cntPlayerBarrelGasQuadA,blocks,Container,,,Gas Barrels
-cntPlayerBarrelGasSingle00,blocks,Container,,,Gas Barrel
-cntPlayerBarrelOilQuadA,blocks,Container,,,Oil Barrels
-cntPlayerBarrelOilSingle00,blocks,Container,,,Oil Barrel
-cntPlayerBarrelAcidQuadA,blocks,Container,,,Green Barrels
-cntPlayerBarrelAcidSingle00,blocks,Container,,,Green Barrel
-cntPlayerBarrelRadiatedQuadA,blocks,Container,,,Yellow Barrels
-cntPlayerBarrelRadiatedSingle00,blocks,Container,,,Yellow Barrel
-cntPlayerGunRackSmallMagazines,blocks,Container,,,Ammo Rack
-cntPlayerGunRackSmallArmor,blocks,Container,,,Armor Rack
-cntPlayerGunRackLargeGuns01,blocks,Container,,,Gun Rack
-cntPlayerGunRackLargeGuns02,blocks,Container,,,Gun Rack
-cntPlayerWeaponsBagSmall,blocks,Container,,,Small Weapons Bag
-cntPlayerWeaponsBagLarge,blocks,Container,,,Large Weapons Bag
-cntPlayerHardenedChestSecure,blocks,Container,,,Hardened Chest
-cntPlayerClothesRackRoundPants,blocks,Container,,,Clothing Rack
-cntPlayerClothesRackRectanglePants,blocks,Container,,,Clothing Rack
-cntPlayerClothesShelfStackShirts02,blocks,Container,,,Clothing Shelf
-cntPlayerLuggageMediumClosed,blocks,Container,,,Luggage
-cntPlayerLuggagePileBClosed,blocks,Container,,,Luggage Pile
-cntPlayerClothesShelfStackShirts02,blocks,Container,,,Clothing Shelf
-cntPlayerLaundryBasketVer2Full,blocks,Container,,,Laundry Basket
-cntPlayerFileCabinetShortClosed,blocks,Container,,,File Cabinet
-cntPlayerFileCabinetTallClosed,blocks,Container,,,File Cabinet
-cntPlayerBookPile01,blocks,Container,,,Stack of Books
-cntPlayerBookPile04,blocks,Container,,,Pile of Books
-cntPlayerCardboardBox,blocks,Container,,,Cardboard Box
-cntPlayerBackpack03,blocks,Container,,,Backpack
-cntPlayerDuffle01,blocks,Container,,,Duffle Bag
-cntPlayerTrashPile09,blocks,Container,,,Small Cardboard Box
-cntPlayerBarrelWoodVert,blocks,Container,,,Upright Wooden Barrel
-cntPlayerBarrelWoodHor,blocks,Container,,,Wooden Barrel
-cntPlayerBarrelWoodSet,blocks,Container,,,Wooden Barrels
-cntPlayerCooler,blocks,Container,,,Chest Cooler
-cntPlayerBookcaseFull,blocks,Container,,,Bookcase
-cntPlayerGarmentBag,blocks,Container,,,Garment Bag
-cntPlayerClosetRod,blocks,Container,,,Closet Rod
-cntPlayerToolBoxClosed,blocks,Container,,,Tool Box
-cntPlayerRollingToolBoxClosed,blocks,Container,,,Tool Chest
-
-
-
-
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+cntStorageGenericHalf,blocks,Container,,,"Small Storage Box",,"Kleine Speicherbox","Caixa de Armazenamento Pequeno","Petite boîte de stockage","Small Storage Box","小ストレージ・ボックス","작은 스토리지 박스","Małe pudełko pamięci","Caixa de Armazenamento Pequeno","Маленький ящик хранения","Küçük Depolama Kutusu","小型存储箱","小儲存箱","Caja de almacenamiento pequeño"
+cntStorageGenericHalfInsecure,blocks,Container,,,"Small Storage Box",,"Kleine Speicherbox","Caixa de Armazenamento Pequeno","Petite boîte de stockage","Small Storage Box","小ストレージ・ボックス","작은 스토리지 박스","Małe pudełko pamięci","Caixa de Armazenamento Pequeno","Маленький ящик хранения","Küçük Depolama Kutusu","小型存储箱","小儲存箱","Caja de almacenamiento pequeño"
+cntPlayerFireWoodStack,blocks,Container,,,"Stack of Wood",,"Stack of Wood","Pilha de Madeira","Pile de bois","Stack di legno","ウッド・オブ・ウッド","나무의 스택","Stos drewna","Pilha de Madeira","Деревянный стек","Stack of Wood","木头栈","木斯堆","Pila de madera"
+cntPlayerCementBagStack,blocks,Container,,,"Cement Pallet",,"Zementpalette","Palete De Cimento","Ciment Pallet","Pallet di cemento","セメントパレット","시멘트 파렛트","Paleta cementu","Palete De Cimento","Цементный палет","Çimento Palet","水泥托盘","水泥棧板","Paleta de cemento"
+cntPlayerBrownBoxes,blocks,Container,,,"Pallet of Boxes",,"Palette der Boxen","Palete de Caixas","Palette de boîtes","Pallet di Bose","「ボクシーズのパレット」","상자의 파렛트","Paleta Boxes","Palete de Caixas","Палитра бокс","Kutuların Paleti","拳王","寶箱的棧板","Paleta de cajas"
+cntPlayerBlueTarp,blocks,Container,,,"Covered Pallet",,"Covered Palette","Pallet Coberto","Palette couverte","Pallet Coperto","カバー・パレット","존경하는 파렛트","Pokryte paletą","Pallet Coberto","крытый поддон","Kapsanan Palet","有盖托盘","「尊敬的棧板」","Palet cubierto"
+cntPlayerBrickPile,blocks,Container,,,"Pallet of Bricks",,"Palette von Ziegeln","Pallet de Bricks","Pallet de Bricks","Pallet di Bricks","パレット・オブ・ブリックス","벽돌의 파렛트 (Pallet of Bricks)","Paleta Bricks","Pallet de Bricks","Палитра кирпичей","Tuğlaların Paleti","砖块","「布瑞克的棧板」","Paleta de Bricks"
+cntPlayerMedicLootPileSmall,blocks,Container,,,"Medical Supplies",,"Medizinische Versorgung","Suprimentos Médicos","Fournitures médicales","Forniture Mediche","「医療用品」","의료 공급","Materiały medyczne","Suprimentos Médicos","Медицинские принадлежности","Tıbbi Malzemeler","医疗用品","「醫療用品」","Suministros médicos"
+cntPlayerMedicLootPileMedium,blocks,Container,,,"Medical Supplies",,"Medizinische Versorgung","Suprimentos Médicos","Fournitures médicales","Forniture Mediche","「医療用品」","의료 공급","Materiały medyczne","Suprimentos Médicos","Медицинские принадлежности","Tıbbi Malzemeler","医疗用品","「醫療用品」","Suministros médicos"
+cntPlayerMedicineCabinetClosed,blocks,Container,,,"Medicine Cabinet",,"Medicine Cabinet","Gabinete De Medicina","Cabinet de médecine","Gabinetto di medicina","「メディシン・キャビネット」","의학 내각","Gabinet Medycyny","Gabinete De Medicina","Медицинский кабинет","Tıp Dolabı","医药内阁","「醫藥櫃」","Gabinete de Medicina"
+cntPlayerPillCaseClosed,blocks,Container,,,"Medical Storage",,"Medical Storage","Armazenamento Médico","Stockage médical","Memoria medica","医療ストレージ","의료 창고","Przechowywanie medyczne","Armazenamento Médico","Медицинская память","Tıbbi Depo","医疗储存","「醫療儲存」","Almacenamiento médico"
+cntPlayerWaterCoolerFull,blocks,Container,,,"Water Cooler",,"Wasserkühler","Cooler de Água","Cooleur d'eau","Water Cooler","ウォーター・クーラー","물 냉각기","Chłodnica wody","Cooler de Água","Охладитель воды","Su Soğutucusu","水冷器","水 Cooler","Cooler de agua"
+cntPlayerVendingMachine,blocks,Container,,,"Vending Machine",,"Vending Machine","Máquina de Vendas","Vending Machine","Vending Machine","自動処理マシン","밴딩 머신 (Vending Machine)","Maszyna Vending","Máquina de Vendas","Vending Machine","Otomat","自动售货机","Vending Machine","Máquina expendedora"
+cntPlayerFoodPileSmall,blocks,Container,,,"Canned Goods",,"Canned Goods","Bens Enlatados","Produits en conserve","Beni conciati","「缶詰」","Canned Goods","Towary w puszkach","Bens Enlatados","Консервы","Konserve Mal","罐头","罐頭貨物","Bienes enlatados"
+cntPlayerFoodPileMedium,blocks,Container,,,"Canned Goods",,"Canned Goods","Bens Enlatados","Produits en conserve","Beni conciati","「缶詰」","Canned Goods","Towary w puszkach","Bens Enlatados","Консервы","Konserve Mal","罐头","罐頭貨物","Bienes enlatados"
+cntPlayerFoodPileLarge,blocks,Container,,,"Canned Goods",,"Canned Goods","Bens Enlatados","Produits en conserve","Beni conciati","「缶詰」","Canned Goods","Towary w puszkach","Bens Enlatados","Консервы","Konserve Mal","罐头","罐頭貨物","Bienes enlatados"
+cntPlayerAmmoPileSmall,blocks,Container,,,"Ammunition Pile",,"Munitionsstapel","Pilha De Munição","Pile de munitions","Munizioni Pile","弾薬のパイル","양탄자","Stos Amunicji","Pilha De Munição","Куча боеприпасов","Cephane Yığını","弹药堆","彈藥庫","Pila de municiones"
+cntPlayerAmmoPileMedium,blocks,Container,,,"Ammunition Pile",,"Munitionsstapel","Pilha De Munição","Pile de munitions","Munizioni Pile","弾薬のパイル","양탄자","Stos Amunicji","Pilha De Munição","Куча боеприпасов","Cephane Yığını","弹药堆","彈藥庫","Pila de municiones"
+cntPlayerAmmoPileLarge,blocks,Container,,,"Ammunition Pile",,"Munitionsstapel","Pilha De Munição","Pile de munitions","Munizioni Pile","弾薬のパイル","양탄자","Stos Amunicji","Pilha De Munição","Куча боеприпасов","Cephane Yığını","弹药堆","彈藥庫","Pila de municiones"
+cntPlayerMunitionsBox,blocks,Container,,,"Munitions Storage Box",,"Munitions Storage Box","Caixa de Armazenamento de Munição","Boîte de stockage Munitions","Box Storage Box","Munitions ストレージ・ボックス","Munitions Storage Box","Skrzynki magazynowe amunicji","Caixa de Armazenamento de Munição","Ящик для хранения боеприпасов","Mühimmat Deposu Kutusu","弹药储存箱","彈藥箱","Caja de almacenamiento de municiones"
+cntPlayerScrapMetalPile,blocks,Container,,,"Pile of Scrap Metal",,"Haufen von Schrott","Pilha de Sucata Metal","Pile of Scrap Metal","Pile di Scrap Metal","スクラップ・メタルの Pile","싸구메탈의 타일","Stos z Scrap Metal","Pilha de Sucata Metal","Куча металлолома","Spist Metal yığını","垃圾金属堆","垃圾金屬堆","Pila de chatarra"
+cntPlayerBarrelPlasticSingle00,blocks,Container,,,"Plastic Barrel",,"Plastic Barrel","Barril De Plástico","Barrel en plastique","Barili di plastica","プラスティック・バレル","플라스틱 바렐","Plastikowa baryłka","Barril De Plástico","Пластиковая Бочка","Plastik Fıçı","塑料桶","塑膠桶","Barril de plástico"
+cntPlayerBarrelPlasticQuadA,blocks,Container,,,"Plastic Barrels",,"Plastikfässer","Barris De Plástico","Barrels en plastique","Barili di plastica","プラスティック・バレルズ","플라스틱 바렐","Plastikowe beczki","Barris De Plástico","Пластиковые бочки","Plastik Fıçılar","塑料桶","「塑膠桶」","Barriles de plástico"
+cntPlayerBarrelGenericQuadA,blocks,Container,,,"Rusty Barrels",,"Rusty Barrels","Barris Enferrudos","Rusty Barrels","Rusty Barattoli","ラスティ・バレルズ","러스티 바렐","Rusty beczki","Barris Enferrudos","Ржавые бочки","Paslı Fıçılar","生锈的桶","小鏽巴","Barriles Oxidados"
+cntPlayerBarrelGasQuadA,blocks,Container,,,"Gas Barrels",,"Gasfässer","Barris De Gás","Barreuils de gaz","Barili di gas","ガス・バレルス","가스 바렐","Baryłki gazowe","Barris De Gás","Газовые бочки","Gaz Fıçıları","天然气桶","天然氣桶","Barriles de gas"
+cntPlayerBarrelGasSingle00,blocks,Container,,,"Gas Barrel",,"Gas Barrel","Barril de Gás","Barrel de gaz","Canna del gas","ガス・バレル","가스바렐","Beczka Gazu","Barril de Gás","Газовая бочка","Gaz Namlusu","气桶","氣體桶","Barril de gas"
+cntPlayerBarrelOilQuadA,blocks,Container,,,"Oil Barrels",,"Ölfässer","Barris De Petróleo","Barils de pétrole","Barili di petrolio","オイル・バレルズ","석유 바렐","Olejek beczki","Barris De Petróleo","Нефтяные бочки","Petrol Varilleri","石油桶","油桶","Barriles de petróleo"
+cntPlayerBarrelOilSingle00,blocks,Container,,,"Oil Barrel",,"Oil Barrel","Barril de Petróleo","Huile de Barrel","Petrolio Barrel","オイル・バレル","오일 배럴","Olejek baryłka","Barril de Petróleo","Нефтяной бочка","Yağ Fıçısı","油桶","油桶","Barril de petróleo"
+cntPlayerBarrelAcidQuadA,blocks,Container,,,"Green Barrels",,"Grüne Barrel","Barris Verdes","Barrels verts","Barili verdi","グリーン・バレルズ","그린 바렐","Zielone beczki","Barris Verdes","Зеленые бочки","Yeşil Variller","绿桶","「綠 Bars」","Barriles verdes"
+cntPlayerBarrelAcidSingle00,blocks,Container,,,"Green Barrel",,"Grünes Barrel","Barril Verde","Barrel vert","Canna verde","緑のバーレル","그린 바렐","Zielone baryłkę","Barril Verde","Зеленая бочка","Yeşil Varil","绿桶","綠色 Barrel","Barril Verde"
+cntPlayerBarrelRadiatedQuadA,blocks,Container,,,"Yellow Barrels",,"Gelbe Fässer","Barris Amarelos","Barils jaunes","Barili gialli","「イエロー・バレルズ」","노란바레","Żółte beczki","Barris Amarelos","Желтые бочки","Sarı Fıçılar","黄色桶","「黃巴雷爾」","Barriles amarillos"
+cntPlayerBarrelRadiatedSingle00,blocks,Container,,,"Yellow Barrel",,"Gelbes Barrel","Barril Amarelo","Barrel jaune","Canna gialla","黄色のバレル","노란바렐","Żółty baryłkę","Barril Amarelo","желтая бочка","Sarı Varil","黄桶","黃巴蕾","Barril amarillo"
+cntPlayerGunRackSmallMagazines,blocks,Container,,,"Ammo Rack",,"Ammo Rack","Rack Ammo","Ammo Rack","Rack di munizioni","Ammo ラック","Ammo랙","Rack Ammo","Rack Ammo","Аммо Стойка","Cephane Rafı","Ammo 机架","彈藥框架","Ammo Rack"
+cntPlayerGunRackSmallArmor,blocks,Container,,,"Armor Rack",,"Armor Rack","Rack Armor","Armoire 'Armor Rack","Armor Rack","「アーマー・ラック」","mor랙","Rack Armor","Rack Armor","Бронежилет","Zırh Rafı","盔甲","Armor Rack","Armor Rack"
+cntPlayerGunRackLargeGuns01,blocks,Container,,,"Gun Rack",,"Gun Rack","Rack Rack","Armoire à canon","Rack di pistola","砲ラック","건 랙","Rack Gun","Rack Rack","Оружейная стойка","Silah Rafı","炮架","槍架","Gun Rack"
+cntPlayerGunRackLargeGuns02,blocks,Container,,,"Gun Rack",,"Gun Rack","Rack Rack","Armoire à canon","Rack di pistola","砲ラック","건 랙","Rack Gun","Rack Rack","Оружейная стойка","Silah Rafı","炮架","槍架","Gun Rack"
+cntPlayerWeaponsBagSmall,blocks,Container,,,"Small Weapons Bag",,"Kleine Waffen Bag","Pequeno Saco De Armas","Bag de petites armes","Small Weapons Bag","小型武器バグ","작은 무기 Bag","Mały worek broni","Pequeno Saco De Armas","Маленький оружейный мешок","Küçük Silahlar çantası","小武器包","小武器袋","Bag de armas pequeñas"
+cntPlayerWeaponsBagLarge,blocks,Container,,,"Large Weapons Bag",,"Große Waffen Bag","Grande Saco De Armas","Bac à gros armes","Large Weapons Bag","「ラージ・ウェポン・バッグ」","큰 무기 Bag","Duża torba broni","Grande Saco De Armas","Большой оружейный мешок","Büyük Silahlar çantası","大武器包","大武器袋","Gran Bolsa de Armas"
+cntPlayerHardenedChestSecure,blocks,Container,,,"Hardened Chest",,"Gehärtete Brust","Peito Endurecido","Hardened Chest","Petto indurito","ハード・チェスト","경화된 흉부","Uhartowana klatka piersiowa","Peito Endurecido","Закаленная грудь","Sertleştirilmiş Göğüs","硬化胸部","挺胸胸圍","pecho endurecido"
+cntPlayerClothesRackRoundPants,blocks,Container,,,"Clothing Rack",,"Kleiderständer","Rack De Roupas","Vêtements Rack","Rack di abbigliamento","クロージング・ラック","의류 랙","Wieszak na ubrania","Rack De Roupas","Одежда в стойке","Giysi Rafı","衣物架","「衣架」","Rack de ropa"
+cntPlayerClothesRackRectanglePants,blocks,Container,,,"Clothing Rack",,"Kleiderständer","Rack De Roupas","Vêtements Rack","Rack di abbigliamento","クロージング・ラック","의류 랙","Wieszak na ubrania","Rack De Roupas","Одежда в стойке","Giysi Rafı","衣物架","「衣架」","Rack de ropa"
+cntPlayerClothesShelfStackShirts02,blocks,Container,,,"Clothing Shelf",,"Kleiderregal","Shelf de roupas","Plateau de vêtements","Abbigliamento di abbigliamento","クローズ・シェルフ","Clothing Shelf","Półka ubrań","Shelf de roupas","Одежда на одежде","Giyim Rafı","衣物架","服裝架","Estante de ropa"
+cntPlayerLuggageMediumClosed,blocks,Container,,,"Luggage",,"Gepäck","Bagagem","Bagages","Bagaglio","「手荷物」","Luggage","Bagaż","Bagagem","Камера","Bagaj","行李","盧格奇","Equipaje"
+cntPlayerLuggagePileBClosed,blocks,Container,,,"Luggage Pile",,"Gepäckstapel","Pilha De Bagagem","Pile de bagages","Bagarre Pile","「手荷物パイル」","Luggage Pile","Bagaż stos","Pilha De Bagagem","Куча багажа","Bagaj Yığını","行李堆","Lugage Pile","Pila de equipaje"
+cntPlayerClothesShelfStackShirts02,blocks,Container,,,"Clothing Shelf",,"Kleiderregal","Shelf de roupas","Plateau de vêtements","Abbigliamento di abbigliamento","クローズ・シェルフ","Clothing Shelf","Półka ubrań","Shelf de roupas","Одежда на одежде","Giyim Rafı","衣物架","服裝架","Estante de ropa"
+cntPlayerLaundryBasketVer2Full,blocks,Container,,,"Laundry Basket",,"Wäschekorb","Cesta De Roupa","Panier de buanderie","Basket Basket","「ランドリー・バスケット」","세탁 바스켓","Do koszyka Pranie","Cesta De Roupa","Корзина для белья","Çamaşır Sepeti","洗衣篮","洗衣籃","Canasta de lavandería"
+cntPlayerFileCabinetShortClosed,blocks,Container,,,"File Cabinet",,"Aktenschrank","Gabinete De Arquivo","Cabinet de fichiers","Cabinet file","ファイルキャビネット","파일 캐비넷","Szafka plików","Gabinete De Arquivo","Кабинет министров","Dosya Kabini","文件文件柜","檔案內閣","Archivo de gabinete"
+cntPlayerFileCabinetTallClosed,blocks,Container,,,"File Cabinet",,"Aktenschrank","Gabinete De Arquivo","Cabinet de fichiers","Cabinet file","ファイルキャビネット","파일 캐비넷","Szafka plików","Gabinete De Arquivo","Кабинет министров","Dosya Kabini","文件文件柜","檔案內閣","Archivo de gabinete"
+cntPlayerBookPile01,blocks,Container,,,"Stack of Books",,"Stapel von Büchern","Pilha de Livros","Pile de livres","Stack di libri","ブックのスタック","책 스택","Stos książek","Pilha de Livros","Стек книг","Stack of Books","书籍堆栈","一疊書堆","Pila de libros"
+cntPlayerBookPile04,blocks,Container,,,"Pile of Books",,"Haufen von Büchern","Pilha de Livros","Pile of Books","Pila di Libri","本のパイル","책의 타일","Stos książek","Pilha de Livros","Куча книг","Kitap Yığını","书堆","書卷","Montón de libros"
+cntPlayerCardboardBox,blocks,Container,,,"Cardboard Box",,"Pappkarton","Caixa De Papelão","Boîte de carton","Box di cartone","カードボード・ボックス","카드보드 박스","Pudełko Kartonowe","Caixa De Papelão","Картонная коробка","Karton Kutu","纸箱","紙板盒","Caja de cartón"
+cntPlayerBackpack03,blocks,Container,,,"Backpack",,"Rucksack","Backpack","Sac à dos","Backpack","バックパック","백팩","Backpack","Backpack","рюкзак","Sırt çantası","背包","背包","Mochila"
+cntPlayerDuffle01,blocks,Container,,,"Duffle Bag",,"Duffle Bag","Bolsa Duffle","Duffle Bag","Sacco di Duffle","ダッフル・バッグ","듀플 백' (Duffle Bag)","Torba Duffle","Bolsa Duffle","Duffle Bag","Duffle Poşet","袋袋","Duffle Bag","Bolsa de Duffle"
+cntPlayerTrashPile09,blocks,Container,,,"Small Cardboard Box",,"Kleine Karton-Box","Pequena Caixa De Papelão","Petite boîte à carton","Small Cardboard Box","スモール・カード・ボックス","소형 카드보드 박스","Małe Pudełko Kartonowe","Pequena Caixa De Papelão","Маленькая картонная коробка","Küçük Karton Kutu","小纸箱","「小卡牌盒」","Caja de cartón pequeña"
+cntPlayerBarrelWoodVert,blocks,Container,,,"Upright Wooden Barrel",,"Aufrechtes Holzfass","Cano de madeira Upright","Upright Wooden Barrel","Upright Wooden Barrel","ウップリン・ウッデン・バレル","Upright Wooden Barrel","Upright Drewniany Beczka","Cano de madeira Upright","Деревянная бочка","Dik Tahta Fıçı","直立木桶","伍登 - 巴雷爾","Barril de madera vertical"
+cntPlayerBarrelWoodHor,blocks,Container,,,"Wooden Barrel",,"Holzfass","Barril De Madeira","Wooden Barrel","Barili di legno","「ウッデン・バーレル」","우덴 바렐","Drewniane beczki","Barril De Madeira","Деревянная бочка","Tahta Fıçı","木桶","木桶木桶","Barril de madera"
+cntPlayerBarrelWoodSet,blocks,Container,,,"Wooden Barrels",,"Holzfässer","Barris De Madeira","Barils en bois","Barili di legno","「ウッデン・バレルズ」","우덴 바레스","Drewniane beczki","Barris De Madeira","Деревянные бочки","Tahta Fıçılar","木桶","「木桶」","Barriles de madera"
+cntPlayerCooler,blocks,Container,,,"Chest Cooler",,"Chest Cooler","Cooler De Peito","Chest Cooler","Cooler del torace","チェストコーラー","가슴 쿨러","Chłodnica klatki piersiowej","Cooler De Peito","Сундук круче","Göğüs Soğutucu","胸前冷却器","胸圍 Cooler","Cooler de tórax"
+cntPlayerBookcaseFull,blocks,Container,,,"Bookcase",,"Bookcase","Bookcase","Sigle","Bookcase","ブックケース","Bookcase","Bookcase","Bookcase","Букбус","Bookcase","书箱","Bookcase","Bookcase"
+cntPlayerGarmentBag,blocks,Container,,,"Garment Bag",,"Kleidertasche","Bolsa De Vestuário","Garment Bag","Bag di Garment","「 Garment Bag」","Garment Bag","Torba Garment","Bolsa De Vestuário","Мешок для одежды","Giysi Torbası","衣袋","Garment Bag","Bolsa de ropa"
+cntPlayerClosetRod,blocks,Container,,,"Closet Rod",,"Closet Rod","Rod do armário","Clôture de la fermeture","Armadio","クロセット・ロッド","클로세트 로드","Rod szafie","Rod do armário","Гардероб","Dolap Rod","壁橱杆","Closet Rod","Closet Rod"
+cntPlayerToolBoxClosed,blocks,Container,,,"Tool Box",,"Werkzeugkasten","Caixa de Ferramenta","Boîte à outils","Casella strumento","ツールボックス","도구 상자","Skrzynka narzędziowa","Caixa de Ferramenta","Инструмент","Araç Kutusu","工具框","工具盒","Caja de herramientas"
+cntPlayerRollingToolBoxClosed,blocks,Container,,,"Tool Chest",,"Werkzeugkasten","Peito de Ferramentas","Outil Chest","Strumento Petto","ツール・チェスト","사랑의열매","Skrzynia narzędzia","Peito de Ferramentas","Коробка с инструментами","Göğüs göğü","工具箱","「工具胸圍」","Caja de herramientas"

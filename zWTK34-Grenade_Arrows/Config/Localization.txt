@@ -1,3 +1,3 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
-ammoArrowGrenade,items,item,,,"Grenade Tipped Arrow",,,,,,,,,,,,,,
-ammoArrowGrenadeDesc,items,item,,,"A arrow with a explosive tip",,,,,,,,,,,,,,
+ammoArrowGrenade,items,item,,,"Grenade Tipped Arrow",,"Grenade Tipped Arrow","Grenade Tipped Arrow","Flèche à pointe de Grenade","Freccia a granata","グレネード・ティップ・アロー","개런드 티핑 애로우","Grenade typped Arrow","Grenade Tipped Arrow","Стрелка из гранатомета","El Bombası Uçlu Ok","榴弹箭","「手雷箭」","Flecha con punta de granada"
+ammoArrowGrenadeDesc,items,item,,,"A arrow with a explosive tip",,"Ein Pfeil mit einem explosiven Tipp","Uma flecha com uma ponta explosa","Une flèche avec une pointe d'explosifs","Una freccia con una punta esplosiva","「爆薬付きの矢」","폭발적인 팁을 가진 화살","Strzałowa z wybuchową końcówką","Uma flecha com uma ponta explosa","Стрелка со взрывной наводкой","Patlayıcı ucu olan bir ok","尖尖的箭","一個有爆發點的箭","Una flecha con una punta explosiva"

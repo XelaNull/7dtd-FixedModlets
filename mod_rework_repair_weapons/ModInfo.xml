@@ -3,8 +3,8 @@
 	<ModInfo>
 		<Name value="Weapon Repair Mod" />
 		<Description value="Require parts of weapons in order to repair them." />
-		<Author value="Survager" />
-		<Version value="1.2" />
+		<Author value="Survager, Modified by Shouden Kalferas" />
+		<Version value="A19.4_1.0" />
 		<Website value="https://7daystodiemods.com/weapons-repair-mod/" />
 	</ModInfo>
 </xml>
