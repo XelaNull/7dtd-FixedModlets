@@ -2,51 +2,51 @@
 
 <append xpath="/lootcontainers">
  <!-- PALLETS -->
-    <lootcontainer id="150" size="6,5" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+    <lootcontainer id="150" name="VanillaPallet01" size="6,5" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
     </lootcontainer>
-    <lootcontainer id="151" size="6,8" sound_open="UseActions/campfire_close" sound_close="UseActions/campfire_close">
+    <lootcontainer id="151" name="VanillaPallet02" size="6,8" sound_open="UseActions/campfire_close" sound_close="UseActions/campfire_close">
     </lootcontainer>
-    <lootcontainer id="152" size="6,8" sound_open="UseActions/close_backpack" sound_close="UseActions/close_backpack">
-    </lootcontainer>   
-    <lootcontainer id="153" size="6,8" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
+    <lootcontainer id="152" name="VanillaPallet03" size="6,8" sound_open="UseActions/close_backpack" sound_close="UseActions/close_backpack">
     </lootcontainer>
-    <lootcontainer id="154" size="6,8" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge">
-    </lootcontainer>   
+    <lootcontainer id="153" name="VanillaPallet04" size="6,8" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard">
+    </lootcontainer>
+    <lootcontainer id="154" name="VanillaPallet05" size="6,8" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge">
+    </lootcontainer>
 
 	<!-- BARRELS -->
-	 <lootcontainer id="155" size="6,8" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan">
-    </lootcontainer>
-  
-	<!-- MEDICAL SUPPLY PILES -->
-  <lootcontainer id="156" size="6,8" sound_open="UseActions/open_garbage" sound_close="UseActions/close_trashcan">
-    </lootcontainer>
-	
-<!-- VENDING MACHINE -->
-	 <lootcontainer id="157" count="0" size="6,8"  sound_open="UseActions/open_vending" sound_close="UseActions/close_vending" >
-    </lootcontainer>
-<!-- HARDENED CHEST -->
-	 <lootcontainer id="158" count="0" size="6,8"  sound_open="UseActions/open_safe" sound_close="UseActions/close_safe">
-    </lootcontainer>
-	<!-- MEDICINE CABINETS -->
-	 <lootcontainer id="159" count="0" size="6,8"  sound_open="UseActions/open_medicine_cabinet" sound_close="UseActions/close_medicine_cabinet">
-    </lootcontainer>
-	<!-- WATER COOLER/PLASTIC BARRELS -->
-	<lootcontainer id="160" count="0" size="6,8"  sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler">
-	</lootcontainer>
-    <!-- FILE CABINETS -->
-	<lootcontainer id="161" count="0" size="6,8"  sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet">
-    </lootcontainer>
-	<!-- SCRAP METAL PILE -->
-	<lootcontainer id="162" count="0" size="6,8"  sound_open="UseActions/open_shopping_cart" sound_close="UseActions/close_shopping_cart">
-    </lootcontainer>
-	
-	<lootcontainer id="163" count="0" size="6,8" sound_open="UseActions/open_toilet" sound_close="UseActions/close_toilet">
-    </lootcontainer>
-	<!-- TOOLBOXES -->
-	<lootcontainer id="164" count="0" size="6,8" sound_open="UseActions/open_toolbox" sound_close="UseActions/close_toolbox">
+	 <lootcontainer id="155" name="VanillaBarrel01" size="6,8" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan">
     </lootcontainer>
 
- 
+	<!-- MEDICAL SUPPLY PILES -->
+  <lootcontainer id="156" name="VanillaMedicine01" size="6,8" sound_open="UseActions/open_garbage" sound_close="UseActions/close_trashcan">
+    </lootcontainer>
+
+<!-- VENDING MACHINE -->
+	 <lootcontainer id="157" name="VanillaVending01" count="0" size="6,8"  sound_open="UseActions/open_vending" sound_close="UseActions/close_vending" >
+    </lootcontainer>
+<!-- HARDENED CHEST -->
+	 <lootcontainer id="158" name="VanillaHardened01" count="0" size="6,8"  sound_open="UseActions/open_safe" sound_close="UseActions/close_safe">
+    </lootcontainer>
+	<!-- MEDICINE CABINETS -->
+	 <lootcontainer id="159" name="VanillaMedicine02" count="0" size="6,8"  sound_open="UseActions/open_medicine_cabinet" sound_close="UseActions/close_medicine_cabinet">
+    </lootcontainer>
+	<!-- WATER COOLER/PLASTIC BARRELS -->
+	<lootcontainer id="160" name="VanillaCooler01" count="0" size="6,8"  sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler">
+	</lootcontainer>
+    <!-- FILE CABINETS -->
+	<lootcontainer id="161" name="VanillaFilecabinet01" count="0" size="6,8"  sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet">
+    </lootcontainer>
+	<!-- SCRAP METAL PILE -->
+	<lootcontainer id="162" name="VanillaScrapPile01" count="0" size="6,8"  sound_open="UseActions/open_shopping_cart" sound_close="UseActions/close_shopping_cart">
+    </lootcontainer>
+
+	<lootcontainer id="163" name="VanillaScrapPile02" count="0" size="6,8" sound_open="UseActions/open_toilet" sound_close="UseActions/close_toilet">
+    </lootcontainer>
+	<!-- TOOLBOXES -->
+	<lootcontainer id="164" name="VanillaToolboxes01" count="0" size="6,8" sound_open="UseActions/open_toolbox" sound_close="UseActions/close_toolbox">
+    </lootcontainer>
+
+
 </append>
 
 </Configs>

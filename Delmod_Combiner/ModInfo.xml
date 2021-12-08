@@ -4,6 +4,6 @@
         <Name value="Delmod_Combiner" />
         <Description value="Adds the Combiner capability to the Workbench and the Vehicles" />
         <Author value="DelStryker, Fixed by Shouden Kalferas" />
-        <Version value="A19.3_1.0" />
+        <Version value="A20_1.0" />
     </ModInfo>
 </xml>

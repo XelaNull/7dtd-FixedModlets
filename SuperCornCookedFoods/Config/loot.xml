@@ -1,5 +1,5 @@
 <configs>
-	<append xpath="/lootcontainers/lootgroup[@name='coldfood']">
+	<append xpath="/lootcontainers/lootgroup[@name='rareFoodDrink']">
 		<item name="foodSuperCornBread" count="1,4"/>
 		<item name="foodSuperCornMeatStew" count="1,2"/>
 	</append>

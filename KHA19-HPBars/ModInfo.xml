@@ -4,7 +4,7 @@
         <Name value="Khaine's HP Bar Mod" />
         <Description value="This modlet adds the HP bar back into the game." />
         <Author value="KhaineGB" />
-        <Version value="1.0.0" />
+        <Version value="A20_1.0" />
         <Website value="https://gitlab.com/KhaineGB/khaines-modlets-a19/" />
     </ModInfo>
 </xml>
