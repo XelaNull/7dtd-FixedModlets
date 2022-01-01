@@ -1,0 +1,17 @@
+<Gouki>
+
+    <remove xpath="/recipes/recipe[@name='vehicleWheels']"/>
+    <append xpath="/recipes">
+	    <recipe name="vehicleWheels" count="1" tags="perkGreaseMonkey,learnable">
+	        <ingredient name="resourceForgedIron" count="4"/>
+	        <ingredient name="resourceScrapPolymers" count="1000"/>
+	        <ingredient name="resourceOil" count="2"/>
+	        <ingredient name="resourceCoal" count="10"/>
+	        <ingredient name="resourceAcid" count="1"/>
+	        <effect_group>
+		        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0" value=".5" tags="resourceForgedIron,resourceCoal"/>
+	        </effect_group>
+        </recipe>
+    </append>
+
+</Gouki>

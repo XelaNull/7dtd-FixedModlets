@@ -1,0 +1,24 @@
+<Gouki>
+
+	<remove xpath="/blocks/block[@name='decoCarTireSmallFlat']/drop[@event='Destroy']"/>
+    <append xpath="/blocks/block[@name='decoCarTireSmallFlat']">
+	    <drop event="Destroy" name="resourceRubber" count="1,3" tag="oreWoodHarvest"/>
+	</append>
+	
+	<remove xpath="/blocks/block[@name='decoCarTireFlat']/drop[@event='Destroy']"/>
+    <append xpath="/blocks/block[@name='decoCarTireFlat']">
+	    <drop event="Destroy" name="resourceRubber" count="2,5" tag="oreWoodHarvest"/>
+	</append>
+	
+	<remove xpath="/blocks/block[@name='decoCarTirePile']/drop[@event='Destroy']"/>
+    <append xpath="/blocks/block[@name='decoCarTirePile']">
+	    <drop event="Destroy" name="resourceRubber" count="4,8" tag="oreWoodHarvest"/>
+	</append>
+	
+	<remove xpath="/blocks/block[@name='decoCarWheelFlat']/drop[@event='Destroy']"/>
+    <append xpath="/blocks/block[@name='decoCarWheelFlat']">
+	    <drop event="Destroy" name="resourceRubber" count="2,5" tag="oreWoodHarvest"/>
+		<drop event="Destroy" name="resourceScrapIron" count="3,7" tag="oreWoodHarvest"/>
+	</append>
+	
+</Gouki>
