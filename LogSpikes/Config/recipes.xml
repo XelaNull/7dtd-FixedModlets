@@ -1,0 +1,7 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="woodLogSpike1" count="1">
+			<ingredient name="resourceWood" count="15"/>
+		</recipe>
+	</append>
+</configs>

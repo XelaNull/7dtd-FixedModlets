@@ -3,7 +3,7 @@
     <ModInfo>
         <Name value="Log Spike Modlet"/>
         <Description value="This modlet adds recipes back for the wood log spike and scrap iron spike."/>
-        <Author value="KhaineGB"/>
+        <Author value="KhaineGB, modified for serverside by ShoudenKalferas"/>
         <Version value="A20_1.0"/>
     </ModInfo>
 </xml>

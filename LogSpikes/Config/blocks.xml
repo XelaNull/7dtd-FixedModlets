@@ -12,7 +12,7 @@
 			<property name="LightOpacity" value="6"/>
 			<property name="Model" value="cone1m"/>
 			<property name="Texture" value="21,21,22,22,22,22"/>
-			<property name="UseGlobalUV" value="Local"/>
+			<!--<property name="UseGlobalUV" value="Local"/>-->
 			<property name="ImposterExchange" value="imposterPyramid" param1="10"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="FuelValue" value="300"/>
