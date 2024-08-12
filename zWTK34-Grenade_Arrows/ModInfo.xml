@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xml>
-	<ModInfo>
 		<Name value="Grenade Arrows"/>
+		<DisplayName value="Grenade Arrows"/>
 		<Description value="This little modlet adds a grenade tipped arrow to the game."/>
 		<Author value="wtk34, Modified by Shouden Kalferas"/>
-		<Version value="A20_1.0"/>
+		<Version value="1.0_1.0a"/>
 		<Website value="https://7daystodiemods.com/wtk34mods-grenade-arrow/" />
-	</ModInfo>
 </xml>

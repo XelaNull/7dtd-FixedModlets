@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-    <ModInfo>
         <Name value="Log Spike Modlet"/>
+        <DisplayName value="Log Spike Modlet"/>
         <Description value="This modlet adds recipes back for the wood log spike and scrap iron spike."/>
         <Author value="KhaineGB, modified for serverside by ShoudenKalferas"/>
-        <Version value="A20_1.0"/>
-    </ModInfo>
+        <Version value="1.0_1.0a"/>
 </xml>

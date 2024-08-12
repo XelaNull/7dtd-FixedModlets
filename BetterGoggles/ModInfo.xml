@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<ModInfo>
 		<Name value="Better Goggles" />
+		<DisplayName value="Better Goggles" />		
 		<Description value="Improved Aviator Goggles, Ski Goggles and Shades" />
 		<Author value="GneX, Modified by Shouden Kalferas" />
-		<Version value="A20_1.0" />
+		<Version value="1.0_1.0a" />
 		<Website value="https://github.com/XelaNull/7dtd-FixedModlets.git" />
-	</ModInfo>
 </xml>

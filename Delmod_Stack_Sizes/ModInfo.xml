@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<ModInfo>
 		<Name value="Delmod_Stack_Sizes" />
+		<DisplayName value="Delmod Stack Sizes" />
 		<Description value="Changes some item stack sizes" />
 		<Author value="DelStryker, Modified by Shouden Kalferas" />
-		<Version value="A20_1.0" />
+		<Version value="1.0_1.0" />
 		<Website value="https://github.com/DelStryker/Delmod" />
-	</ModInfo>
 </xml>
