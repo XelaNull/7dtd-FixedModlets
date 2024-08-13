@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-        <Name value="Khaine's HP Bar Mod" />
+        <Name value="KhainesHPBarMod" />
         <DisplayName value="Khaine's HP Bar Mod" />        
         <Description value="This modlet adds the HP bar back into the game." />
         <Author value="KhaineGB" />
-        <Version value="1.0_1.0a" />
+        <Version value="1.0.1.1" />
         <Website value="https://gitlab.com/KhaineGB/khaines-modlets-a19/" />
 </xml>

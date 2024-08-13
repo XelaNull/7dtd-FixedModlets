@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="Vanilla Expanded - Storage" />
+		<Name value="VanillaExpandedStorage" />
 		<DisplayName value="Vanilla Expanded - Storage" />
 		<Description value="Adds new immersive storage options." />
 		<Author value="TSBX" />
-		<Version value="1.0_1.0a" />
+		<Version value="1.0.1.1" />
 		<Website value="https://7daystodiemods.com/vanilla-expanded-storage/" />
 </xml>

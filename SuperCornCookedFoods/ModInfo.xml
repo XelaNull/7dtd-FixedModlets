@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="Foods That use Super Corn" />
+		<Name value="FoodsThatuseSuperCorn" />
 		<DisplayName value="Foods That use Super Corn" />
 		<Description value="Adds different foods that use Super Corn." />
 		<Author value="Gopher, Fixed By Shouden Kalferas" />
-		<Version value="1.0_1.0a" />
+		<Version value="1.0.1.1" />
 		<Website value="https://github.com/XelaNull/7dtd-FixedModlets.git" />
 </xml>

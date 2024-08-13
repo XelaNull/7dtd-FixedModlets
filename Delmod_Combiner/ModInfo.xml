@@ -4,5 +4,5 @@
         <DisplayName value="Delmod Combiner" />        
         <Description value="Adds the Combiner capability to the Workbench and the Vehicles" />
         <Author value="DelStryker, Fixed by Shouden Kalferas" />
-        <Version value="1.0_1.0a" />
+        <Version value="1.0.1.1" />
 </xml>
