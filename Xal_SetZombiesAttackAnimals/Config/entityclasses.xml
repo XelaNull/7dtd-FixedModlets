@@ -75,7 +75,7 @@
 	<!--	Humanoid zombies
 	  -->
 	  
-	<set xpath="/entity_classes/entity_class[starts-with(@name, 'zombie') and not(contains(@name, 'FatCop') or contains(@name, 'Demolition'))]/property[@name='ApproachAndAttackTarget']/@value">
+	<set xpath="/entity_classes/entity_class[starts-with(@name, 'zombie') and not(contains(@name, 'FatCop') or contains(@name, 'Demolition'))]/property[@name='AITask']/@value">
 	BreakBlock|
 	DestroyArea|
 	ApproachDistraction|
