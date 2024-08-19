@@ -24,10 +24,6 @@
 	<append xpath="/blocks/block[@name='terrGravel']">
 		<property name="MovementFactor" value="1.15"/>
 	</append>
-<!--Ice-->
-	<append xpath="/blocks/block[@name='terrIce']"><!--Ice-->
-		<property name="MovementFactor" value=".75"/>
-	</append>
 <!--Burnt Forest -->
 	<append xpath="/blocks/block[@name='terrBurntForestGround']">
 		<property name="MovementFactor" value=".95"/>
