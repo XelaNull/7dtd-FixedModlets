@@ -1,0 +1,6 @@
+<delmod>		
+
+		<!-- Include Jail Doors and Jail Bars (Locked behind engineering 4) -->
+		<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='4,5']/@tags">,jailBars, Jail Door, Jail Door Powered</append>
+
+</delmod>

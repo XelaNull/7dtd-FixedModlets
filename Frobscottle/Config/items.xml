@@ -1,0 +1,28 @@
+<configs>
+<append xpath="/items">
+
+<item name="drinkFrobscottle">
+	<property name="Extends" value="drinkJarRedTea"/>
+	<property name="DisplayType" value="Frobscottle"/>
+	<property name="EconomicValue" value="48"/>
+	<property name="CustomIcon" value="drinkJarBoiledWater"/>
+	<property name="CustomIconTint" value="84ff21"/>
+	<property class="Action0">
+		<property name="Create_item" value="drinkJarEmpty"/>
+	</property>
+
+	<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
+			<display_value name="dDuration" value="60"/>
+			<display_value name="Jump Height" value="12"/>
+			<display_value name="Jump Stamina Loss" value="-.75"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffFrobscottleDuration" operation="add" value="60"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffFrobscottleDuration" operation="set" value="180">
+				<requirement name="CVarCompare" cvar="$buffFrobscottleDuration" operation="GT" value="180"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffFrobscottle"/>
+	</effect_group>
+
+</item>
+
+</append>
+</configs>

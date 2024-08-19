@@ -1,0 +1,4 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+jailDoorDesc,blocks,Block,New,Return of the Jail Door,,,,
+jailDoorPowered,blocks,Door,New,Powered Jail Door,,Elektrische Gefängnistür,,,
+jailDoorPoweredDesc,blocks,Block,New,Electrically powered and controlled jaildoors!,,,,

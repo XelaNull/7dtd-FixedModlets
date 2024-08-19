@@ -1,0 +1,5 @@
+<delmod>
+<append xpath="/items/item[@name='poweredDoorsSchematic']/effect_group">
+<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Jail Door Powered" operation="set" value="1"/>
+</append>
+</delmod>

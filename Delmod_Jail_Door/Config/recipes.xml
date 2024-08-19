@@ -1,0 +1,35 @@
+<delmod>
+	<append xpath="/recipes">
+
+	<!--- Must be able to craft the door  -->
+	<recipe name="Jail Door" count="1" craft_area="workbench">
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceSpring" count="7"/>
+		<ingredient name="resourceMechanicalParts" count="17"/>
+	</recipe>
+
+	<!--- Must be able to craft bars to attach door to  -->
+	<recipe name="jailBars" count="1" craft_area="workbench">
+		 <ingredient name="resourceForgedIron" count="20"/>
+	</recipe>
+
+	<recipe name="Jail Door" count="1" craft_area="workbench">
+		<ingredient name="resourceForgedSteel" count="12"/>
+		<ingredient name="resourceSpring" count="2"/>
+		<ingredient name="resourceMechanicalParts" count="2"/>
+	</recipe>
+
+	<recipe name="Jail Door Powered" count="1" craft_area="workbench">
+		<ingredient name="resourceForgedSteel" count="12"/>
+		<ingredient name="resourceSpring" count="2"/>
+		<ingredient name="resourceMechanicalParts" count="2"/>
+		<ingredient name="resourceElectricParts" count="2"/>
+	</recipe>
+
+	<recipe name="Jail Door Powered" count="1" craft_area="workbench">
+		<ingredient name="Jail Door" count="1"/>
+		<ingredient name="resourceElectricParts" count="2"/>
+	</recipe>
+	</append>
+</delmod>
+
