@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-		<Name value="WeaponRepairMod" />
-		<DisplayName value="Weapon Repair Mod" />		
-		<Description value="Require parts of weapons in order to repair them." />
-		<Author value="Survager, Modified by Shouden Kalferas" />
-		<Version value="1.0.1.0" />
-		<Website value="https://7daystodiemods.com/weapons-repair-mod/" />
-</xml>
