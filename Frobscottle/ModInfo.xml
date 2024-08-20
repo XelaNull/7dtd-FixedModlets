@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 		<Name value="Frobscottle" />
+	    <DisplayName value="Frobscottle" />
 		<Description value="This modlet adds the Frobscottle drink to increase jump height and make fun farty noises" />
 		<Author value="stample, stamplesmods@gmail.com, Fixed by ShoudenKalferas" />
 		<Version value="1.0.1.0" />

@@ -164,6 +164,7 @@
 <item name="gunHandgunT0PipePistol" count="1"/>
 </lootcontainer>
 
+<!--
 <lootcontainer name="FPSMannequin" count="1,2" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
 <item name="armorMilitaryHelmet" count="1"/>
 <item name="armorMilitaryVest" count="1"/>
@@ -176,6 +177,7 @@
 <item name="apparelCigar" count="1"/>
 <item name="apparelToughGuySunglasses" count="1"/>
 </lootcontainer>
+-->
 
 </append>
 
