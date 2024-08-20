@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="Grenade Arrows" />
+		<Name value="GrenadeArrows" />
 		<DisplayName value="Grenade Arrows" />
 		<Description value="This little modlet adds a grenade tipped arrow to the game." />
 		<Author value="wtk34, Modified by Shouden Kalferas"/>
