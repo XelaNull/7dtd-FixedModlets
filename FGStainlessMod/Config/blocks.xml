@@ -1,26 +1,28 @@
 <fgstainlessmod>
 		<!-- Bringing the stainless back -->
+	<set xpath="/blocks/block[@name='concreteMaster']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">steelMaster</set>
+
 	<append xpath="/blocks">
 		<block name="stainlessSteelMaster">
 			<property name="CreativeMode" value="None"/>
 			<property name="Group" value="Building,advBuilding"/>
 			<property name="DescriptionKey" value="steelBlockGroupDesc"/>
-			<property name="Material" value="MstainlessSteel"/>		
+			<property name="Material" value="MstainlessSteel"/>
 			<property name="DisplayType" value="blockHardened"/>
 			<property name="PassThroughDamage" value="false"/>
-			<property name="Texture" value="191"/>		
+			<property name="Texture" value="191"/>
 			<property class="RepairItems">
 				<property name="resourceForgedSteel" value="5"/>
 			</property>
-			<property name="CustomUpgradeSound" value="place_block_metal"/>
+			<property name="UpgradeSound" value="place_block_metal"/>
 			<drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
-			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>		
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 			<property name="DescriptionKey" value="steelBlockGroupDesc"/>
 			<property name="FilterTags" value="MC_building"/>
-			<property name="SortOrder1" value="40p0"/>
-			<property name="SortOrder2" value="0002"/>
-		</block>	
+			<property name="SortOrder1" value="M100"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
 		<block name="stainlessSteelShapes" shapes="All">
 			<property name="Group" value="Building,advBuilding" />
 			<property name="DescriptionKey" value="steelBlockGroupDesc" />
@@ -28,19 +30,20 @@
 			<property name="DisplayType" value="blockHardened" />
 			<property name="PassThroughDamage" value="false" />
 			<property name="Texture" value="191" />
+			<property name="Shape" value="New"/>
 			<property name="UiBackgroundTexture" value="191" />
 			<property class="RepairItems">
 				<property name="resourceForgedSteel" value="5" />
 			</property>
-			<property name="CustomUpgradeSound" value="place_block_metal" />
-			<drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest" />
+			<property name="UpgradeSound" value="place_block_metal" />
+			<drop event="Harvest" name="resourceScrapIron" count="65" tag="allHarvest" />
 			<drop event="Destroy" count="0" />
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
 			<property name="EconomicValue" value="160" />
 			<property name="FilterTags" value="MC_Shapes" />
-			<property name="SortOrder1" value="0011" />
-		</block>	
-	</append>		
+			<property name="SortOrder1" value="S050" />
+		</block>
+	</append>
 	<append xpath="/blocks/block[@name='steelMaster']">
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="stainlessSteelMaster"/>
@@ -48,7 +51,7 @@
 			<property name="ItemCount" value="2"/>
 			<property name="UpgradeHitCount" value="2"/>
 		</property>
-	</append>		
+	</append>
 	<append xpath="/blocks/block[@name='steelShapes']">
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="stainlessSteelShapes"/>
@@ -56,5 +59,5 @@
 			<property name="ItemCount" value="2"/>
 			<property name="UpgradeHitCount" value="2"/>
 		</property>
-	</append>		
+	</append>
 </fgstainlessmod>

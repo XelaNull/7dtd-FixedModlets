@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <!-- Add notes from the Duke to airdrops. -->
+    <append xpath="//lootgroup[@name='groupAirDrop']">
+        <item name="noteDukeAirdrop" count="1" />
+    </append>
+</configs>

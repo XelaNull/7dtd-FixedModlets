@@ -1,0 +1,41 @@
+<XineladaLendaria>
+
+<!-- Remove EconomicValue from Vanilla Vehicles and Parts -->
+
+<remove xpath="//item[@name='vehicleBicycleChassis']//property[@name='EconomicValue']"/>
+<remove xpath="//item[@name='vehicleBicycleHandlebars']//property[@name='EconomicValue']"/>
+<remove xpath="//item[@name='vehicleBicyclePlaceable']//property[@name='EconomicValue']"/>
+
+<remove xpath="//item[@name='vehicleMinibikeChassis']//property[@name='EconomicValue']"/>
+<remove xpath="//item[@name='vehicleMinibikeHandlebars']//property[@name='EconomicValue']"/>
+<remove xpath="//item[@name='vehicleMinibikePlaceable']//property[@name='EconomicValue']"/>
+
+<remove xpath="//item[@name='vehicleMotorcycleChassis']//property[@name='EconomicValue']"/>
+<remove xpath="//item[@name='vehicleMotorcycleHandlebars']//property[@name='EconomicValue']"/>
+<remove xpath="//item[@name='vehicleMotorcyclePlaceable']//property[@name='EconomicValue']"/>
+
+<remove xpath="//item[@name='vehicleTruck4x4Chassis']//property[@name='EconomicValue']"/>
+<remove xpath="//item[@name='vehicleTruck4x4Accessories']//property[@name='EconomicValue']"/>
+<remove xpath="//item[@name='vehicleTruck4x4Placeable']//property[@name='EconomicValue']"/>
+
+<remove xpath="//item[@name='vehicleGyroCopterChassis']//property[@name='EconomicValue']"/>
+<remove xpath="//item[@name='vehicleGyroCopterAccessories']//property[@name='EconomicValue']"/>
+<remove xpath="//item[@name='vehicleGyrocopterPlaceable']//property[@name='EconomicValue']"/>
+
+
+
+<!-- Remove Vanilla Vehicles and Parts from quests rewards -->
+
+<setattribute xpath="//item[@name='questRewardMinibikePartsBundle']//property[@name='Random_item']" name="Random_item">vehiclesSkillMagazine,vehiclesSkillMagazine</setattribute>
+<setattribute xpath="//item[@name='questRewardMinibikePartsBundle']//property[@name='Random_item_count']" name="Random_item_count">5,10</setattribute>
+
+<setattribute xpath="//item[@name='questRewardMotorcyclePartsBundle']//property[@name='Random_item']" name="Random_item">vehiclesSkillMagazine,vehiclesSkillMagazine</setattribute>
+<setattribute xpath="//item[@name='questRewardMotorcyclePartsBundle']//property[@name='Random_item_count']" name="Random_item_count">5,10</setattribute>
+
+<setattribute xpath="//item[@name='questReward4x4PartsBundle']//property[@name='Random_item']" name="Random_item">vehiclesSkillMagazine,vehiclesSkillMagazine</setattribute>
+<setattribute xpath="//item[@name='questReward4x4PartsBundle']//property[@name='Random_item_count']" name="Random_item_count">5,10</setattribute>
+
+<setattribute xpath="//item[@name='questRewardGyrocopterPartsBundle']//property[@name='Random_item']" name="Random_item">vehiclesSkillMagazine,vehiclesSkillMagazine</setattribute>
+<setattribute xpath="//item[@name='questRewardGyrocopterPartsBundle']//property[@name='Random_item_count']" name="Random_item_count">5,10</setattribute>
+
+</XineladaLendaria>

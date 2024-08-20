@@ -1,0 +1,11 @@
+<XineladaLendaria>
+
+    <remove xpath="//trader_item_group[@name='groupVehicles']"/>
+    <insertBefore xpath="//trader_item_group[@name='workstations']">
+    		<trader_item_group name="groupVehicles" count="1">
+			<item name="vehicleWheels"/>
+			<item name="smallEngine"/>
+		</trader_item_group>
+    </insertBefore>
+
+</XineladaLendaria>

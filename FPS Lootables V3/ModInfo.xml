@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="FPS_Lootables_V3" />
+    <DisplayName value="FPS Lootables V3" />
+    <Version value="21.1.0.0" />
+    <Description value="Get loot from tractors, forklifts, old cars, plastic barrels, wood barrels and many other places not lootable previously!" />
+    <Author value="fatrap" />
+    <Website value="" />
+</xml>

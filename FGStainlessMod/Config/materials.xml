@@ -15,6 +15,6 @@
 		<property name="explosionresistance" value="6" />
 		<property name="MaxDamage" value="30000" />
 		<property name="Experience" value="30" />
-	</material>	
+	</material>
 	</append>
 </fgstainlessmod>

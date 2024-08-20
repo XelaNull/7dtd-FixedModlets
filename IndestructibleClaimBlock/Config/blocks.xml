@@ -1,0 +1,27 @@
+<config>
+	<!-- *** LAND_CLAIM_BLOCK, LCB -->
+<set xpath="/blocks/block[@name='keystoneBlock']">
+		<property name="CreativeMode" value="Player"/>
+		<property name="Class" value="LandClaim"/>
+		<property name="Tags" value="landclaim"/>
+		<property name="IndexName" value="lpblock"/>
+		<property name="DisplayInfo" value="Custom"/>
+		<property name="DisplayType" value="blockHardened"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="Material" value="Mclaimblock"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="Entities/Industrial/landClaimBlockPrefab"/>
+		<property name="PlacementDistance" value="25"/>
+		<property name="AllowedRotations" value="No45"/>
+		<property name="Weight" value="0"/>
+		<property name="EconomicValue" value="1"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="TakeDelay" value="30"/>
+		<drop event="Destroy" count="0"/>
+		<property name="SortOrder1" value="B050"/>
+		<property name="SortOrder2" value="0000"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</set>
+
+</config>

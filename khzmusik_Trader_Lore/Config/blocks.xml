@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <!-- In this lore the Duke is a military leader, not a "casino Indian" stereotype -->
+    <set xpath="//block[@name='flagWallHungDuke']/property[@name='Model']/@value">Entities/Decor/flagUsaPrefab</set>
+    <set xpath="//block[@name='flagTopWallHungDuke']/property[@name='Model']/@value">Entities/Decor/flagUsaPrefab</set>
+</configs>

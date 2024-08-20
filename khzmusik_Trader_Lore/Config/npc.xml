@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <!-- Joel: gets armor from Cassadores -->
+    <set xpath="/npc/npc_info[@id='traitorjoel']/@dialog_id">trader_lore_cassadores</set>
+    <!-- Jen: gets medical supplies from Noah -->
+    <set xpath="/npc/npc_info[@id='traderjen']/@dialog_id">trader_lore_noah</set>
+    <!-- Bob: gets tools and parts from Whiteriver -->
+    <set xpath="/npc/npc_info[@id='traderbob']/@dialog_id">trader_lore_whiteriver</set>
+    <!-- Hugh: gets guns & ammo from the Duke -->
+    <set xpath="/npc/npc_info[@id='traderhugh']/@dialog_id">trader_lore_duke</set>
+    <!-- Rekt: just plain hostile -->
+    <set xpath="/npc/npc_info[@id='traderrekt']/@dialog_id">trader_lore_hostile</set>
+</configs>

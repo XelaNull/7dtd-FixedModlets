@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <append xpath="/items">
+        <item name="noteDukeAirdrop">
+            <property name="Extends" value="blankNoteMaster" />
+            <property name="CreativeMode" value="None" />
+            <property name="DescriptionKey" value="noteDukeAirdropDesc" />
+            <property name="CustomIcon" value="questMaster" />
+        </item>
+    </append>
+</configs>

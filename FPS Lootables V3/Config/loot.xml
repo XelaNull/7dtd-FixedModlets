@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<FPS>
+
+<append xpath="/lootcontainers">
+
+<lootcontainer name="FPSFoods" count="1,2" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+<item name="foodCanChili" count="1"/>
+<item name="foodCanBeef" count="1"/>
+<item name="foodCanCatfood" count="1"/>
+<item name="foodGrilledMeat" count="1"/>
+<item name="foodCanChicken" count="1"/>
+<item name="foodCanDogfood" count="1"/>
+<item name="foodCanSham" count="1"/>
+<item name="foodCanSoup" count="1"/>
+<item name="foodCanPasta" count="1"/>
+<item name="foodCanTuna" count="1"/>
+<item name="foodCanPears" count="1"/>
+</lootcontainer>
+
+<lootcontainer name="FPSDrinks" count="1,2" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+<item name="drinkJarRiverWater" count="1,2"/>
+<item name="drinkJarBoiledWater" count="1,2"/>
+<item name="drinkJarPureMineralWater" count="1" prob=".50"/>
+<item name="drinkJarBeer" count="1,2"/>
+<item name="drinkJarCoffee" count="1,2"/>
+<item name="drinkCanMegaCrush" count="1" prob=".25"/>
+</lootcontainer>
+
+<lootcontainer name="FPSVendingFood" count="1,2" size="6,3" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+<item name="foodChiliDog" count="1"/>
+<item name="foodFishTacos" count="1"/>
+<item name="foodMeatStew" count="1"/>
+<item name="foodShepardsPie" count="1"/>
+<item name="foodSteakAndPotato" count="1"/>
+<item name="foodVegetableStew" count="1"/>
+<item name="foodSpaghetti" count="1"/>
+<item name="foodBlueberryPie" count="1"/>
+<item name="foodMeatStew" count="1"/>
+<item name="foodShamChowder" count="1"/>
+<item name="foodHoboStew" count="1"/>
+</lootcontainer>
+
+<lootcontainer name="FPSVendingDrinks" count="1,2" size="6,3" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+<item name="drinkJarBeer" count="1"/>
+<item name="drinkJarBoiledWater" count="1"/>
+<item name="drinkJarPureMineralWater" count="1"/>
+<item name="drinkJarYuccaJuice" count="1"/>
+<item name="drinkJarGoldenRodTea" count="1"/>
+<item name="drinkJarRedTea" count="1"/>
+<item name="drinkJarCoffee" count="1"/>
+</lootcontainer>
+
+<lootcontainer name="FPSElectronics" count="1,2" size="6,3" sound_open="UseActions/open_toolbox" sound_close="UseActions/close_toolbox" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+<item name="resourceDuctTape" count="1,5"/>
+<item name="resourceElectricParts" count="1,5"/>
+<item name="resourceSpring" count="1,5"/>
+</lootcontainer>
+
+<lootcontainer name="FPSMechanicals" count="1,2" size="6,3" sound_open="UseActions/open_toolchest" sound_close="UseActions/close_toolchest" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+<item name="resourceMechanicalParts" count="1,5"/>
+<item name="resourceForgedSteel" count="1,5"/>
+<item name="resourceForgedIron" count="1,5"/>
+</lootcontainer>
+
+<lootcontainer name="FPSCarstuff" count="1,2" size="6,3" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+<item name="resourceSewingKit" count="1,2"/>
+<item name="resourceScrapPolymers" count="25,50"/>
+<item name="resourceRepairKit" count="1,2"/>
+<item name="resourceForgedSteel" count="5,10"/>
+</lootcontainer>
+
+<lootcontainer name="FPSFarmstuff" count="1,2" size="6,3" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+<item name="resourceClayLump" count="100,500"/>
+<item name="resourceRockSmall" count="100,500"/>
+<item name="resourceWood" count="100,500"/>
+<item name="resourceScrapLead" count="100,500"/>
+<item name="resourceScrapBrass" count="100,500"/>
+<item name="resourceScrapIron" count="100,500"/>
+<item name="resourceCoal" count="100,500"/>
+</lootcontainer>
+
+<lootcontainer name="FPSCraftstuff" count="1,2" size="6,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+<item name="resourceSewingKit" count="1,2"/>
+<item name="resourceGunPowder" count="1,10"/>
+<item name="resourceDuctTape" count="1,2"/>
+<item name="resourceOil" count="1,5"/>
+<item name="resourceSpring" count="1,2"/>
+<item name="resourceHeadlight" count="1,2"/>
+<item name="resourceElectricParts" count="1,2"/>
+<item name="resourceMechanicalParts" count="1,2"/>
+<item name="resourceAcid" count="1,2"/>
+<item name="resourceCloth" count="1,5"/>
+<item name="resourceMetalPipe" count="1,5"/>
+<item name="resourceGlue" count="1,2"/>
+<item name="resourceScrapPolymers" count="1,10"/>
+<item name="resourceNail" count="10,20"/>
+</lootcontainer>
+
+<lootcontainer name="FPSWorkstuff" count="1,2" size="6,3" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+<item name="resourceMetalPipe" count="5,10"/>
+<item name="resourceNail" count="10,20"/>
+<item name="resourceMechanicalParts" count="1,3"/>
+<item name="resourceElectricParts" count="1,3"/>
+<item name="resourceDuctTape" count="1,3"/>
+<item name="resourceGlue" count="1,3"/>
+<item name="resourceOil" count="1,3"/>
+<item name="resourceSpring" count="1,3"/>
+</lootcontainer>
+
+<lootcontainer name="FPSBoomstuff" count="1,3" size="6,3" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+<item name="ammo9mmBulletBall" count="10,50"/>
+<item name="ammo9mmBulletHP" count="10,40"/>
+<item name="ammo9mmBulletAP" count="10,30"/>
+<item name="ammo44MagnumBulletBall" count="10,50"/>
+<item name="ammo44MagnumBulletHP" count="10,40"/>
+<item name="ammo44MagnumBulletAP" count="10,30"/>
+<item name="ammoShotgunShell" count="10,50"/>
+<item name="ammoShotgunSlug" count="10,40"/>
+<item name="ammo762mmBulletBall" count="10,50"/>
+<item name="ammo762mmBulletHP" count="10,40"/>
+<item name="ammo762mmBulletAP" count="10,30"/>
+<item name="ammoArrowFlaming" count="5,20"/>
+<item name="ammoCrossbowBoltFlaming" count="5,15"/>
+<item name="ammoArrowExploding" count="5,10"/>
+<item name="ammoCrossbowBoltExploding" count="5,10"/>
+<item name="ammoRocketFrag" count="1,5"/>
+<item name="thrownAmmoPipeBomb" count="1,5"/>
+<item name="thrownDynamite" count="1,5"/>
+<item name="thrownAmmoMolotovCocktail" count="1,5"/>
+<item name="thrownGrenade" count="1,5"/>
+<item name="thrownGrenadeContact" count="1,5"/>
+<item name="thrownTimedCharge" count="1,5"/>
+</lootcontainer>
+
+<lootcontainer name="FPSSeeds" count="1,5" size="6,3" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+<item name="plantedPotato1" count="1,5"/>
+<item name="plantedCoffee1" count="1,5"/>
+<item name="plantedCorn1" count="1,5"/>
+<item name="plantedBlueberry1" count="1,5"/>
+<item name="plantedGoldenrod1" count="1,5"/>
+<item name="plantedAloe1" count="1,5"/>
+<item name="plantedMushroom1" count="1,5"/>
+<item name="plantedYucca1" count="1,5"/>
+<item name="plantedHop1" count="1,5"/>
+<item name="plantedChrysanthemum1" count="1,5"/>
+<item name="plantedPumpkin1" count="1,5"/>
+<item name="plantedGraceCorn1" count="1,5"/>
+</lootcontainer>
+
+<lootcontainer name="FPSCone" count="1,2" size="6,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+<item name="drinkJarRiverWater" count="1,3" prob="1"/>
+<item name="drinkJarBoiledWater" count="1,2" prob="0.5"/>
+<item name="drinkJarPureMineralWater" count="1"  prob=".10"/>
+</lootcontainer>
+
+<lootcontainer name="FPSBodyBag" count="1,2" size="6,3" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+<item name="resourceBrokenGlass" count="5,10"/>
+<item name="resourceCloth" count="5,10"/>
+<item name="resourceLeather" count="5,10"/>
+<item name="resourcePaper" count="5,10"/>
+<item name="casinoCoin" count="10,50"/>
+<item name="oldCash" count="10,50"/>
+<item name="resourceBone" count="5,10"/>
+<item name="gunHandgunT0PipePistol" count="1"/>
+</lootcontainer>
+
+<lootcontainer name="FPSMannequin" count="1,2" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+<item name="armorMilitaryHelmet" count="1"/>
+<item name="armorMilitaryVest" count="1"/>
+<item name="armorMilitaryGloves" count="1"/>
+<item name="armorMilitaryLegs" count="1"/>
+<item name="armorMilitaryBoots" count="1"/>
+<item name="armorMilitaryStealthBoots" count="1"/>
+<item name="apparelArmyPants" count="1"/>
+<item name="apparelArmyShirt" count="1"/>
+<item name="apparelCigar" count="1"/>
+<item name="apparelToughGuySunglasses" count="1"/>
+</lootcontainer>
+
+</append>
+
+</FPS>

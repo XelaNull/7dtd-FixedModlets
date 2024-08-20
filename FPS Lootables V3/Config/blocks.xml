@@ -1,0 +1,496 @@
+<FPS>
+
+<append xpath="/blocks/block[@name='cntArmyTruckOpen']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSCraftstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='tractorWhite']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSSeeds'/>
+</append>
+
+<append xpath="/blocks/block[@name='tractorRed']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSSeeds'/>
+</append>
+
+<append xpath="/blocks/block[@name='tractorGreen']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSSeeds'/>
+</append>
+
+<append xpath="/blocks/block[@name='tractorBlue']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSSeeds'/>
+</append>
+
+<append xpath="/blocks/block[@name='excavatorWhite']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='excavatorRed']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='excavatorOrange']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='excavatorYellow']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='excavatorGreen']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='excavatorBlue']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='excavatorGrey']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='excavatorClawWhite']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='excavatorClawRed']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='excavatorClawOrange']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='excavatorClawYellow']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='excavatorClawGreen']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='excavatorClawBlue']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='excavatorClawGrey']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='backhoeWhite']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSFarmstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='backhoeRed']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSFarmstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='backhoeOrange']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSFarmstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='backhoeYellow']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSFarmstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='backhoeGreen']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSFarmstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='backhoeBlue']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSFarmstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='backhoeGrey']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSFarmstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='forkliftWhite']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSWorkstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='forkliftRed']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSWorkstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='forkliftOrange']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSWorkstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='forkliftYellow']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSWorkstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='forkliftGreen']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSWorkstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='forkliftBlue']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSWorkstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='forklift2White']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSWorkstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='forklift2Red']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSWorkstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='forklift2Orange']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSWorkstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='forklift2Yellow']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSWorkstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='forklift2Green']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSWorkstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='forklift2Blue']">
+    <property name="Class" value="Loot"/>	
+		<property name='LootList' value = 'FPSWorkstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='burntSedan01']">	
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value = 'FPSCarstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='abandonedSUV01White']">	
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value = 'FPSCarstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='abandonedPickupTruck01White']">	
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value = 'FPSCarstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='burntSedan3Wide01']">	
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value = 'FPSCarstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='abandonedSUV3Wide01White']">	
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value = 'FPSCarstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='abandonedPickupTruck3Wide01White']">	
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value = 'FPSCarstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='cntBarrelPlasticSingle00']">	
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value = 'FPSDrinks'/>
+</append>
+
+<append xpath="/blocks/block[@name='cntBarrelPlasticSingle45']">	
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value = 'FPSDrinks'/>
+</append>
+
+<append xpath="/blocks/block[@name='cntBarrelPlasticQuadA']">	
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value = 'FPSDrinks'/>
+</append>
+
+<append xpath="/blocks/block[@name='cntBarrelPlasticQuadB']">	
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value = 'FPSDrinks'/>
+</append>
+
+<append xpath="/blocks/block[@name='wineBarrel' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSFoods'/>
+</append>
+
+<append xpath="/blocks/block[@name='wineBarrelSet' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSFoods'/>
+</append>
+
+<append xpath="/blocks/block[@name='wineBarrelPlain' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSFoods'/>
+</append>
+
+<set xpath="/blocks/block[@name='wineBarrelPlayer']/property[@name='CreativeMode']/@value">Player</set>
+<set xpath="/blocks/block[@name='wineBarrelPlayer']/property[@name='LootList']/@value">FPSFoods</set>
+
+<append xpath="/blocks/block[@name='wineBarrelPlayerSecure' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSFoods'/>
+</append>
+
+<set xpath="/blocks/block[@name='wineBarrelSetPlayer']/property[@name='CreativeMode']/@value">Player</set>
+<set xpath="/blocks/block[@name='wineBarrelSetPlayer']/property[@name='LootList']/@value">FPSFoods</set>
+
+<append xpath="/blocks/block[@name='wineBarrelSetPlayerSecure' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSFoods'/>
+</append>
+
+<append xpath="/blocks/block[@name='wineBarrelPlainPlayerSecure' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSFoods'/>
+</append>
+
+<set xpath="/blocks/block[@name='wineBarrelPlainPlayer']/property[@name='LootList']/@value">FPSFoods</set>
+
+<append xpath="/blocks/block[@name='cntIceMachine' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSVendingDrinks'/>
+</append>
+
+<append xpath="/blocks/block[@name='cntVendingMachine2Broken' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSVendingDrinks'/>
+</append>
+
+<append xpath="/blocks/block[@name='cntVendingMachineEnergyBroken' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSVendingDrinks'/>
+</append>
+
+<append xpath="/blocks/block[@name='cntVendingMachineWaterBroken' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSVendingDrinks'/>
+</append>
+
+<append xpath="/blocks/block[@name='cntVendingMachineSnacksFullBroken' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSVendingFood'/>
+</append>
+
+<append xpath="/blocks/block[@name='cntVendingMachineSnacksEmptyBroken' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSVendingFood'/>
+</append>
+
+<append xpath="/blocks/block[@name='electricalBox01' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSElectronics'/>
+</append>
+
+<append xpath="/blocks/block[@name='electricalBox02' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSElectronics'/>
+</append>
+
+<append xpath="/blocks/block[@name='airConditioner' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSMechanicals'/>
+</append>
+
+<append xpath="/blocks/block[@name='tableSaw' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSMechanicals'/>
+</append>
+
+<append xpath="/blocks/block[@name='goreBlockAnimal' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='goreBlockHumanCorpse' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='goreBlockHumanCorpse1' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='goreBlockHumanCorpse2' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='goreBlockHumanCorpse2Offset' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='goreBlockHumanCorpse3' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='goreBlockHumanBones' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='goreHumanSkull' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='breakerBoxClosed' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSElectronics'/>
+</append>
+
+<append xpath="/blocks/block[@name='breakerBoxOpen' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSElectronics'/>
+</append>
+
+<append xpath="/blocks/block[@name='breakerBoxBroken' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSElectronics'/>
+</append>
+
+<append xpath="/blocks/block[@name='breakerBoxWallClosed' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSElectronics'/>
+</append>
+
+<append xpath="/blocks/block[@name='breakerBoxWallOpen' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSElectronics'/>
+</append>
+
+<append xpath="/blocks/block[@name='utilityGasMeter01' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'gasBarrel'/>
+</append>
+
+<append xpath="/blocks/block[@name='utilityGasMeter02' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'gasBarrel'/>
+</append>
+
+<append xpath="/blocks/block[@name='fireHydrant' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSDrinks'/>
+</append>
+
+<append xpath="/blocks/block[@name='fireHydrantYellow' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSDrinks'/>
+</append>
+
+<append xpath="/blocks/block[@name='coneConstruction' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSCone'/>
+</append>
+
+<append xpath="/blocks/block[@name='bodyBagBlack' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='bodyBagYellow' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='bodyBagPile' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='bodyBagPileMix' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='bodyBagPair' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='bodyBagPairYellow' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='bodyBagPairMixed' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='bodyBagBlackFlies' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='bodyBagYellowFlies' ]">	
+	  <property name="Class" value="Loot"/>
+	  <property name='LootList' value = 'FPSBodyBag'/>
+</append>
+
+<append xpath="/blocks/block[@name='palletCartonMilitaryBase']">	
+	    <property name="Class" value="Loot"/>
+	    <property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='traderShelvesWoodFullA']">	
+	    <property name="Class" value="Loot"/>
+	    <property name='LootList' value = 'FPSCraftstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='traderShelvesMetalFullA']">	
+	    <property name="Class" value="Loot"/>
+	    <property name='LootList' value = 'FPSWorkstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='traderMilitaryMetalShelvesFull']">	
+	    <property name="Class" value="Loot"/>
+	    <property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='traderMilitaryGoodsA']">	
+	    <property name="Class" value="Loot"/>
+	    <property name='LootList' value = 'FPSBoomstuff'/>
+</append>
+
+<append xpath="/blocks/block[@name='decoMannequinMale']">	
+	    <property name="Class" value="Loot"/>
+	    <property name='LootList' value = 'FPSMannequin'/>
+</append>
+                                            
+</FPS>

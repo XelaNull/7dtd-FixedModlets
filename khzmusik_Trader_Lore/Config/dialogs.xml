@@ -1,0 +1,2306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <!-- Remove the default dialog so we can replace it -->
+    <remove xpath="/dialogs/dialog[@id='trader']" />
+    <append xpath="/dialogs">
+        <!--
+            Default dialog. This is now unused by vanilla traders, but it will be used by any
+            custom traders that still use the default.
+        -->
+        <dialog id="trader" startstatementid="start">
+            <!-- Statements -->
+            <statement id="start" text="dialog_trader_statement_start">
+                <response_entry id="shop" />
+                <response_entry id="jobsnone" />
+                <response_entry id="jobshave1" />
+                <response_entry id="jobshave2" />
+                <response_entry id="jobshave3" />
+                <response_entry id="jobshave4" />
+                <response_entry id="jobshave5" />
+                <response_entry id="jobshave6" />
+                <response_entry id="jobshavenotallowed" />
+                <response_entry id="specialjobshave" />
+                <response_entry id="background" />
+                <response_entry id="admin" />
+                <response_entry id="done" />
+            </statement>
+
+            <statement id="currentjobs1" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="1" />
+                <quest_entry listindex="1" tier="1" />
+                <quest_entry listindex="2" tier="1" />
+                <quest_entry listindex="3" tier="1" />
+                <quest_entry listindex="4" tier="1" />
+                <response_entry id="jobsnext2" uniqueid="next" />
+                <response_entry id="jobsnext3" uniqueid="next" />
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs2" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="2" />
+                <quest_entry listindex="1" tier="2" />
+                <quest_entry listindex="2" tier="2" />
+                <quest_entry listindex="3" tier="2" />
+                <quest_entry listindex="4" tier="2" />
+
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext3" uniqueid="next" />
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs3" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="3" />
+                <quest_entry listindex="1" tier="3" />
+                <quest_entry listindex="2" tier="3" />
+                <quest_entry listindex="3" tier="3" />
+                <quest_entry listindex="4" tier="3" />
+
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs4" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="4" />
+                <quest_entry listindex="1" tier="4" />
+                <quest_entry listindex="2" tier="4" />
+                <quest_entry listindex="3" tier="4" />
+                <quest_entry listindex="4" tier="4" />
+
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs5" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="5" />
+                <quest_entry listindex="1" tier="5" />
+                <quest_entry listindex="2" tier="5" />
+                <quest_entry listindex="3" tier="5" />
+                <quest_entry listindex="4" tier="5" />
+
+                <response_entry id="jobsprev4" uniqueid="prev" />
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext6" uniqueid="next" />
+
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs6" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="6" />
+                <quest_entry listindex="1" tier="6" />
+                <quest_entry listindex="2" tier="6" />
+                <quest_entry listindex="3" tier="6" />
+                <quest_entry listindex="4" tier="6" />
+
+                <response_entry id="jobsprev5" uniqueid="prev" />
+                <response_entry id="jobsprev4" uniqueid="prev" />
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobsspecial" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry type="special" listindex="0" />
+                <quest_entry type="special" listindex="1" />
+                <quest_entry type="special" listindex="2" />
+                <quest_entry type="special" listindex="3" />
+                <quest_entry type="special" listindex="4" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="nojobs" text="dialog_trader_statement_nojobs" nextstatementid="start" />
+
+            <statement id="jobsnotallowed" text="dialog_trader_statement_notallowed" nextstatementid="start" />
+
+            <statement id="admin" text="dialog_trader_statement_admin">
+                <response_entry id="restock" />
+                <response_entry id="resetquests" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <!-- Lore -->
+            <statement id="background" text="dialog_trader_statement_background">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="navezgane" text="dialog_trader_statement_navezgane">
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts" text="dialog_trader_statement_whiteriveroutposts">
+                <response_entry id="whiteriveroutposts_relationship" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="whiteriveroutposts_history" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts_history" text="dialog_trader_statement_unknown_history">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="theduke" text="dialog_trader_statement_theduke">
+                <response_entry id="theduke_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="theduke_history" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_history" text="dialog_trader_statement_unknown_history">
+                <response_entry id="theduke_leader" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_leader" text="dialog_trader_statement_unknown_leader">
+                <response_entry id="theduke_motive" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_motive" text="dialog_trader_statement_theduke_motive">
+                <response_entry id="theduke_name" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_name" text="dialog_trader_statement_dont_know">
+                <response_entry id="navezgane" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="cassadores" text="dialog_trader_statement_cassadores">
+                <response_entry id="cassadores_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="cassadores_name" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_name" text="dialog_trader_statement_cassadores_name">
+                <response_entry id="cassadores_encounter" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_encounter" text="dialog_trader_statement_surprised_alive">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="noah" text="dialog_trader_statement_noah">
+                <response_entry id="noah_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="noah_history" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_history" text="dialog_trader_statement_noah_history">
+                <response_entry id="noah_leader" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_leader" text="dialog_trader_statement_unknown_leader">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <!-- Responses -->
+            <response id="shop" text="dialog_trader_response_shop">
+                <action type="Trader" id="trade" />
+            </response>
+
+            <response id="jobsnone" text="dialog_trader_response_jobsnone" nextstatementid="nojobs">
+                <requirement type="QuestStatus" value="InProgress" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave1" text="dialog_trader_response_jobshave" nextstatementid="currentjobs1">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="1" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave2" text="dialog_trader_response_jobshave" nextstatementid="currentjobs2">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="2" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave3" text="dialog_trader_response_jobshave" nextstatementid="currentjobs3">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="3" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave4" text="dialog_trader_response_jobshave" nextstatementid="currentjobs4">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="4" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave5" text="dialog_trader_response_jobshave" nextstatementid="currentjobs5">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="5" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave6" text="dialog_trader_response_jobshave" nextstatementid="currentjobs6">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="6" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshavenotallowed" text="dialog_trader_response_jobshave" nextstatementid="jobsnotallowed">
+			    <requirement type="CheckCVar" id="DisableQuesting" value="1" requirementtype="Hide" />
+		    </response>
+		
+		    <response id="jobsprev1" text="dialog_trader_response_prevtier" nextstatementid="currentjobs1">
+                <requirement type="QuestTier" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev2" text="dialog_trader_response_prevtier" nextstatementid="currentjobs2">
+                <requirement type="QuestTier" value="2" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev3" text="dialog_trader_response_prevtier" nextstatementid="currentjobs3">
+                <requirement type="QuestTier" value="3" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev4" text="dialog_trader_response_prevtier" nextstatementid="currentjobs4">
+                <requirement type="QuestTier" value="4" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev5" text="dialog_trader_response_prevtier" nextstatementid="currentjobs5">
+                <requirement type="QuestTier" value="5" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext2" text="dialog_trader_response_nexttier" nextstatementid="currentjobs2">
+                <requirement type="QuestTier" value="2" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext3" text="dialog_trader_response_nexttier" nextstatementid="currentjobs3">
+                <requirement type="QuestTier" value="3" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext4" text="dialog_trader_response_nexttier" nextstatementid="currentjobs4">
+                <requirement type="QuestTier" value="4" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext5" text="dialog_trader_response_nexttier" nextstatementid="currentjobs5">
+                <requirement type="QuestTier" value="5" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext6" text="dialog_trader_response_nexttier" nextstatementid="currentjobs6">
+                <requirement type="QuestTier" value="6" requirementtype="Hide" />
+            </response>
+
+            <response id="specialjobshave" text="dialog_trader_response_specialjobshave" nextstatementid="currentjobsspecial">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" tag="special" />
+                <requirement type="QuestsAvailable" value="special" requirementtype="Hide" />
+            </response>
+
+            <response id="nevermind" text="dialog_trader_response_nevermind" nextstatementid="start" />
+
+            <response id="admin" text="dialog_trader_response_admin" nextstatementid="admin">
+                <requirement type="Admin" requirementtype="Hide" />
+            </response>
+
+            <response id="restock" text="dialog_trader_response_restock">
+                <action type="Trader" id="restock" />
+            </response>
+
+            <response id="resetquests" text="dialog_trader_response_resetquests">
+                <action type="Trader" id="reset_quests" />
+            </response>
+
+            <response id="done" text="dialog_trader_response_nevermind" />
+
+            <!-- Lore -->
+            <response id="background" text="dialog_trader_response_background" nextstatementid="background" />
+
+            <response id="navezgane" text="dialog_trader_response_navezgane" nextstatementid="navezgane" />
+
+            <response id="whiteriveroutposts" text="dialog_trader_response_whiteriveroutposts" nextstatementid="whiteriveroutposts" />
+            <response id="whiteriveroutposts_relationship" text="dialog_trader_response_whiteriveroutposts_relationship" nextstatementid="whiteriveroutposts_relationship" />
+            <response id="whiteriveroutposts_history" text="dialog_trader_response_whiteriveroutposts_history" nextstatementid="whiteriveroutposts_history" />
+
+            <response id="theduke" text="dialog_trader_response_theduke" nextstatementid="theduke" />
+            <response id="theduke_relationship" text="dialog_trader_response_theduke_relationship" nextstatementid="theduke_relationship" />
+            <response id="theduke_history" text="dialog_trader_response_male_history" nextstatementid="theduke_history" />
+            <response id="theduke_leader" text="dialog_trader_response_theduke_leader" nextstatementid="theduke_leader" />
+            <response id="theduke_motive" text="dialog_trader_response_male_motive" nextstatementid="theduke_motive" />
+            <response id="theduke_name" text="dialog_trader_response_theduke_name" nextstatementid="theduke_name" />
+
+            <response id="cassadores" text="dialog_trader_response_cassadores" nextstatementid="cassadores" />
+            <response id="cassadores_relationship" text="dialog_trader_response_cassadores_relationship" nextstatementid="cassadores_relationship" />
+            <response id="cassadores_name" text="dialog_trader_response_cassadores_name" nextstatementid="cassadores_name" />
+            <response id="cassadores_encounter" text="dialog_trader_response_bad_encounter" nextstatementid="cassadores_encounter" />
+
+            <response id="noah" text="dialog_trader_response_noah" nextstatementid="noah" />
+            <response id="noah_relationship" text="dialog_trader_response_noah_relationship" nextstatementid="noah_relationship" />
+            <response id="noah_history" text="dialog_trader_response_male_history" nextstatementid="noah_history" />
+            <response id="noah_leader" text="dialog_trader_response_noah_leader" nextstatementid="noah_leader" />
+        </dialog>
+
+        <dialog id="trader_lore_cassadores" startstatementid="start">
+            <!-- Statements -->
+            <statement id="start" text="dialog_trader_statement_start">
+                <response_entry id="shop" />
+                <response_entry id="jobsnone" />
+                <response_entry id="jobshave1" />
+                <response_entry id="jobshave2" />
+                <response_entry id="jobshave3" />
+                <response_entry id="jobshave4" />
+                <response_entry id="jobshave5" />
+                <response_entry id="jobshave6" />
+                <response_entry id="jobshavenotallowed" />
+                <response_entry id="specialjobshave" />
+                <response_entry id="background" />
+                <response_entry id="admin" />
+                <response_entry id="done" />
+            </statement>
+
+            <statement id="currentjobs1" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="1" />
+                <quest_entry listindex="1" tier="1" />
+                <quest_entry listindex="2" tier="1" />
+                <quest_entry listindex="3" tier="1" />
+                <quest_entry listindex="4" tier="1" />
+                <response_entry id="jobsnext2" uniqueid="next" />
+                <response_entry id="jobsnext3" uniqueid="next" />
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs2" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="2" />
+                <quest_entry listindex="1" tier="2" />
+                <quest_entry listindex="2" tier="2" />
+                <quest_entry listindex="3" tier="2" />
+                <quest_entry listindex="4" tier="2" />
+
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext3" uniqueid="next" />
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs3" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="3" />
+                <quest_entry listindex="1" tier="3" />
+                <quest_entry listindex="2" tier="3" />
+                <quest_entry listindex="3" tier="3" />
+                <quest_entry listindex="4" tier="3" />
+
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs4" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="4" />
+                <quest_entry listindex="1" tier="4" />
+                <quest_entry listindex="2" tier="4" />
+                <quest_entry listindex="3" tier="4" />
+                <quest_entry listindex="4" tier="4" />
+
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs5" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="5" />
+                <quest_entry listindex="1" tier="5" />
+                <quest_entry listindex="2" tier="5" />
+                <quest_entry listindex="3" tier="5" />
+                <quest_entry listindex="4" tier="5" />
+
+                <response_entry id="jobsprev4" uniqueid="prev" />
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext6" uniqueid="next" />
+
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs6" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="6" />
+                <quest_entry listindex="1" tier="6" />
+                <quest_entry listindex="2" tier="6" />
+                <quest_entry listindex="3" tier="6" />
+                <quest_entry listindex="4" tier="6" />
+
+                <response_entry id="jobsprev5" uniqueid="prev" />
+                <response_entry id="jobsprev4" uniqueid="prev" />
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobsspecial" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry type="special" listindex="0" />
+                <quest_entry type="special" listindex="1" />
+                <quest_entry type="special" listindex="2" />
+                <quest_entry type="special" listindex="3" />
+                <quest_entry type="special" listindex="4" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="nojobs" text="dialog_trader_statement_nojobs" nextstatementid="start" />
+
+            <statement id="jobsnotallowed" text="dialog_trader_statement_notallowed" nextstatementid="start" />
+
+            <statement id="admin" text="dialog_trader_statement_admin">
+                <response_entry id="restock" />
+                <response_entry id="resetquests" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <!-- Lore -->
+            <statement id="background" text="dialog_trader_statement_background">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="navezgane" text="dialog_trader_statement_navezgane">
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts" text="dialog_trader_statement_whiteriveroutposts">
+                <response_entry id="whiteriveroutposts_relationship" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="whiteriveroutposts_history" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts_history" text="dialog_trader_statement_unknown_history">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="theduke" text="dialog_trader_statement_theduke">
+                <response_entry id="theduke_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="theduke_history" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_history_informed" text="dialog_trader_statement_theduke_history_informed">
+                <response_entry id="theduke_leader" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_leader" text="dialog_trader_statement_unknown_leader">
+                <response_entry id="theduke_motive" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_motive" text="dialog_trader_statement_theduke_motive">
+                <response_entry id="theduke_name" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_name" text="dialog_trader_statement_dont_know">
+                <response_entry id="navezgane" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="cassadores" text="dialog_trader_statement_cassadores">
+                <response_entry id="cassadores_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_relationship_informed" text="dialog_trader_statement_relationship_supply_armor">
+                <response_entry id="cassadores_name" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_name_informed" text="dialog_trader_statement_cassadores_name_informed">
+                <response_entry id="cassadores_encounter" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_encounter_informed" text="dialog_trader_statement_cassadores_encounter_informed">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="noah" text="dialog_trader_statement_noah">
+                <response_entry id="noah_history" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_history" text="dialog_trader_statement_noah_history">
+                <response_entry id="noah_leader" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_leader_hostile" text="dialog_trader_statement_noah_leader_hostile">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <!-- Responses -->
+            <response id="shop" text="dialog_trader_response_shop">
+                <action type="Trader" id="trade" />
+            </response>
+
+            <response id="jobsnone" text="dialog_trader_response_jobsnone" nextstatementid="nojobs">
+                <requirement type="QuestStatus" value="InProgress" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave1" text="dialog_trader_response_jobshave" nextstatementid="currentjobs1">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="1" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave2" text="dialog_trader_response_jobshave" nextstatementid="currentjobs2">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="2" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave3" text="dialog_trader_response_jobshave" nextstatementid="currentjobs3">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="3" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave4" text="dialog_trader_response_jobshave" nextstatementid="currentjobs4">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="4" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave5" text="dialog_trader_response_jobshave" nextstatementid="currentjobs5">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="5" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave6" text="dialog_trader_response_jobshave" nextstatementid="currentjobs6">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="6" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshavenotallowed" text="dialog_trader_response_jobshave" nextstatementid="jobsnotallowed">
+			    <requirement type="CheckCVar" id="DisableQuesting" value="1" requirementtype="Hide" />
+		    </response>
+		
+		    <response id="jobsprev1" text="dialog_trader_response_prevtier" nextstatementid="currentjobs1">
+                <requirement type="QuestTier" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev2" text="dialog_trader_response_prevtier" nextstatementid="currentjobs2">
+                <requirement type="QuestTier" value="2" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev3" text="dialog_trader_response_prevtier" nextstatementid="currentjobs3">
+                <requirement type="QuestTier" value="3" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev4" text="dialog_trader_response_prevtier" nextstatementid="currentjobs4">
+                <requirement type="QuestTier" value="4" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev5" text="dialog_trader_response_prevtier" nextstatementid="currentjobs5">
+                <requirement type="QuestTier" value="5" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext2" text="dialog_trader_response_nexttier" nextstatementid="currentjobs2">
+                <requirement type="QuestTier" value="2" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext3" text="dialog_trader_response_nexttier" nextstatementid="currentjobs3">
+                <requirement type="QuestTier" value="3" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext4" text="dialog_trader_response_nexttier" nextstatementid="currentjobs4">
+                <requirement type="QuestTier" value="4" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext5" text="dialog_trader_response_nexttier" nextstatementid="currentjobs5">
+                <requirement type="QuestTier" value="5" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext6" text="dialog_trader_response_nexttier" nextstatementid="currentjobs6">
+                <requirement type="QuestTier" value="6" requirementtype="Hide" />
+            </response>
+
+            <response id="specialjobshave" text="dialog_trader_response_specialjobshave" nextstatementid="currentjobsspecial">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" tag="special" />
+                <requirement type="QuestsAvailable" value="special" requirementtype="Hide" />
+            </response>
+
+            <response id="nevermind" text="dialog_trader_response_nevermind" nextstatementid="start" />
+
+            <response id="admin" text="dialog_trader_response_admin" nextstatementid="admin">
+                <requirement type="Admin" requirementtype="Hide" />
+            </response>
+
+            <response id="restock" text="dialog_trader_response_restock">
+                <action type="Trader" id="restock" />
+            </response>
+
+            <response id="resetquests" text="dialog_trader_response_resetquests">
+                <action type="Trader" id="reset_quests" />
+            </response>
+
+            <response id="done" text="dialog_trader_response_nevermind" />
+
+            <!-- Lore -->
+            <response id="background" text="dialog_trader_response_background" nextstatementid="background" />
+
+            <response id="navezgane" text="dialog_trader_response_navezgane" nextstatementid="navezgane" />
+
+            <response id="whiteriveroutposts" text="dialog_trader_response_whiteriveroutposts" nextstatementid="whiteriveroutposts" />
+            <response id="whiteriveroutposts_relationship" text="dialog_trader_response_whiteriveroutposts_relationship" nextstatementid="whiteriveroutposts_relationship" />
+            <response id="whiteriveroutposts_history" text="dialog_trader_response_whiteriveroutposts_history" nextstatementid="whiteriveroutposts_history" />
+
+            <response id="theduke" text="dialog_trader_response_theduke" nextstatementid="theduke" />
+            <response id="theduke_relationship" text="dialog_trader_response_theduke_relationship" nextstatementid="theduke_relationship" />
+            <response id="theduke_history" text="dialog_trader_response_male_history" nextstatementid="theduke_history_informed" />
+            <response id="theduke_leader" text="dialog_trader_response_theduke_leader" nextstatementid="theduke_leader" />
+            <response id="theduke_motive" text="dialog_trader_response_male_motive" nextstatementid="theduke_motive" />
+            <response id="theduke_name" text="dialog_trader_response_theduke_name" nextstatementid="theduke_name" />
+
+            <response id="cassadores" text="dialog_trader_response_cassadores" nextstatementid="cassadores" />
+            <response id="cassadores_relationship" text="dialog_trader_response_cassadores_relationship" nextstatementid="cassadores_relationship_informed" />
+            <response id="cassadores_name" text="dialog_trader_response_cassadores_name" nextstatementid="cassadores_name_informed" />
+            <response id="cassadores_encounter" text="dialog_trader_response_bad_encounter" nextstatementid="cassadores_encounter_informed" />
+
+            <response id="noah" text="dialog_trader_response_noah" nextstatementid="noah" />
+            <response id="noah_relationship" text="dialog_trader_response_cassadores_relationship" nextstatementid="noah_relationship" />
+            <response id="noah_history" text="dialog_trader_response_male_history" nextstatementid="noah_history" />
+            <response id="noah_leader" text="dialog_trader_response_noah_leader" nextstatementid="noah_leader_hostile" />
+        </dialog>
+
+        <dialog id="trader_lore_noah" startstatementid="start">
+            <!-- Statements -->
+            <statement id="start" text="dialog_trader_statement_start">
+                <response_entry id="shop" />
+                <response_entry id="jobsnone" />
+                <response_entry id="jobshave1" />
+                <response_entry id="jobshave2" />
+                <response_entry id="jobshave3" />
+                <response_entry id="jobshave4" />
+                <response_entry id="jobshave5" />
+                <response_entry id="jobshave6" />
+                <response_entry id="jobshavenotallowed" />
+                <response_entry id="specialjobshave" />
+                <response_entry id="background" />
+                <response_entry id="admin" />
+                <response_entry id="done" />
+            </statement>
+
+            <statement id="currentjobs1" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="1" />
+                <quest_entry listindex="1" tier="1" />
+                <quest_entry listindex="2" tier="1" />
+                <quest_entry listindex="3" tier="1" />
+                <quest_entry listindex="4" tier="1" />
+                <response_entry id="jobsnext2" uniqueid="next" />
+                <response_entry id="jobsnext3" uniqueid="next" />
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs2" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="2" />
+                <quest_entry listindex="1" tier="2" />
+                <quest_entry listindex="2" tier="2" />
+                <quest_entry listindex="3" tier="2" />
+                <quest_entry listindex="4" tier="2" />
+
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext3" uniqueid="next" />
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs3" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="3" />
+                <quest_entry listindex="1" tier="3" />
+                <quest_entry listindex="2" tier="3" />
+                <quest_entry listindex="3" tier="3" />
+                <quest_entry listindex="4" tier="3" />
+
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs4" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="4" />
+                <quest_entry listindex="1" tier="4" />
+                <quest_entry listindex="2" tier="4" />
+                <quest_entry listindex="3" tier="4" />
+                <quest_entry listindex="4" tier="4" />
+
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs5" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="5" />
+                <quest_entry listindex="1" tier="5" />
+                <quest_entry listindex="2" tier="5" />
+                <quest_entry listindex="3" tier="5" />
+                <quest_entry listindex="4" tier="5" />
+
+                <response_entry id="jobsprev4" uniqueid="prev" />
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext6" uniqueid="next" />
+
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs6" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="6" />
+                <quest_entry listindex="1" tier="6" />
+                <quest_entry listindex="2" tier="6" />
+                <quest_entry listindex="3" tier="6" />
+                <quest_entry listindex="4" tier="6" />
+
+                <response_entry id="jobsprev5" uniqueid="prev" />
+                <response_entry id="jobsprev4" uniqueid="prev" />
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobsspecial" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry type="special" listindex="0" />
+                <quest_entry type="special" listindex="1" />
+                <quest_entry type="special" listindex="2" />
+                <quest_entry type="special" listindex="3" />
+                <quest_entry type="special" listindex="4" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="nojobs" text="dialog_trader_statement_nojobs" nextstatementid="start" />
+
+            <statement id="jobsnotallowed" text="dialog_trader_statement_notallowed" nextstatementid="start" />
+
+            <statement id="admin" text="dialog_trader_statement_admin">
+                <response_entry id="restock" />
+                <response_entry id="resetquests" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <!-- Lore -->
+            <statement id="background" text="dialog_trader_statement_background">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="navezgane" text="dialog_trader_statement_navezgane">
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts" text="dialog_trader_statement_whiteriveroutposts">
+                <response_entry id="whiteriveroutposts_relationship" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="whiteriveroutposts_history" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts_history_informed" text="dialog_trader_statement_whiteriveroutposts_history_informed">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="theduke" text="dialog_trader_statement_theduke">
+                <response_entry id="theduke_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="theduke_history" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_history_hostile" text="dialog_trader_statement_theduke_history_hostile">
+                <response_entry id="theduke_leader" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_leader" text="dialog_trader_statement_unknown_leader">
+                <response_entry id="theduke_motive" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_motive_hostile" text="dialog_trader_statement_leader_motive_hostile">
+                <response_entry id="theduke_name" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_name_hostile" text="dialog_trader_statement_theduke_name_hostile">
+                <response_entry id="navezgane" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="cassadores" text="dialog_trader_statement_cassadores">
+                <response_entry id="cassadores_name" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_name_joke" text="dialog_trader_statement_cassadores_name_joke">
+                <response_entry id="cassadores_encounter" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_encounter" text="dialog_trader_statement_surprised_alive">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="noah" text="dialog_trader_statement_noah">
+                <response_entry id="noah_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_relationship_informed" text="dialog_trader_statement_relationship_supplies_medicine">
+                <response_entry id="noah_history" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_history_informed" text="dialog_trader_statement_noah_history_informed">
+                <response_entry id="noah_leader" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_leader_informed" text="dialog_trader_statement_noah_leader_informed">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <!-- Responses -->
+            <response id="shop" text="dialog_trader_response_shop">
+                <action type="Trader" id="trade" />
+            </response>
+
+            <response id="jobsnone" text="dialog_trader_response_jobsnone" nextstatementid="nojobs">
+                <requirement type="QuestStatus" value="InProgress" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave1" text="dialog_trader_response_jobshave" nextstatementid="currentjobs1">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="1" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave2" text="dialog_trader_response_jobshave" nextstatementid="currentjobs2">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="2" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave3" text="dialog_trader_response_jobshave" nextstatementid="currentjobs3">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="3" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave4" text="dialog_trader_response_jobshave" nextstatementid="currentjobs4">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="4" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave5" text="dialog_trader_response_jobshave" nextstatementid="currentjobs5">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="5" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave6" text="dialog_trader_response_jobshave" nextstatementid="currentjobs6">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="6" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshavenotallowed" text="dialog_trader_response_jobshave" nextstatementid="jobsnotallowed">
+			    <requirement type="CheckCVar" id="DisableQuesting" value="1" requirementtype="Hide" />
+		    </response>
+		
+		    <response id="jobsprev1" text="dialog_trader_response_prevtier" nextstatementid="currentjobs1">
+                <requirement type="QuestTier" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev2" text="dialog_trader_response_prevtier" nextstatementid="currentjobs2">
+                <requirement type="QuestTier" value="2" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev3" text="dialog_trader_response_prevtier" nextstatementid="currentjobs3">
+                <requirement type="QuestTier" value="3" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev4" text="dialog_trader_response_prevtier" nextstatementid="currentjobs4">
+                <requirement type="QuestTier" value="4" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev5" text="dialog_trader_response_prevtier" nextstatementid="currentjobs5">
+                <requirement type="QuestTier" value="5" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext2" text="dialog_trader_response_nexttier" nextstatementid="currentjobs2">
+                <requirement type="QuestTier" value="2" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext3" text="dialog_trader_response_nexttier" nextstatementid="currentjobs3">
+                <requirement type="QuestTier" value="3" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext4" text="dialog_trader_response_nexttier" nextstatementid="currentjobs4">
+                <requirement type="QuestTier" value="4" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext5" text="dialog_trader_response_nexttier" nextstatementid="currentjobs5">
+                <requirement type="QuestTier" value="5" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext6" text="dialog_trader_response_nexttier" nextstatementid="currentjobs6">
+                <requirement type="QuestTier" value="6" requirementtype="Hide" />
+            </response>
+
+            <response id="specialjobshave" text="dialog_trader_response_specialjobshave" nextstatementid="currentjobsspecial">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" tag="special" />
+                <requirement type="QuestsAvailable" value="special" requirementtype="Hide" />
+            </response>
+
+            <response id="nevermind" text="dialog_trader_response_nevermind" nextstatementid="start" />
+
+            <response id="admin" text="dialog_trader_response_admin" nextstatementid="admin">
+                <requirement type="Admin" requirementtype="Hide" />
+            </response>
+
+            <response id="restock" text="dialog_trader_response_restock">
+                <action type="Trader" id="restock" />
+            </response>
+
+            <response id="resetquests" text="dialog_trader_response_resetquests">
+                <action type="Trader" id="reset_quests" />
+            </response>
+
+            <response id="done" text="dialog_trader_response_nevermind" />
+
+            <!-- Lore -->
+            <response id="background" text="dialog_trader_response_background" nextstatementid="background" />
+
+            <response id="navezgane" text="dialog_trader_response_navezgane" nextstatementid="navezgane" />
+
+            <response id="whiteriveroutposts" text="dialog_trader_response_whiteriveroutposts" nextstatementid="whiteriveroutposts" />
+            <response id="whiteriveroutposts_relationship" text="dialog_trader_response_whiteriveroutposts_relationship" nextstatementid="whiteriveroutposts_relationship" />
+            <response id="whiteriveroutposts_history" text="dialog_trader_response_whiteriveroutposts_history" nextstatementid="whiteriveroutposts_history_informed" />
+
+            <response id="theduke" text="dialog_trader_response_theduke" nextstatementid="theduke" />
+            <response id="theduke_relationship" text="dialog_trader_response_theduke_relationship" nextstatementid="theduke_relationship" />
+            <response id="theduke_history" text="dialog_trader_response_male_history" nextstatementid="theduke_history_hostile" />
+            <response id="theduke_leader" text="dialog_trader_response_theduke_leader" nextstatementid="theduke_leader" />
+            <response id="theduke_motive" text="dialog_trader_response_male_motive" nextstatementid="theduke_motive_hostile" />
+            <response id="theduke_name" text="dialog_trader_response_theduke_name" nextstatementid="theduke_name_hostile" />
+
+            <response id="cassadores" text="dialog_trader_response_cassadores" nextstatementid="cassadores" />
+            <response id="cassadores_relationship" text="dialog_trader_response_cassadores_relationship" nextstatementid="cassadores_relationship" />
+            <response id="cassadores_name" text="dialog_trader_response_cassadores_name" nextstatementid="cassadores_name_joke" />
+            <response id="cassadores_encounter" text="dialog_trader_response_bad_encounter" nextstatementid="cassadores_encounter" />
+
+            <response id="noah" text="dialog_trader_response_noah" nextstatementid="noah" />
+            <response id="noah_relationship" text="dialog_trader_response_noah_relationship" nextstatementid="noah_relationship_informed" />
+            <response id="noah_history" text="dialog_trader_response_male_history" nextstatementid="noah_history_informed" />
+            <response id="noah_leader" text="dialog_trader_response_noah_leader" nextstatementid="noah_leader_informed" />
+        </dialog>
+
+        <dialog id="trader_lore_whiteriver" startstatementid="start">
+            <!-- Statements -->
+            <statement id="start" text="dialog_trader_statement_start">
+                <response_entry id="shop" />
+                <response_entry id="jobsnone" />
+                <response_entry id="jobshave1" />
+                <response_entry id="jobshave2" />
+                <response_entry id="jobshave3" />
+                <response_entry id="jobshave4" />
+                <response_entry id="jobshave5" />
+                <response_entry id="jobshave6" />
+                <response_entry id="jobshavenotallowed" />
+                <response_entry id="specialjobshave" />
+                <response_entry id="background" />
+                <response_entry id="admin" />
+                <response_entry id="done" />
+            </statement>
+
+            <statement id="currentjobs1" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="1" />
+                <quest_entry listindex="1" tier="1" />
+                <quest_entry listindex="2" tier="1" />
+                <quest_entry listindex="3" tier="1" />
+                <quest_entry listindex="4" tier="1" />
+                <response_entry id="jobsnext2" uniqueid="next" />
+                <response_entry id="jobsnext3" uniqueid="next" />
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs2" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="2" />
+                <quest_entry listindex="1" tier="2" />
+                <quest_entry listindex="2" tier="2" />
+                <quest_entry listindex="3" tier="2" />
+                <quest_entry listindex="4" tier="2" />
+
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext3" uniqueid="next" />
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs3" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="3" />
+                <quest_entry listindex="1" tier="3" />
+                <quest_entry listindex="2" tier="3" />
+                <quest_entry listindex="3" tier="3" />
+                <quest_entry listindex="4" tier="3" />
+
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs4" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="4" />
+                <quest_entry listindex="1" tier="4" />
+                <quest_entry listindex="2" tier="4" />
+                <quest_entry listindex="3" tier="4" />
+                <quest_entry listindex="4" tier="4" />
+
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs5" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="5" />
+                <quest_entry listindex="1" tier="5" />
+                <quest_entry listindex="2" tier="5" />
+                <quest_entry listindex="3" tier="5" />
+                <quest_entry listindex="4" tier="5" />
+
+                <response_entry id="jobsprev4" uniqueid="prev" />
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext6" uniqueid="next" />
+
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs6" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="6" />
+                <quest_entry listindex="1" tier="6" />
+                <quest_entry listindex="2" tier="6" />
+                <quest_entry listindex="3" tier="6" />
+                <quest_entry listindex="4" tier="6" />
+
+                <response_entry id="jobsprev5" uniqueid="prev" />
+                <response_entry id="jobsprev4" uniqueid="prev" />
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobsspecial" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry type="special" listindex="0" />
+                <quest_entry type="special" listindex="1" />
+                <quest_entry type="special" listindex="2" />
+                <quest_entry type="special" listindex="3" />
+                <quest_entry type="special" listindex="4" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="nojobs" text="dialog_trader_statement_nojobs" nextstatementid="start" />
+
+            <statement id="jobsnotallowed" text="dialog_trader_statement_notallowed" nextstatementid="start" />
+
+            <statement id="admin" text="dialog_trader_statement_admin">
+                <response_entry id="restock" />
+                <response_entry id="resetquests" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <!-- Lore -->
+            <statement id="background" text="dialog_trader_statement_background">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="navezgane" text="dialog_trader_statement_navezgane">
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts" text="dialog_trader_statement_whiteriveroutposts">
+                <response_entry id="whiteriveroutposts_relationship" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts_relationship_informed" text="dialog_trader_statement_relationship_supply_tools">
+                <response_entry id="whiteriveroutposts_history" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts_history_informed" text="dialog_trader_statement_whiteriveroutposts_history_informed">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="theduke" text="dialog_trader_statement_theduke">
+                <response_entry id="theduke_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="theduke_history" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_history_hostile" text="dialog_trader_statement_theduke_history_hostile">
+                <response_entry id="theduke_leader" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_leader" text="dialog_trader_statement_unknown_leader">
+                <response_entry id="theduke_motive" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_motive_hostile" text="dialog_trader_statement_leader_motive_hostile">
+                <response_entry id="theduke_name" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_name_hostile" text="dialog_trader_statement_theduke_name_hostile">
+                <response_entry id="navezgane" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="cassadores" text="dialog_trader_statement_cassadores">
+                <response_entry id="cassadores_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="cassadores_name" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_name" text="dialog_trader_statement_cassadores_name">
+                <response_entry id="cassadores_encounter" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_encounter" text="dialog_trader_statement_surprised_alive">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="noah" text="dialog_trader_statement_noah">
+                <response_entry id="noah_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="noah_history" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_history" text="dialog_trader_statement_noah_history">
+                <response_entry id="noah_leader" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_leader" text="dialog_trader_statement_unknown_leader">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <!-- Responses -->
+            <response id="shop" text="dialog_trader_response_shop">
+                <action type="Trader" id="trade" />
+            </response>
+
+            <response id="jobsnone" text="dialog_trader_response_jobsnone" nextstatementid="nojobs">
+                <requirement type="QuestStatus" value="InProgress" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave1" text="dialog_trader_response_jobshave" nextstatementid="currentjobs1">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="1" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave2" text="dialog_trader_response_jobshave" nextstatementid="currentjobs2">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="2" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave3" text="dialog_trader_response_jobshave" nextstatementid="currentjobs3">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="3" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave4" text="dialog_trader_response_jobshave" nextstatementid="currentjobs4">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="4" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave5" text="dialog_trader_response_jobshave" nextstatementid="currentjobs5">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="5" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave6" text="dialog_trader_response_jobshave" nextstatementid="currentjobs6">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="6" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshavenotallowed" text="dialog_trader_response_jobshave" nextstatementid="jobsnotallowed">
+			    <requirement type="CheckCVar" id="DisableQuesting" value="1" requirementtype="Hide" />
+		    </response>
+		
+		    <response id="jobsprev1" text="dialog_trader_response_prevtier" nextstatementid="currentjobs1">
+                <requirement type="QuestTier" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev2" text="dialog_trader_response_prevtier" nextstatementid="currentjobs2">
+                <requirement type="QuestTier" value="2" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev3" text="dialog_trader_response_prevtier" nextstatementid="currentjobs3">
+                <requirement type="QuestTier" value="3" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev4" text="dialog_trader_response_prevtier" nextstatementid="currentjobs4">
+                <requirement type="QuestTier" value="4" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev5" text="dialog_trader_response_prevtier" nextstatementid="currentjobs5">
+                <requirement type="QuestTier" value="5" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext2" text="dialog_trader_response_nexttier" nextstatementid="currentjobs2">
+                <requirement type="QuestTier" value="2" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext3" text="dialog_trader_response_nexttier" nextstatementid="currentjobs3">
+                <requirement type="QuestTier" value="3" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext4" text="dialog_trader_response_nexttier" nextstatementid="currentjobs4">
+                <requirement type="QuestTier" value="4" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext5" text="dialog_trader_response_nexttier" nextstatementid="currentjobs5">
+                <requirement type="QuestTier" value="5" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext6" text="dialog_trader_response_nexttier" nextstatementid="currentjobs6">
+                <requirement type="QuestTier" value="6" requirementtype="Hide" />
+            </response>
+
+            <response id="specialjobshave" text="dialog_trader_response_specialjobshave" nextstatementid="currentjobsspecial">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" tag="special" />
+                <requirement type="QuestsAvailable" value="special" requirementtype="Hide" />
+            </response>
+
+            <response id="nevermind" text="dialog_trader_response_nevermind" nextstatementid="start" />
+
+            <response id="admin" text="dialog_trader_response_admin" nextstatementid="admin">
+                <requirement type="Admin" requirementtype="Hide" />
+            </response>
+
+            <response id="restock" text="dialog_trader_response_restock">
+                <action type="Trader" id="restock" />
+            </response>
+
+            <response id="resetquests" text="dialog_trader_response_resetquests">
+                <action type="Trader" id="reset_quests" />
+            </response>
+
+            <response id="done" text="dialog_trader_response_nevermind" />
+
+            <!-- Lore -->
+            <response id="background" text="dialog_trader_response_background" nextstatementid="background" />
+
+            <response id="navezgane" text="dialog_trader_response_navezgane" nextstatementid="navezgane" />
+
+            <response id="whiteriveroutposts" text="dialog_trader_response_whiteriveroutposts" nextstatementid="whiteriveroutposts" />
+            <response id="whiteriveroutposts_relationship" text="dialog_trader_response_whiteriveroutposts_relationship" nextstatementid="whiteriveroutposts_relationship_informed" />
+            <response id="whiteriveroutposts_history" text="dialog_trader_response_whiteriveroutposts_history" nextstatementid="whiteriveroutposts_history_informed" />
+
+            <response id="theduke" text="dialog_trader_response_theduke" nextstatementid="theduke" />
+            <response id="theduke_relationship" text="dialog_trader_response_theduke_relationship" nextstatementid="theduke_relationship" />
+            <response id="theduke_history" text="dialog_trader_response_male_history" nextstatementid="theduke_history_hostile" />
+            <response id="theduke_leader" text="dialog_trader_response_theduke_leader" nextstatementid="theduke_leader" />
+            <response id="theduke_motive" text="dialog_trader_response_male_motive" nextstatementid="theduke_motive_hostile" />
+            <response id="theduke_name" text="dialog_trader_response_theduke_name" nextstatementid="theduke_name_hostile" />
+
+            <response id="cassadores" text="dialog_trader_response_cassadores" nextstatementid="cassadores" />
+            <response id="cassadores_relationship" text="dialog_trader_response_cassadores_relationship" nextstatementid="cassadores_relationship" />
+            <response id="cassadores_name" text="dialog_trader_response_cassadores_name" nextstatementid="cassadores_name" />
+            <response id="cassadores_encounter" text="dialog_trader_response_bad_encounter" nextstatementid="cassadores_encounter" />
+
+            <response id="noah" text="dialog_trader_response_noah" nextstatementid="noah" />
+            <response id="noah_relationship" text="dialog_trader_response_noah_relationship" nextstatementid="noah_relationship" />
+            <response id="noah_history" text="dialog_trader_response_male_history" nextstatementid="noah_history" />
+            <response id="noah_leader" text="dialog_trader_response_noah_leader" nextstatementid="noah_leader" />
+        </dialog>
+
+        <dialog id="trader_lore_duke" startstatementid="start">
+            <!-- Statements -->
+            <statement id="start" text="dialog_trader_statement_start">
+                <response_entry id="shop" />
+                <response_entry id="jobsnone" />
+                <response_entry id="jobshave1" />
+                <response_entry id="jobshave2" />
+                <response_entry id="jobshave3" />
+                <response_entry id="jobshave4" />
+                <response_entry id="jobshave5" />
+                <response_entry id="jobshave6" />
+                <response_entry id="jobshavenotallowed" />
+                <response_entry id="specialjobshave" />
+                <response_entry id="background" />
+                <response_entry id="admin" />
+                <response_entry id="done" />
+            </statement>
+
+            <statement id="currentjobs1" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="1" />
+                <quest_entry listindex="1" tier="1" />
+                <quest_entry listindex="2" tier="1" />
+                <quest_entry listindex="3" tier="1" />
+                <quest_entry listindex="4" tier="1" />
+                <response_entry id="jobsnext2" uniqueid="next" />
+                <response_entry id="jobsnext3" uniqueid="next" />
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs2" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="2" />
+                <quest_entry listindex="1" tier="2" />
+                <quest_entry listindex="2" tier="2" />
+                <quest_entry listindex="3" tier="2" />
+                <quest_entry listindex="4" tier="2" />
+
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext3" uniqueid="next" />
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs3" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="3" />
+                <quest_entry listindex="1" tier="3" />
+                <quest_entry listindex="2" tier="3" />
+                <quest_entry listindex="3" tier="3" />
+                <quest_entry listindex="4" tier="3" />
+
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs4" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="4" />
+                <quest_entry listindex="1" tier="4" />
+                <quest_entry listindex="2" tier="4" />
+                <quest_entry listindex="3" tier="4" />
+                <quest_entry listindex="4" tier="4" />
+
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs5" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="5" />
+                <quest_entry listindex="1" tier="5" />
+                <quest_entry listindex="2" tier="5" />
+                <quest_entry listindex="3" tier="5" />
+                <quest_entry listindex="4" tier="5" />
+
+                <response_entry id="jobsprev4" uniqueid="prev" />
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext6" uniqueid="next" />
+
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs6" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="6" />
+                <quest_entry listindex="1" tier="6" />
+                <quest_entry listindex="2" tier="6" />
+                <quest_entry listindex="3" tier="6" />
+                <quest_entry listindex="4" tier="6" />
+
+                <response_entry id="jobsprev5" uniqueid="prev" />
+                <response_entry id="jobsprev4" uniqueid="prev" />
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobsspecial" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry type="special" listindex="0" />
+                <quest_entry type="special" listindex="1" />
+                <quest_entry type="special" listindex="2" />
+                <quest_entry type="special" listindex="3" />
+                <quest_entry type="special" listindex="4" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="nojobs" text="dialog_trader_statement_nojobs" nextstatementid="start" />
+
+            <statement id="jobsnotallowed" text="dialog_trader_statement_notallowed" nextstatementid="start" />
+
+            <statement id="admin" text="dialog_trader_statement_admin">
+                <response_entry id="restock" />
+                <response_entry id="resetquests" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <!-- Lore -->
+            <statement id="background" text="dialog_trader_statement_background">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="navezgane" text="dialog_trader_statement_navezgane">
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts" text="dialog_trader_statement_whiteriveroutposts">
+                <response_entry id="whiteriveroutposts_relationship" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="whiteriveroutposts_history" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts_history" text="dialog_trader_statement_unknown_history">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="theduke" text="dialog_trader_statement_theduke">
+                <response_entry id="theduke_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_relationship_informed" text="dialog_trader_statement_relationship_supplies_guns">
+                <response_entry id="theduke_history" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_history_informed" text="dialog_trader_statement_theduke_history_informed">
+                <response_entry id="theduke_leader" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_leader_informed" text="dialog_trader_statement_theduke_leader_informed">
+                <response_entry id="theduke_motive" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_motive_informed" text="dialog_trader_statement_theduke_motive_informed">
+                <response_entry id="theduke_name" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_name_informed" text="dialog_trader_statement_theduke_name_informed">
+                <response_entry id="navezgane" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="cassadores" text="dialog_trader_statement_cassadores">
+                <response_entry id="cassadores_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="cassadores_name" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_name_informed" text="dialog_trader_statement_cassadores_name_informed">
+                <response_entry id="cassadores_encounter" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_encounter_hostile" text="dialog_trader_statement_bad_encounter_hostile">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="noah" text="dialog_trader_statement_noah">
+                <response_entry id="noah_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="noah_history" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_history" text="dialog_trader_statement_noah_history">
+                <response_entry id="noah_leader" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_leader_hostile" text="dialog_trader_statement_noah_leader_hostile">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <!-- Responses -->
+            <response id="shop" text="dialog_trader_response_shop">
+                <action type="Trader" id="trade" />
+            </response>
+
+            <response id="jobsnone" text="dialog_trader_response_jobsnone" nextstatementid="nojobs">
+                <requirement type="QuestStatus" value="InProgress" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave1" text="dialog_trader_response_jobshave" nextstatementid="currentjobs1">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="1" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave2" text="dialog_trader_response_jobshave" nextstatementid="currentjobs2">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="2" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave3" text="dialog_trader_response_jobshave" nextstatementid="currentjobs3">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="3" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave4" text="dialog_trader_response_jobshave" nextstatementid="currentjobs4">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="4" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave5" text="dialog_trader_response_jobshave" nextstatementid="currentjobs5">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="5" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave6" text="dialog_trader_response_jobshave" nextstatementid="currentjobs6">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="6" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshavenotallowed" text="dialog_trader_response_jobshave" nextstatementid="jobsnotallowed">
+			    <requirement type="CheckCVar" id="DisableQuesting" value="1" requirementtype="Hide" />
+		    </response>
+		
+		    <response id="jobsprev1" text="dialog_trader_response_prevtier" nextstatementid="currentjobs1">
+                <requirement type="QuestTier" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev2" text="dialog_trader_response_prevtier" nextstatementid="currentjobs2">
+                <requirement type="QuestTier" value="2" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev3" text="dialog_trader_response_prevtier" nextstatementid="currentjobs3">
+                <requirement type="QuestTier" value="3" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev4" text="dialog_trader_response_prevtier" nextstatementid="currentjobs4">
+                <requirement type="QuestTier" value="4" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev5" text="dialog_trader_response_prevtier" nextstatementid="currentjobs5">
+                <requirement type="QuestTier" value="5" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext2" text="dialog_trader_response_nexttier" nextstatementid="currentjobs2">
+                <requirement type="QuestTier" value="2" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext3" text="dialog_trader_response_nexttier" nextstatementid="currentjobs3">
+                <requirement type="QuestTier" value="3" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext4" text="dialog_trader_response_nexttier" nextstatementid="currentjobs4">
+                <requirement type="QuestTier" value="4" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext5" text="dialog_trader_response_nexttier" nextstatementid="currentjobs5">
+                <requirement type="QuestTier" value="5" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext6" text="dialog_trader_response_nexttier" nextstatementid="currentjobs6">
+                <requirement type="QuestTier" value="6" requirementtype="Hide" />
+            </response>
+
+            <response id="specialjobshave" text="dialog_trader_response_specialjobshave" nextstatementid="currentjobsspecial">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" tag="special" />
+                <requirement type="QuestsAvailable" value="special" requirementtype="Hide" />
+            </response>
+
+            <response id="nevermind" text="dialog_trader_response_nevermind" nextstatementid="start" />
+
+            <response id="admin" text="dialog_trader_response_admin" nextstatementid="admin">
+                <requirement type="Admin" requirementtype="Hide" />
+            </response>
+
+            <response id="restock" text="dialog_trader_response_restock">
+                <action type="Trader" id="restock" />
+            </response>
+
+            <response id="resetquests" text="dialog_trader_response_resetquests">
+                <action type="Trader" id="reset_quests" />
+            </response>
+
+            <response id="done" text="dialog_trader_response_nevermind" />
+
+            <!-- Lore -->
+            <response id="background" text="dialog_trader_response_background" nextstatementid="background" />
+
+            <response id="navezgane" text="dialog_trader_response_navezgane" nextstatementid="navezgane" />
+
+            <response id="whiteriveroutposts" text="dialog_trader_response_whiteriveroutposts" nextstatementid="whiteriveroutposts" />
+            <response id="whiteriveroutposts_relationship" text="dialog_trader_response_whiteriveroutposts_relationship" nextstatementid="whiteriveroutposts_relationship" />
+            <response id="whiteriveroutposts_history" text="dialog_trader_response_whiteriveroutposts_history" nextstatementid="whiteriveroutposts_history" />
+
+            <response id="theduke" text="dialog_trader_response_theduke" nextstatementid="theduke" />
+            <response id="theduke_relationship" text="dialog_trader_response_theduke_relationship" nextstatementid="theduke_relationship_informed" />
+            <response id="theduke_history" text="dialog_trader_response_male_history" nextstatementid="theduke_history_informed" />
+            <response id="theduke_leader" text="dialog_trader_response_theduke_leader" nextstatementid="theduke_leader_informed" />
+            <response id="theduke_motive" text="dialog_trader_response_male_motive" nextstatementid="theduke_motive_informed" />
+            <response id="theduke_name" text="dialog_trader_response_theduke_name" nextstatementid="theduke_name_informed" />
+
+            <response id="cassadores" text="dialog_trader_response_cassadores" nextstatementid="cassadores" />
+            <response id="cassadores_relationship" text="dialog_trader_response_cassadores_relationship" nextstatementid="cassadores_relationship" />
+            <response id="cassadores_name" text="dialog_trader_response_cassadores_name" nextstatementid="cassadores_name_informed" />
+            <response id="cassadores_encounter" text="dialog_trader_response_bad_encounter" nextstatementid="cassadores_encounter_hostile" />
+
+            <response id="noah" text="dialog_trader_response_noah" nextstatementid="noah" />
+            <response id="noah_relationship" text="dialog_trader_response_noah_relationship" nextstatementid="noah_relationship" />
+            <response id="noah_history" text="dialog_trader_response_male_history" nextstatementid="noah_history" />
+            <response id="noah_leader" text="dialog_trader_response_noah_leader" nextstatementid="noah_leader_hostile" />
+        </dialog>
+
+        <dialog id="trader_lore_hostile" startstatementid="start">
+            <!-- Statements -->
+            <statement id="start" text="dialog_trader_statement_start">
+                <response_entry id="shop" />
+                <response_entry id="jobsnone" />
+                <response_entry id="jobshave1" />
+                <response_entry id="jobshave2" />
+                <response_entry id="jobshave3" />
+                <response_entry id="jobshave4" />
+                <response_entry id="jobshave5" />
+                <response_entry id="jobshave6" />
+                <response_entry id="jobshavenotallowed" />
+                <response_entry id="specialjobshave" />
+                <response_entry id="background" />
+                <response_entry id="admin" />
+                <response_entry id="done" />
+            </statement>
+
+            <statement id="currentjobs1" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="1" />
+                <quest_entry listindex="1" tier="1" />
+                <quest_entry listindex="2" tier="1" />
+                <quest_entry listindex="3" tier="1" />
+                <quest_entry listindex="4" tier="1" />
+                <response_entry id="jobsnext2" uniqueid="next" />
+                <response_entry id="jobsnext3" uniqueid="next" />
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs2" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="2" />
+                <quest_entry listindex="1" tier="2" />
+                <quest_entry listindex="2" tier="2" />
+                <quest_entry listindex="3" tier="2" />
+                <quest_entry listindex="4" tier="2" />
+
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext3" uniqueid="next" />
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs3" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="3" />
+                <quest_entry listindex="1" tier="3" />
+                <quest_entry listindex="2" tier="3" />
+                <quest_entry listindex="3" tier="3" />
+                <quest_entry listindex="4" tier="3" />
+
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext4" uniqueid="next" />
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs4" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="4" />
+                <quest_entry listindex="1" tier="4" />
+                <quest_entry listindex="2" tier="4" />
+                <quest_entry listindex="3" tier="4" />
+                <quest_entry listindex="4" tier="4" />
+
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext5" uniqueid="next" />
+                <response_entry id="jobsnext6" uniqueid="next" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs5" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="5" />
+                <quest_entry listindex="1" tier="5" />
+                <quest_entry listindex="2" tier="5" />
+                <quest_entry listindex="3" tier="5" />
+                <quest_entry listindex="4" tier="5" />
+
+                <response_entry id="jobsprev4" uniqueid="prev" />
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="jobsnext6" uniqueid="next" />
+
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobs6" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry listindex="0" tier="6" />
+                <quest_entry listindex="1" tier="6" />
+                <quest_entry listindex="2" tier="6" />
+                <quest_entry listindex="3" tier="6" />
+                <quest_entry listindex="4" tier="6" />
+
+                <response_entry id="jobsprev5" uniqueid="prev" />
+                <response_entry id="jobsprev4" uniqueid="prev" />
+                <response_entry id="jobsprev3" uniqueid="prev" />
+                <response_entry id="jobsprev2" uniqueid="prev" />
+                <response_entry id="jobsprev1" uniqueid="prev" />
+
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="currentjobsspecial" text="dialog_trader_statement_currentjobs" nextstatementid="start">
+                <quest_entry type="special" listindex="0" />
+                <quest_entry type="special" listindex="1" />
+                <quest_entry type="special" listindex="2" />
+                <quest_entry type="special" listindex="3" />
+                <quest_entry type="special" listindex="4" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="nojobs" text="dialog_trader_statement_nojobs" nextstatementid="start" />
+
+            <statement id="jobsnotallowed" text="dialog_trader_statement_notallowed" nextstatementid="start" />
+
+            <statement id="jobsnotallowed" text="dialog_trader_statement_notallowed" nextstatementid="start" />
+
+            <statement id="admin" text="dialog_trader_statement_admin">
+                <response_entry id="restock" />
+                <response_entry id="resetquests" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <!-- Lore -->
+            <statement id="background" text="dialog_trader_statement_background">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="navezgane" text="dialog_trader_statement_navezgane">
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts" text="dialog_trader_statement_whiteriveroutposts">
+                <response_entry id="whiteriveroutposts_relationship" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts_relationship_hostile" text="dialog_trader_statement_group_relationship_hostile">
+                <response_entry id="whiteriveroutposts_history" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="whiteriveroutposts_history_hostile" text="dialog_trader_statement_whiteriveroutposts_history_hostile">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="theduke" text="dialog_trader_statement_theduke">
+                <response_entry id="theduke_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="theduke_history" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_history_hostile" text="dialog_trader_statement_theduke_history_hostile">
+                <response_entry id="theduke_leader" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_leader_hostile" text="dialog_trader_statement_theduke_leader_hostile">
+                <response_entry id="theduke_motive" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_motive_hostile" text="dialog_trader_statement_theduke_motive_hostile">
+                <response_entry id="theduke_name" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="theduke_name_hostile" text="dialog_trader_statement_theduke_name_hostile">
+                <response_entry id="navezgane" />
+                <response_entry id="cassadores" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="cassadores" text="dialog_trader_statement_cassadores">
+                <response_entry id="cassadores_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_relationship_hostile" text="dialog_trader_statement_group_relationship_hostile">
+                <response_entry id="cassadores_name" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_name_hostile" text="dialog_trader_statement_cassadores_name_hostile">
+                <response_entry id="cassadores_encounter" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="cassadores_encounter_hostile" text="dialog_trader_statement_bad_encounter_hostile">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="noah" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <statement id="noah" text="dialog_trader_statement_noah">
+                <response_entry id="noah_relationship" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_relationship" text="dialog_trader_statement_neutral_relationship">
+                <response_entry id="noah_history" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_history_hostile" text="dialog_trader_statement_noah_history_hostile">
+                <response_entry id="noah_leader" />
+                <response_entry id="background" />
+            </statement>
+
+            <statement id="noah_leader_hostile" text="dialog_trader_statement_noah_leader_hostile">
+                <response_entry id="navezgane" />
+                <response_entry id="theduke" />
+                <response_entry id="cassadores" />
+                <response_entry id="whiteriveroutposts" />
+                <response_entry id="nevermind" />
+            </statement>
+
+            <!-- Responses -->
+            <response id="shop" text="dialog_trader_response_shop">
+                <action type="Trader" id="trade" />
+            </response>
+
+            <response id="jobsnone" text="dialog_trader_response_jobsnone" nextstatementid="nojobs">
+                <requirement type="QuestStatus" value="InProgress" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave1" text="dialog_trader_response_jobshave" nextstatementid="currentjobs1">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="1" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave2" text="dialog_trader_response_jobshave" nextstatementid="currentjobs2">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="2" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave3" text="dialog_trader_response_jobshave" nextstatementid="currentjobs3">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="3" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave4" text="dialog_trader_response_jobshave" nextstatementid="currentjobs4">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="4" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave5" text="dialog_trader_response_jobshave" nextstatementid="currentjobs5">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="5" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshave6" text="dialog_trader_response_jobshave" nextstatementid="currentjobs6">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+                <requirement type="QuestTierHighest" value="6" requirementtype="Hide" />
+                <requirement type="CheckCVar" id="IntroComplete" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobshavenotallowed" text="dialog_trader_response_jobshave" nextstatementid="jobsnotallowed">
+			    <requirement type="CheckCVar" id="DisableQuesting" value="1" requirementtype="Hide" />
+		    </response>
+		
+		    <response id="jobsprev1" text="dialog_trader_response_prevtier" nextstatementid="currentjobs1">
+                <requirement type="QuestTier" value="1" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev2" text="dialog_trader_response_prevtier" nextstatementid="currentjobs2">
+                <requirement type="QuestTier" value="2" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev3" text="dialog_trader_response_prevtier" nextstatementid="currentjobs3">
+                <requirement type="QuestTier" value="3" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev4" text="dialog_trader_response_prevtier" nextstatementid="currentjobs4">
+                <requirement type="QuestTier" value="4" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsprev5" text="dialog_trader_response_prevtier" nextstatementid="currentjobs5">
+                <requirement type="QuestTier" value="5" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext2" text="dialog_trader_response_nexttier" nextstatementid="currentjobs2">
+                <requirement type="QuestTier" value="2" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext3" text="dialog_trader_response_nexttier" nextstatementid="currentjobs3">
+                <requirement type="QuestTier" value="3" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext4" text="dialog_trader_response_nexttier" nextstatementid="currentjobs4">
+                <requirement type="QuestTier" value="4" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext5" text="dialog_trader_response_nexttier" nextstatementid="currentjobs5">
+                <requirement type="QuestTier" value="5" requirementtype="Hide" />
+            </response>
+
+            <response id="jobsnext6" text="dialog_trader_response_nexttier" nextstatementid="currentjobs6">
+                <requirement type="QuestTier" value="6" requirementtype="Hide" />
+            </response>
+
+            <response id="specialjobshave" text="dialog_trader_response_specialjobshave" nextstatementid="currentjobsspecial">
+                <requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" tag="special" />
+                <requirement type="QuestsAvailable" value="special" requirementtype="Hide" />
+            </response>
+
+            <response id="nevermind" text="dialog_trader_response_nevermind" nextstatementid="start" />
+
+            <response id="admin" text="dialog_trader_response_admin" nextstatementid="admin">
+                <requirement type="Admin" requirementtype="Hide" />
+            </response>
+
+            <response id="restock" text="dialog_trader_response_restock">
+                <action type="Trader" id="restock" />
+            </response>
+
+            <response id="resetquests" text="dialog_trader_response_resetquests">
+                <action type="Trader" id="reset_quests" />
+            </response>
+
+            <response id="done" text="dialog_trader_response_nevermind" />
+
+            <!-- Lore -->
+            <response id="background" text="dialog_trader_response_background" nextstatementid="background" />
+
+            <response id="navezgane" text="dialog_trader_response_navezgane" nextstatementid="navezgane" />
+
+            <response id="whiteriveroutposts" text="dialog_trader_response_whiteriveroutposts" nextstatementid="whiteriveroutposts" />
+            <response id="whiteriveroutposts_relationship" text="dialog_trader_response_whiteriveroutposts_relationship" nextstatementid="whiteriveroutposts_relationship_hostile" />
+            <response id="whiteriveroutposts_history" text="dialog_trader_response_whiteriveroutposts_history" nextstatementid="whiteriveroutposts_history_hostile" />
+
+            <response id="theduke" text="dialog_trader_response_theduke" nextstatementid="theduke" />
+            <response id="theduke_relationship" text="dialog_trader_response_theduke_relationship" nextstatementid="theduke_relationship" />
+            <response id="theduke_history" text="dialog_trader_response_male_history" nextstatementid="theduke_history_hostile" />
+            <response id="theduke_leader" text="dialog_trader_response_theduke_leader" nextstatementid="theduke_leader_hostile" />
+            <response id="theduke_motive" text="dialog_trader_response_male_motive" nextstatementid="theduke_motive_hostile" />
+            <response id="theduke_name" text="dialog_trader_response_theduke_name" nextstatementid="theduke_name_hostile" />
+
+            <response id="cassadores" text="dialog_trader_response_cassadores" nextstatementid="cassadores" />
+            <response id="cassadores_relationship" text="dialog_trader_response_cassadores_relationship" nextstatementid="cassadores_relationship_hostile" />
+            <response id="cassadores_name" text="dialog_trader_response_cassadores_name" nextstatementid="cassadores_name_hostile" />
+            <response id="cassadores_encounter" text="dialog_trader_response_bad_encounter" nextstatementid="cassadores_encounter_hostile" />
+
+            <response id="noah" text="dialog_trader_response_noah" nextstatementid="noah" />
+            <response id="noah_relationship" text="dialog_trader_response_noah_relationship" nextstatementid="noah_relationship" />
+            <response id="noah_history" text="dialog_trader_response_male_history" nextstatementid="noah_history_hostile" />
+            <response id="noah_leader" text="dialog_trader_response_noah_leader" nextstatementid="noah_leader_hostile" />
+        </dialog>
+    </append>
+</configs>

@@ -1,0 +1,262 @@
+<XineladaLendaria>
+
+    <!-- *** HARVESTING_TOOL_SKILLS -->
+    <setattribute xpath="//crafting_skill[@name='craftingHarvestingTools']" name="max_level">250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHarvestingTools']//display_entry[@name_key='harvestToolsStone']" name="unlock_level">1,6,12,18,32,50</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHarvestingTools']//display_entry[@name_key='harvestToolsIron']" name="unlock_level">60,70,80,90,100,110</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHarvestingTools']//display_entry[@name_key='harvestToolsSteel']" name="unlock_level">120,130,140,150,160,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHarvestingTools']//display_entry[@name_key='harvestToolsMechanical']" name="unlock_level">200,210,220,230,240,250</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingHarvestingTools']//effect_group//passive_effect[@level='1,100']" name="level">1,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHarvestingTools']//effect_group//passive_effect[@level='11,100']" name="level">60,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHarvestingTools']//effect_group//passive_effect[@level='26,100']" name="level">120,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHarvestingTools']//effect_group//passive_effect[@level='61,100']" name="level">200,250</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingHarvestingTools']//effect_group//passive_effect[@level='2,4,6,8,10,100']" name="level">6,12,18,32,50,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHarvestingTools']//effect_group//passive_effect[@level='13,16,19,22,25,100']" name="level">70,80,90,100,110,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHarvestingTools']//effect_group//passive_effect[@level='32,39,46,53,60,100']" name="level">130,140,150,160,180,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHarvestingTools']//effect_group//passive_effect[@level='68,76,84,92,100']" name="level">210,220,230,240,250</setattribute>
+
+    <!-- *** REPAIRING_TOOL_SKILLS -->
+
+    <setattribute xpath="//crafting_skill[@name='craftingRepairTools']" name="max_level">130</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRepairTools']//display_entry[@item='meleeToolRepairT1ClawHammer']" name="unlock_level">10,20,30,40,50,60</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRepairTools']//display_entry[@item='meleeToolRepairT3Nailgun']" name="unlock_level">80,90,100,110,120,130</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingRepairTools']//effect_group//passive_effect[@level='4,50']" name="level">10,130</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRepairTools']//effect_group//passive_effect[@level='26,50']" name="level">80,130</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRepairTools']//effect_group//passive_effect[@level='8,12,16,20,25,50']" name="level">20,30,40,50,60,130</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRepairTools']//effect_group//passive_effect[@level='30,35,40,45,50']" name="level">90,100,110,120,130</setattribute>
+
+    <!-- *** SALVAGING_TOOL_SKILLS -->
+
+    <setattribute xpath="//crafting_skill[@name='craftingSalvageTools']" name="max_level">190</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSalvageTools']//display_entry[@item='meleeToolSalvageT1Wrench']" name="unlock_level">15,23,31,40,50,60</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSalvageTools']//display_entry[@item='meleeToolSalvageT2Ratchet']" name="unlock_level">70,80,90,100,110,120</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSalvageTools']//display_entry[@item='meleeToolSalvageT3ImpactDriver']" name="unlock_level">140,150,160,170,180,190</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingSalvageTools']//effect_group//passive_effect[@level='4,75']" name="level">15,190</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSalvageTools']//effect_group//passive_effect[@level='26,75']" name="level">70,190</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSalvageTools']//effect_group//passive_effect[@level='51,75']" name="level">140,190</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingSalvageTools']//effect_group//passive_effect[@level='8,12,16,20,25,75']" name="level">23,31,40,50,60,190</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSalvageTools']//effect_group//passive_effect[@level='30,35,40,45,50,75']" name="level">80,90,100,110,120,190</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSalvageTools']//effect_group//passive_effect[@level='55,60,65,70,75']" name="level">150,160,170,180,190</setattribute>
+
+    <!-- *** KNUCKLE_SKILLS -->
+
+    <setattribute xpath="//crafting_skill[@name='craftingKnuckles']" name="max_level">180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingKnuckles']//display_entry[@item='meleeWpnKnucklesT0LeatherKnuckles']" name="unlock_level">1,6,12,18,32,50</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingKnuckles']//display_entry[@item='meleeWpnKnucklesT1IronKnuckles']" name="unlock_level">60,70,80,90,100,110</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingKnuckles']//display_entry[@item='meleeWpnKnucklesT3SteelKnuckles']" name="unlock_level">120,130,140,150,160,180</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingKnuckles']//effect_group//passive_effect[@level='1,75']" name="level">1,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingKnuckles']//effect_group//passive_effect[@level='11,75']" name="level">60,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingKnuckles']//effect_group//passive_effect[@level='36,75']" name="level">120,180</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingKnuckles']//effect_group//passive_effect[@level='2,4,6,8,10,75']" name="level">6,12,18,32,50,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingKnuckles']//effect_group//passive_effect[@level='15,20,25,30,35,75']" name="level">70,80,90,100,110,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingKnuckles']//effect_group//passive_effect[@level='43,51,59,67,75']" name="level">130,140,150,160,180</setattribute>
+
+    <!-- *** BLADE_SKILLS -->
+
+    <setattribute xpath="//crafting_skill[@name='craftingBlades']" name="max_level">180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBlades']//display_entry[@item='meleeWpnBladeT0BoneKnife']" name="unlock_level">1,6,12,18,32,50</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBlades']//display_entry[@item='meleeWpnBladeT1HuntingKnife']" name="unlock_level">60,70,80,90,100,110</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBlades']//display_entry[@item='meleeWpnBladeT3Machete']" name="unlock_level">120,130,140,150,160,180</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingBlades']//effect_group//passive_effect[@level='1,75']" name="level">1,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBlades']//effect_group//passive_effect[@level='11,75']" name="level">60,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBlades']//effect_group//passive_effect[@level='36,75']" name="level">120,180</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingBlades']//effect_group//passive_effect[@level='2,4,6,8,10,75']" name="level">6,12,18,32,50,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBlades']//effect_group//passive_effect[@level='15,20,25,30,35,75']" name="level">70,80,90,100,110,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBlades']//effect_group//passive_effect[@level='43,51,59,67,75']" name="level">130,140,150,160,180</setattribute>
+
+    <!-- *** CLUB_SKILLS -->
+
+    <setattribute xpath="//crafting_skill[@name='craftingClubs']" name="max_level">180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingClubs']//display_entry[@item='meleeWpnClubT0WoodenClub']" name="unlock_level">1,6,12,18,32,50</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingClubs']//display_entry[@item='meleeWpnClubT1BaseballBat']" name="unlock_level">60,70,80,90,100,110</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingClubs']//display_entry[@item='meleeWpnClubT3SteelClub']" name="unlock_level">120,130,140,150,160,180</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingClubs']//effect_group//passive_effect[@level='1,75']" name="level">1,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingClubs']//effect_group//passive_effect[@level='11,75']" name="level">60,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingClubs']//effect_group//passive_effect[@level='36,75']" name="level">120,180</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingClubs']//effect_group//passive_effect[@level='2,4,6,8,10,75']" name="level">6,12,18,32,50,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingClubs']//effect_group//passive_effect[@level='15,20,25,30,35,75']" name="level">70,80,90,100,110,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingClubs']//effect_group//passive_effect[@level='43,51,59,67,75']" name="level">130,140,150,160,180</setattribute>
+
+    <!-- *** SLEDGEHAMMER_SKILLS -->
+
+    <setattribute xpath="//crafting_skill[@name='craftingSledgehammers']" name="max_level">180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSledgehammers']//display_entry[@item='meleeWpnSledgeT0StoneSledgehammer']" name="unlock_level">1,6,12,18,32,50</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSledgehammers']//display_entry[@item='meleeWpnSledgeT1IronSledgehammer']" name="unlock_level">60,70,80,90,100,110</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSledgehammers']//display_entry[@item='meleeWpnSledgeT3SteelSledgehammer']" name="unlock_level">120,130,140,150,160,180</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingSledgehammers']//effect_group//passive_effect[@level='1,75']" name="level">1,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSledgehammers']//effect_group//passive_effect[@level='11,75']" name="level">60,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSledgehammers']//effect_group//passive_effect[@level='36,75']" name="level">120,180</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingSledgehammers']//effect_group//passive_effect[@level='2,4,6,8,10,75']" name="level">6,12,18,32,50,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSledgehammers']//effect_group//passive_effect[@level='15,20,25,30,35,75']" name="level">70,80,90,100,110,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSledgehammers']//effect_group//passive_effect[@level='43,51,59,67,75']" name="level">130,140,150,160,180</setattribute>
+
+    <!-- *** BOW_SKILLS -->
+
+    <setattribute xpath="//crafting_skill[@name='craftingBows']" name="max_level">250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBows']//display_entry[@item='gunBowT0PrimitiveBow']" name="unlock_level">1,6,12,18,32,40</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBows']//display_entry[@item='gunBowT1WoodenBow']" name="unlock_level">50,55,60,65,70,80</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBows']//display_entry[@item='gunBowT1IronCrossbow']" name="unlock_level">90,100,105,110,120,130</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBows']//display_entry[@item='gunBowT3CompoundBow']" name="unlock_level">140,150,160,170,180,190</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBows']//display_entry[@item='gunBowT3CompoundCrossbow']" name="unlock_level">200,210,220,230,240,250</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingBows']//effect_group//passive_effect[@level='1,100']" name="level">1,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBows']//effect_group//passive_effect[@level='11,100']" name="level">50,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBows']//effect_group//passive_effect[@level='21,100']" name="level">90,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBows']//effect_group//passive_effect[@level='36,100']" name="level">140,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBows']//effect_group//passive_effect[@level='56,100']" name="level">200,250</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingBows']//effect_group//passive_effect[@level='2,4,6,8,10,75']" name="level">6,12,18,32,40,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBows']//effect_group//passive_effect[@level='12,14,16,18,20,75']" name="level">55,60,65,70,80,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBows']//effect_group//passive_effect[@level='23,26,29,32,35,75']" name="level">100,105,110,120,130,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBows']//effect_group//passive_effect[@level='39,43,47,51,55,75']" name="level">150,160,170,180,190,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingBows']//effect_group//passive_effect[@level='59,63,67,71,75']" name="level">210,220,230,240,250</setattribute>
+
+    <!-- *** SPEAR_SKILLS -->
+
+    <setattribute xpath="//crafting_skill[@name='craftingSpears']" name="max_level">180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSpears']//display_entry[@item='meleeWpnSpearT0StoneSpear']" name="unlock_level">1,6,12,18,32,50</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSpears']//display_entry[@item='meleeWpnSpearT1IronSpear']" name="unlock_level">60,70,80,90,100,110</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSpears']//display_entry[@item='meleeWpnSpearT3SteelSpear']" name="unlock_level">120,130,140,150,160,180</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingSpears']//effect_group//passive_effect[@level='1,75']" name="level">1,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSpears']//effect_group//passive_effect[@level='11,75']" name="level">60,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSpears']//effect_group//passive_effect[@level='36,75']" name="level">120,180</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingSpears']//effect_group//passive_effect[@level='2,4,6,8,10,75']" name="level">6,12,18,32,50,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSpears']//effect_group//passive_effect[@level='15,20,25,30,35,75']" name="level">70,80,90,100,110,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingSpears']//effect_group//passive_effect[@level='43,51,59,67,75']" name="level">130,140,150,160,180</setattribute>
+
+    <!-- *** HANDGUN_SKILLS -->
+
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']" name="max_level">250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']//display_entry[@item='gunHandgunT0PipePistol']" name="unlock_level">1,6,12,18,32,40</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']//display_entry[@item='gunHandgunT1Pistol']" name="unlock_level">50,55,60,65,70,80</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']//display_entry[@item='gunHandgunT2Magnum44']" name="unlock_level">90,100,105,110,120,130</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']//display_entry[@item='gunHandgunT3SMG5']" name="unlock_level">140,150,160,170,180,190</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']//display_entry[@item='gunHandgunT3DesertVulture']" name="unlock_level">200,210,220,230,240,250</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']//effect_group//passive_effect[@level='1,100']" name="level">1,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']//effect_group//passive_effect[@level='11,100']" name="level">50,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']//effect_group//passive_effect[@level='26,100']" name="level">90,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']//effect_group//passive_effect[@level='46,100']" name="level">140,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']//effect_group//passive_effect[@level='71,100']" name="level">200,250</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']//effect_group//passive_effect[@level='2,4,6,8,10,100']" name="level">6,12,18,32,40,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']//effect_group//passive_effect[@level='13,16,19,22,25,100']" name="level">55,60,65,70,80,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']//effect_group//passive_effect[@level='29,33,37,41,45,100']" name="level">100,105,110,120,130,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']//effect_group//passive_effect[@level='50,55,60,65,70,100']" name="level">150,160,170,180,190,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingHandguns']//effect_group//passive_effect[@level='76,82,88,94,100']" name="level">210,220,230,240,250</setattribute>
+
+    <!-- *** SHOTGUN_SKILLS -->
+
+    <setattribute xpath="//crafting_skill[@name='craftingShotguns']" name="max_level">250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingShotguns']//display_entry[@item='gunShotgunT0PipeShotgun']" name="unlock_level">1,6,12,18,32,50</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingShotguns']//display_entry[@item='gunShotgunT1DoubleBarrel']" name="unlock_level">60,70,80,90,100,110</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingShotguns']//display_entry[@item='gunShotgunT2PumpShotgun']" name="unlock_level">120,130,140,150,160,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingShotguns']//display_entry[@item='gunShotgunT3AutoShotgun']" name="unlock_level">200,210,220,230,240,250</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingShotguns']//effect_group//passive_effect[@level='1,100']" name="level">1,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingShotguns']//effect_group//passive_effect[@level='11,100']" name="level">60,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingShotguns']//effect_group//passive_effect[@level='26,100']" name="level">120,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingShotguns']//effect_group//passive_effect[@level='61,100']" name="level">200,250</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingShotguns']//effect_group//passive_effect[@level='2,4,6,8,10,100']" name="level">6,12,18,32,50,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingShotguns']//effect_group//passive_effect[@level='13,16,19,22,25,100']" name="level">70,80,90,100,110,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingShotguns']//effect_group//passive_effect[@level='32,39,46,53,60,100']" name="level">130,140,150,160,180,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingShotguns']//effect_group//passive_effect[@level='68,76,84,92,100']" name="level">210,220,230,240,250</setattribute>
+
+    <!-- *** RIFLE_SKILLS -->
+
+    <setattribute xpath="//crafting_skill[@name='craftingRifles']" name="max_level">250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRifles']//display_entry[@item='gunRifleT0PipeRifle']" name="unlock_level">1,6,12,18,32,50</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRifles']//display_entry[@item='gunRifleT1HuntingRifle']" name="unlock_level">60,70,80,90,100,110</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRifles']//display_entry[@item='gunRifleT2LeverActionRifle']" name="unlock_level">120,130,140,150,160,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRifles']//display_entry[@item='gunRifleT3SniperRifle']" name="unlock_level">200,210,220,230,240,250</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingRifles']//effect_group//passive_effect[@level='1,100']" name="level">1,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRifles']//effect_group//passive_effect[@level='11,100']" name="level">60,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRifles']//effect_group//passive_effect[@level='26,100']" name="level">120,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRifles']//effect_group//passive_effect[@level='61,100']" name="level">200,250</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingRifles']//effect_group//passive_effect[@level='2,4,6,8,10,100']" name="level">6,12,18,32,50,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRifles']//effect_group//passive_effect[@level='13,16,19,22,25,100']" name="level">70,80,90,100,110,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRifles']//effect_group//passive_effect[@level='32,39,46,53,60,100']" name="level">130,140,150,160,180,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRifles']//effect_group//passive_effect[@level='68,76,84,92,100']" name="level">210,220,230,240,250</setattribute>
+
+    <!-- *** MACHINE_GUN_SKILLS -->
+
+    <setattribute xpath="//crafting_skill[@name='craftingMachineGuns']" name="max_level">250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingMachineGuns']//display_entry[@item='gunMGT0PipeMachineGun']" name="unlock_level">1,6,12,18,32,50</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingMachineGuns']//display_entry[@item='gunMGT1AK47']" name="unlock_level">60,70,80,90,100,110</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingMachineGuns']//display_entry[@item='gunMGT2TacticalAR']" name="unlock_level">120,130,140,150,160,180</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingMachineGuns']//display_entry[@item='gunMGT3M60']" name="unlock_level">200,210,220,230,240,250</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingMachineGuns']//effect_group//passive_effect[@level='1,100']" name="level">1,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingMachineGuns']//effect_group//passive_effect[@level='11,100']" name="level">60,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingMachineGuns']//effect_group//passive_effect[@level='26,100']" name="level">120,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingMachineGuns']//effect_group//passive_effect[@level='61,100']" name="level">200,250</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingMachineGuns']//effect_group//passive_effect[@level='2,4,6,8,10,100']" name="level">6,12,18,32,50,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingMachineGuns']//effect_group//passive_effect[@level='13,16,19,22,25,100']" name="level">70,80,90,100,110,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingMachineGuns']//effect_group//passive_effect[@level='32,39,46,53,60,100']" name="level">130,140,150,160,180,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingMachineGuns']//effect_group//passive_effect[@level='68,76,84,92,100']" name="level">210,220,230,240,250</setattribute>
+
+    <!-- *** EXPLOSIVE_SKILLS -->
+
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']" name="max_level">200</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//display_entry[contains(@icon,'thrownAmmoPipeBomb')]" name="unlock_level">10,20,25</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//display_entry[contains(@icon,'thrownDynamite')]" name="unlock_level">40,50,60</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//display_entry[contains(@icon,'mineAirFilter')]" name="unlock_level">70,90,100</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//display_entry[contains(@icon,'ammoRocketFrag')]" name="unlock_level">120</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//display_entry[contains(@icon,'gunExplosivesT3RocketLauncher')]" name="unlock_level">150,160,170,180,190,200</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//effect_group//passive_effect[@level='2,100']" name="level">10,200</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//effect_group//passive_effect[@level='5,100']" name="level">20,200</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//effect_group//passive_effect[@level='10,100']" name="level">25,200</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//effect_group//passive_effect[@level='12,100']" name="level">40,200</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//effect_group//passive_effect[@level='16,100']" name="level">50,200</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//effect_group//passive_effect[@level='20,100']" name="level">60,200</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//effect_group//passive_effect[@level='25,100']" name="level">70,200</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//effect_group//passive_effect[@level='30,100']" name="level">90,200</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//effect_group//passive_effect[@level='35,100']" name="level">100,200</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//effect_group//passive_effect[@level='45,100']" name="level">120,200</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//effect_group//passive_effect[@level='50,100']" name="level">150,200</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingExplosives']//effect_group//passive_effect[@level='60,70,80,90,100']" name="level">160,170,180,190,200</setattribute>
+
+    <!-- *** ROBOTIC_SKILLS -->
+
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']" name="max_level">250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']//display_entry[@item='meleeWpnBatonT0PipeBaton']" name="unlock_level">1,6,12,18,32,40</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']//display_entry[@item='gunBotT1JunkSledge']" name="unlock_level">50,55,60,65,70,80</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']//display_entry[@item='meleeWpnBatonT2StunBaton']" name="unlock_level">90,100,105,110,120,130</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']//display_entry[@item='gunBotT2JunkTurret']" name="unlock_level">140,150,160,170,180,190</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']//display_entry[@item='gunBotT3JunkDrone']" name="unlock_level">200,210,220,230,240,250</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']//effect_group//passive_effect[@level='1,100']" name="level">1,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']//effect_group//passive_effect[@level='11,100']" name="level">50,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']//effect_group//passive_effect[@level='26,100']" name="level">90,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']//effect_group//passive_effect[@level='51,100']" name="level">140,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']//effect_group//passive_effect[@level='76,100']" name="level">200,250</setattribute>
+
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']//effect_group//passive_effect[@level='2,4,6,8,10,100']" name="level">6,12,18,32,40,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']//effect_group//passive_effect[@level='13,16,19,22,25,100']" name="level">55,60,65,70,80,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']//effect_group//passive_effect[@level='30,35,40,45,50,100']" name="level">100,105,110,120,130,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']//effect_group//passive_effect[@level='55,60,65,70,75,100']" name="level">150,160,170,180,190,250</setattribute>
+    <setattribute xpath="//crafting_skill[@name='craftingRobotics']//effect_group//passive_effect[@level='80,85,90,95,100']" name="level">210,220,230,240,250</setattribute>
+
+
+</XineladaLendaria>

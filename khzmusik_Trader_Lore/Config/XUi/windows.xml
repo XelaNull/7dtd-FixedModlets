@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <!--
+        VANILLA ONLY:
+        We need to move the respondent and statement windows up, and make them larger,
+        in order to accomodate larger sections of text.
+    -->
+    <set xpath="/windows/window[@name='windowRespondentName' and @pos='-175,120']/@pos">-175,220</set>
+    <set xpath="/windows/window[@name='windowStatement' and @pos='0,85']/@pos">0,180</set>
+    <set xpath="/windows/window[@name='windowStatement' and @height='60']/@height">165</set>
+    <set xpath="/windows/window[@name='windowStatement']/rect/label[@name='statementLabel' and @pos='-500,-5']/@pos">-490,-10</set>
+    <set xpath="/windows/window[@name='windowStatement']/rect/label[@name='statementLabel']/@justify">left</set>
+</configs>

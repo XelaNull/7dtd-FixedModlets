@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="Flexible Games Stainless Steel Mod" />
-		<Description value="Make your bunker shine with Stainless Steel!" />
-		<Author value="Buggi, Fixed by ShoudenKalferas" />
-		<Version value="1.0.1.0" />
-		<Website value="https://www.youtube.com/c/FlexibleGames" />
+	<Name value="FGStainlessMod" />
+	<DisplayName value="Stainless Steel Mod"/>
+	<Description value="Make your bunker shine with Stainless Steel! Adds Stainless Steel blocks back into the game, upgrade from Steel using the new Steel Polish." />
+	<Author value="Buggi" />
+	<Version value="2.0.1" />
+	<Website value="https://www.youtube.com/c/FlexibleGames" />
 </xml>

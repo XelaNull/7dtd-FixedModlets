@@ -1,0 +1,16 @@
+<XineladaLendaria>
+
+<setattribute xpath="//crafting_skill[@name='craftingVehicles']" name="max_level">250</setattribute>
+<setattribute xpath="//crafting_skill[@name='craftingVehicles']//display_entry[@name_key='vehiclesT1']" name="unlock_level">15</setattribute>
+<setattribute xpath="//crafting_skill[@name='craftingVehicles']//display_entry[@name_key='vehiclesT2']" name="unlock_level">50</setattribute>
+<setattribute xpath="//crafting_skill[@name='craftingVehicles']//display_entry[@name_key='vehiclesT3']" name="unlock_level">120</setattribute>
+<setattribute xpath="//crafting_skill[@name='craftingVehicles']//display_entry[@name_key='vehiclesT4']" name="unlock_level">190</setattribute>
+<setattribute xpath="//crafting_skill[@name='craftingVehicles']//display_entry[@name_key='vehiclesT5']" name="unlock_level">250</setattribute>
+
+<setattribute xpath="//crafting_skill[@name='craftingVehicles']//effect_group//passive_effect[@level='5,100']" name="level">15,250</setattribute>
+<setattribute xpath="//crafting_skill[@name='craftingVehicles']//effect_group//passive_effect[@level='20,100']" name="level">50,250</setattribute>
+<setattribute xpath="//crafting_skill[@name='craftingVehicles']//effect_group//passive_effect[@level='45,100']" name="level">120,250</setattribute>
+<setattribute xpath="//crafting_skill[@name='craftingVehicles']//effect_group//passive_effect[@level='70,100']" name="level">190,250</setattribute>
+<setattribute xpath="//crafting_skill[@name='craftingVehicles']//effect_group//passive_effect[@level='100,100']" name="level">250,250</setattribute>
+
+</XineladaLendaria>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="1MoreDifficultVehicles" />
+	<DisplayName value="More Difficult Vehicles" />
+	<Description value="Adds to the game more difficult to unlock vehicles." />
+	<Author value="Darkikos" />
+	<Version value="1.0" />
+	<Website value="" />
+	<SkipWithAntiCheat value="true" />
+</xml>
