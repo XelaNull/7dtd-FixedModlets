@@ -1,3 +1,0 @@
-<configs>
-  <set xpath="/worldglobal/environment/property[@name='fogPower']/@value">1,0.40</set>
-</configs>
